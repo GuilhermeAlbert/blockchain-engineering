@@ -174,6 +174,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Soft fork** — A protocol rule change that tightens consensus rules in a way old software still accepts. See [Soft Forks](./chapters/forks/soft-forks.md).
 
+**Smart contract** — Code deployed to a blockchain that executes deterministically when called, holding its own state and, optionally, funds. See [Smart Contracts](./chapters/contracts/README.md).
+
 **secp256k1** — The specific elliptic curve Bitcoin and Ethereum use for all keys and signatures. See [secp256k1](./chapters/cryptography/secp256k1.md).
 
 **Schnorr signature** — A signature scheme added to Bitcoin via Taproot, notable for enabling signature aggregation. See [Schnorr Signatures](./chapters/cryptography/schnorr.md).

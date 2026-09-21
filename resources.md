@@ -83,7 +83,11 @@ A curated list of primary sources, specifications, and books referenced througho
 
 ## Smart contracts
 
-- TODO: add as the Contracts section is written
+- [Solidity documentation](https://docs.soliditylang.org/)
+- [Foundry Book](https://book.getfoundry.sh/)
+- [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
+- [EIP-1967: Standard Proxy Storage Slots](https://eips.ethereum.org/EIPS/eip-1967)
+- [EIP-2535: Diamonds, Multi-Facet Proxy](https://eips.ethereum.org/EIPS/eip-2535)
 
 ## DeFi
 

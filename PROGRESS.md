@@ -18,7 +18,7 @@ A section is `Complete` only when every linked chapter exists, is substantive (n
 | Lightning | Complete | 9 chapters + README. One citation error caught (BOLT 13 lives outside the core lightning/bolts repo as a draft) and corrected. |
 | Ethereum | Complete | 19 chapters + README. Live JSON-RPC and viem examples verified against real mainnet data; EIP-1559 base fee formula independently computed and verified. |
 | EVM | Complete | 9 chapters + README. Every bytecode example executed against a real EVM implementation (@ethereumjs/evm), including a real SSTORE/SLOAD gas cost measurement. |
-| Contracts | Planned | Solidity, ABI, proxies, upgradeability. |
+| Contracts | Complete | 15 chapters + README. Nearly every non-trivial Solidity snippet compiled with solc 0.8.26 and confirmed clean, including a working minimal proxy with inline Yul assembly. |
 | Tokens | Planned | ERC-20, ERC-721, ERC-1155. |
 | Web3 | Planned | JSON-RPC, viem, wagmi, wallet-stats example. |
 | DeFi | Planned | AMMs, lending, oracles, Uniswap/Aave case studies. |
