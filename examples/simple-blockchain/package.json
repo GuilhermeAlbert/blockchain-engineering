@@ -1,0 +1,17 @@
+{
+  "name": "simple-blockchain",
+  "version": "1.0.0",
+  "description": "A small, from-scratch TypeScript blockchain built to teach the concepts in chapters/blockchain/, not to be used as real software.",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "demo": "tsx src/demo.ts",
+    "build": "tsc",
+    "test": "tsx src/test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
