@@ -33,6 +33,10 @@ A curated list of primary sources, specifications, and books referenced througho
 - [Casper the Friendly Finality Gadget](https://arxiv.org/abs/1710.09437) — Buterin & Griffith, 2017
 - [Solidity documentation](https://docs.soliditylang.org/)
 - [`viem` documentation](https://viem.sh/) — used throughout this book's Web3 examples
+- [`wagmi` documentation](https://wagmi.sh/)
+- [EIP-712: Typed structured data hashing and signing](https://eips.ethereum.org/EIPS/eip-712)
+- [EIP-1193: Ethereum Provider JavaScript API](https://eips.ethereum.org/EIPS/eip-1193)
+- [WalletConnect documentation](https://docs.walletconnect.com/)
 
 ## Cryptography
 

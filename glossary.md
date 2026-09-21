@@ -76,6 +76,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Elliptic curve** — A curve of the form y² = x³ + ax + b over a finite field, used as the mathematical basis for Bitcoin and Ethereum's keys and signatures. See [Elliptic Curves](./chapters/cryptography/elliptic-curves.md).
 
+**EIP-712** — A standard for structured, human-readable typed-data signatures, with a domain separator preventing cross-application replay. See [Typed Data and EIP-712](./chapters/web3/eip-712.md).
+
 ## E (continued)
 
 **EVM (Ethereum Virtual Machine)** — The stack-based, Turing-complete virtual machine that executes contract bytecode. See [The EVM](./chapters/evm/README.md).
