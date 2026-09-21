@@ -19,7 +19,7 @@ A section is `Complete` only when every linked chapter exists, is substantive (n
 | Ethereum | Complete | 19 chapters + README. Live JSON-RPC and viem examples verified against real mainnet data; EIP-1559 base fee formula independently computed and verified. |
 | EVM | Complete | 9 chapters + README. Every bytecode example executed against a real EVM implementation (@ethereumjs/evm), including a real SSTORE/SLOAD gas cost measurement. |
 | Contracts | Complete | 15 chapters + README. Nearly every non-trivial Solidity snippet compiled with solc 0.8.26 and confirmed clean, including a working minimal proxy with inline Yul assembly. |
-| Tokens | Planned | ERC-20, ERC-721, ERC-1155. |
+| Tokens | Complete | 11 chapters + README. All interfaces/contracts compile with solc 0.8.26; WETH's real mainnet address verified live via viem (returns name/symbol correctly). |
 | Web3 | Planned | JSON-RPC, viem, wagmi, wallet-stats example. |
 | DeFi | Planned | AMMs, lending, oracles, Uniswap/Aave case studies. |
 | Layer 2 | Planned | Rollups, data availability, blobs, bridges. |

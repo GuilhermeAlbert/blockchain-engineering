@@ -58,6 +58,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 ## D
 
+**Decimals** — An ERC-20 display convention (not a protocol rule) specifying how many places to divide a raw token balance by for human-readable display; USDC uses 6, most tokens use 18. See [Balances](./chapters/tokens/balances.md).
+
 **Difficulty** — A normalized measure of how hard it currently is to find a valid block hash, expressed relative to Bitcoin's easiest-ever target. See [Mining Difficulty](./chapters/bitcoin/difficulty.md).
 
 **Digital signature** — Cryptographic proof that a private key holder authorized a specific message, verifiable by anyone with the public key. See [Digital Signatures](./chapters/cryptography/digital-signatures.md).

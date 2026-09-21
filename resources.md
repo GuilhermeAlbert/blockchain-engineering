@@ -89,6 +89,13 @@ A curated list of primary sources, specifications, and books referenced througho
 - [EIP-1967: Standard Proxy Storage Slots](https://eips.ethereum.org/EIPS/eip-1967)
 - [EIP-2535: Diamonds, Multi-Facet Proxy](https://eips.ethereum.org/EIPS/eip-2535)
 
+## Tokens
+
+- [EIP-20: Token Standard](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-721: Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-1155: Multi Token Standard](https://eips.ethereum.org/EIPS/eip-1155)
+- [WETH9 (verified live on mainnet)](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2)
+
 ## DeFi
 
 - TODO: add as the DeFi section is written
