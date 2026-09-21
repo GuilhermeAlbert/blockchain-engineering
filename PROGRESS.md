@@ -31,7 +31,7 @@ A section is `Complete` only when every linked chapter exists, is substantive (n
 | Resources | Drafting | Built incrementally alongside each section. |
 | examples/simple-blockchain | Complete | TypeScript, runnable (`npm run demo` / `npm test`), 8/8 tests passing, type-checks clean. |
 | examples/bitcoin | Complete | Decodes real, verified on-chain tx/block data (txid + block hash + PoW target all confirmed to match). Live-fetch variant included. 7/7 tests passing. |
-| examples/wallet-stats | Planned | Read-only web3 app (TypeScript/viem). |
+| examples/wallet-stats | Complete | Live CLI reading real balances/tx count/contract status/token balances. 4/4 tests pass against live mainnet data. Found and documented a real EIP-7702 detection gap during testing. |
 | examples/ethereum-rpc | Planned | JSON-RPC exercises. |
 | examples/solidity | Planned | Foundry-based contract examples. |
 | examples/defi | Planned | AMM math and swap inspection. |
