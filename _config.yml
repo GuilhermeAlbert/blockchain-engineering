@@ -1,5 +1,4 @@
 title: Blockchain Engineering
 description: A theme for blockchain engineering documentation.
-show_downloads: true
-google_analytics:
+show_downloads: false
 theme: jekyll-theme-cayman
