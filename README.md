@@ -1,35 +1,123 @@
 <p align="center">
   <a href="https://github.com/GuilhermeAlbert/blockchain-engineering/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="cover.png" />
-      <img src="cover.png" alt="Blockchain Engineering" width="320" />
-    </picture>
+    <img src="cover.png" alt="Blockchain Engineering" width="300" />
   </a>
 </p>
 
-<h1 align="center">
-  Blockchain Engineering
-</h1>
+<h1 align="center">Blockchain Engineering</h1>
+
+<p align="center">Understanding blockchain through code.</p>
 
 <p align="center">
-  Understanding blockchain through code.
+  <a href="#start-reading">Start reading</a>
+  ·
+  <a href="./SUMMARY.md">Full contents</a>
+  ·
+  <a href="./PROGRESS.md">Progress</a>
+  ·
+  <a href="./glossary.md">Glossary</a>
+  ·
+  <a href="./resources.md">Resources</a>
+</p>
+
+<p align="center">
+  <img alt="Status" src="https://img.shields.io/badge/status-work%20in%20progress-a12a7d" />
+  <img alt="Language" src="https://img.shields.io/badge/language-English-555555" />
+  <img alt="Format" src="https://img.shields.io/badge/format-open%20book-555555" />
 </p>
 
 ---
 
-Blockchain Engineering is an open-source book about blockchain, Bitcoin, Ethereum, decentralized systems, and the engineering ideas behind them.
+Blockchain Engineering is an open-source technical book about Bitcoin, Ethereum, cryptography, distributed systems, monetary economics, smart contracts, DeFi, scaling, security, and blockchain infrastructure.
 
-I'm writing it as I study the subject from first principles. The book starts before Bitcoin, with money, cryptography, distributed systems, and the Cypherpunk movement, then moves into Bitcoin, Ethereum, smart contracts, DeFi, scaling, security, and blockchain infrastructure.
+The book approaches blockchain from a software engineer's perspective: understand the mechanism first, then inspect it, reproduce it, and build with it.
 
-The goal is to understand how these systems work, why they were created, what problems they solve, where their tradeoffs come from, and how to build software on top of them.
+> [!NOTE]
+> This book is about engineering, protocols, and economic context. It does not cover trading strategies or price speculation.
 
-This is not a book about trading or price speculation.
+## Book map
 
-## Read the book
+```mermaid
+flowchart TD
+    A[Origins] --> B[Money & Economics]
+    B --> C[Cryptography]
+    C --> D[Distributed Systems]
+    D --> E[Blockchain Fundamentals]
 
-### Origins
+    E --> F[Bitcoin]
+    F --> G[Wallets]
+    F --> H[Bitcoin Scaling]
+    H --> I[Lightning]
 
-The ideas behind Bitcoin did not appear in isolation. This section covers the technical and political context that led to decentralized digital money.
+    E --> J[Ethereum]
+    J --> K[EVM]
+    K --> L[Smart Contracts]
+    L --> M[Tokens]
+    M --> N[Web3 Applications]
+    N --> O[DeFi]
+    O --> P[Layer 2]
+
+    F --> Q[Security]
+    P --> Q
+    Q --> R[Infrastructure]
+```
+
+## Start reading
+
+| Path | Start here | Focus |
+| --- | --- | --- |
+| Beginner | [Origins](./chapters/origins/README.md) | Full conceptual foundation |
+| Software engineer | [Cryptography](./chapters/cryptography/README.md) | Protocols, execution, and code |
+| Bitcoin | [Origins](./chapters/origins/README.md) | Bitcoin, wallets, forks, and Lightning |
+| Ethereum | [Ethereum](./chapters/ethereum/README.md) | Accounts, EVM, contracts, DeFi, and Layer 2 |
+
+### Beginner path
+
+```mermaid
+flowchart LR
+    A[Origins] --> B[Economics]
+    B --> C[Cryptography]
+    C --> D[Distributed Systems]
+    D --> E[Blockchain]
+    E --> F[Bitcoin]
+    F --> G[Wallets]
+    G --> H[Ethereum]
+    H --> I[Smart Contracts]
+    I --> J[DeFi]
+```
+
+### Software engineer path
+
+```mermaid
+flowchart LR
+    A[Cryptography] --> B[Blockchain]
+    B --> C[Ethereum]
+    C --> D[EVM]
+    D --> E[Smart Contracts]
+    E --> F[Tokens]
+    F --> G[Web3]
+    G --> H[Security]
+```
+
+### Bitcoin path
+
+```mermaid
+flowchart LR
+    A[Origins] --> B[Economics]
+    B --> C[Cryptography]
+    C --> D[Bitcoin]
+    D --> E[Forks]
+    D --> F[Wallets]
+    D --> G[Scaling]
+    G --> H[Lightning]
+```
+
+## Explore the book
+
+<details>
+<summary><strong>Origins</strong> — digital cash, Cypherpunks, Satoshi, and the work that came before Bitcoin</summary>
+
+<br>
 
 - [Why Digital Cash Was Hard](./chapters/origins/digital-cash.md)
 - [The Cypherpunk Movement](./chapters/origins/cypherpunks.md)
@@ -42,23 +130,12 @@ The ideas behind Bitcoin did not appear in isolation. This section covers the te
 - [The Genesis Block](./chapters/origins/genesis-block.md)
 - [Early Bitcoin History](./chapters/origins/early-bitcoin.md)
 
-Topics include:
+</details>
 
-- anonymous and pseudonymous digital money
-- censorship resistance
-- trusted third parties
-- the double-spending problem
-- digital scarcity
-- peer-to-peer networks
-- Satoshi's public writings
-- the Bitcoin mailing list
-- Bitcoin's first release
-- Hal Finney and early contributors
-- what is known and unknown about Satoshi's identity
+<details>
+<summary><strong>Money and Economics</strong> — money, banking, monetary policy, Austrian economics, and competing views</summary>
 
-### Money and Economics
-
-Before studying Bitcoin as software, it helps to understand the economic problem it is trying to address.
+<br>
 
 - [What Is Money?](./chapters/economics/money.md)
 - [Functions of Money](./chapters/economics/functions-of-money.md)
@@ -68,636 +145,226 @@ Before studying Bitcoin as software, it helps to understand the economic problem
 - [Inflation and Deflation](./chapters/economics/inflation-and-deflation.md)
 - [Central Banking](./chapters/economics/central-banking.md)
 - [Monetary Policy](./chapters/economics/monetary-policy.md)
-- [Money Supply](./chapters/economics/money-supply.md)
-- [The Cantillon Effect](./chapters/economics/cantillon-effect.md)
-- [Network Effects in Money](./chapters/economics/network-effects.md)
 - [Bitcoin as Money](./chapters/economics/bitcoin-as-money.md)
 
 #### Austrian economics
-
-This section examines ideas often referenced in Bitcoin discussions while keeping historical influence separate from claims those authors themselves made about Bitcoin.
 
 - [Carl Menger and the Origin of Money](./chapters/economics/menger.md)
 - [Ludwig von Mises and Monetary Theory](./chapters/economics/mises.md)
 - [Friedrich Hayek and Competing Currencies](./chapters/economics/hayek.md)
 - [Murray Rothbard and Sound Money](./chapters/economics/rothbard.md)
-- [The Regression Theorem](./chapters/economics/regression-theorem.md)
-- [Hard Money and Sound Money](./chapters/economics/sound-money.md)
 - [Austrian Economics and Bitcoin](./chapters/economics/austrian-economics-and-bitcoin.md)
 
-#### Other economic perspectives
+</details>
 
-- [Keynesian Perspectives](./chapters/economics/keynesian-perspectives.md)
-- [Monetarism](./chapters/economics/monetarism.md)
-- [Modern Monetary Theory](./chapters/economics/mmt.md)
-- [Critiques of Bitcoin as Money](./chapters/economics/bitcoin-criticism.md)
-- [Volatility and Monetary Adoption](./chapters/economics/volatility.md)
-- [Deflationary Money](./chapters/economics/deflationary-money.md)
-- [Bitcoin and Monetary Sovereignty](./chapters/economics/monetary-sovereignty.md)
+<details>
+<summary><strong>Cryptography</strong> — hashes, keys, signatures, elliptic curves, and Merkle trees</summary>
 
-The goal is not to treat one school of economics as settled truth, but to understand the arguments behind competing views of money.
-
-### Cryptography
-
-Blockchain systems combine several cryptographic primitives. None of them alone creates a blockchain.
+<br>
 
 - [What Cryptography Does](./chapters/cryptography/README.md)
 - [Hash Functions](./chapters/cryptography/hashes.md)
 - [SHA-256](./chapters/cryptography/sha-256.md)
-- [Hash Collisions](./chapters/cryptography/collisions.md)
-- [Preimage Resistance](./chapters/cryptography/preimage-resistance.md)
 - [Public-Key Cryptography](./chapters/cryptography/public-key-cryptography.md)
 - [Private and Public Keys](./chapters/cryptography/keys.md)
 - [Digital Signatures](./chapters/cryptography/digital-signatures.md)
 - [ECDSA](./chapters/cryptography/ecdsa.md)
 - [Schnorr Signatures](./chapters/cryptography/schnorr.md)
-- [Elliptic Curves](./chapters/cryptography/elliptic-curves.md)
-- [secp256k1](./chapters/cryptography/secp256k1.md)
 - [Merkle Trees](./chapters/cryptography/merkle-trees.md)
-- [Merkle Proofs](./chapters/cryptography/merkle-proofs.md)
-- [Commitments](./chapters/cryptography/commitments.md)
 - [Zero-Knowledge Proofs](./chapters/cryptography/zero-knowledge.md)
 
-Experiments:
+</details>
 
-- hash a file
-- generate a key pair
-- derive a public key
-- sign and verify a message
-- construct a small Merkle tree
-- verify a Merkle proof
+<details>
+<summary><strong>Bitcoin</strong> — transactions, UTXOs, mining, Script, SegWit, Taproot, and monetary policy</summary>
 
-### Distributed Systems
+<br>
 
-Blockchain is also a distributed systems problem.
-
-- [Distributed Systems Basics](./chapters/distributed-systems/README.md)
-- [Peer-to-Peer Networks](./chapters/distributed-systems/p2p.md)
-- [Replication](./chapters/distributed-systems/replication.md)
-- [Consensus](./chapters/distributed-systems/consensus.md)
-- [Byzantine Faults](./chapters/distributed-systems/byzantine-faults.md)
-- [Byzantine Generals Problem](./chapters/distributed-systems/byzantine-generals.md)
-- [Sybil Attacks](./chapters/distributed-systems/sybil-attacks.md)
-- [CAP Theorem](./chapters/distributed-systems/cap.md)
-- [Finality](./chapters/distributed-systems/finality.md)
-- [Probabilistic Finality](./chapters/distributed-systems/probabilistic-finality.md)
-
-### Blockchain Fundamentals
-
-This section builds the blockchain data structure from its individual parts.
-
-- [What Is a Blockchain?](./chapters/blockchain/README.md)
-- [Blocks](./chapters/blockchain/blocks.md)
-- [Block Headers](./chapters/blockchain/block-headers.md)
-- [Transactions](./chapters/blockchain/transactions.md)
-- [Hashes and Block Linking](./chapters/blockchain/block-linking.md)
-- [Merkle Roots](./chapters/blockchain/merkle-roots.md)
-- [Genesis Blocks](./chapters/blockchain/genesis-blocks.md)
-- [Block Height](./chapters/blockchain/block-height.md)
-- [Block Time](./chapters/blockchain/block-time.md)
-- [Chain Reorganizations](./chapters/blockchain/reorgs.md)
-- [Consensus Rules](./chapters/blockchain/consensus-rules.md)
-- [Fork Choice](./chapters/blockchain/fork-choice.md)
-- [Permissionless vs Permissioned Networks](./chapters/blockchain/permissionless-vs-permissioned.md)
-
-Project:
-
-- [Build a Small Blockchain](./examples/simple-blockchain/)
-
-The implementation should include:
-
-- blocks
-- timestamps
-- hashes
-- previous block hashes
-- transaction data
-- basic proof of work
-- validation
-- chain verification
-
-### Bitcoin
-
-This section studies Bitcoin as both a protocol and a running distributed system.
+#### Core concepts
 
 - [How Bitcoin Works](./chapters/bitcoin/README.md)
-- [Bitcoin Nodes](./chapters/bitcoin/nodes.md)
-- [The Bitcoin Network](./chapters/bitcoin/network.md)
-- [Full Nodes](./chapters/bitcoin/full-nodes.md)
-- [Light Clients](./chapters/bitcoin/light-clients.md)
-- [Bitcoin Core](./chapters/bitcoin/bitcoin-core.md)
 - [Transactions](./chapters/bitcoin/transactions.md)
 - [The UTXO Model](./chapters/bitcoin/utxo.md)
-- [Inputs and Outputs](./chapters/bitcoin/inputs-and-outputs.md)
-- [Transaction Fees](./chapters/bitcoin/fees.md)
 - [The Mempool](./chapters/bitcoin/mempool.md)
 - [Transaction Confirmation](./chapters/bitcoin/confirmation.md)
-- [Coinbase Transactions](./chapters/bitcoin/coinbase-transactions.md)
-- [Bitcoin Script](./chapters/bitcoin/script.md)
-- [ScriptPubKey and ScriptSig](./chapters/bitcoin/scripts.md)
-- [P2PKH](./chapters/bitcoin/p2pkh.md)
-- [P2SH](./chapters/bitcoin/p2sh.md)
-- [SegWit](./chapters/bitcoin/segwit.md)
-- [Taproot](./chapters/bitcoin/taproot.md)
-- [Ordinals and Inscriptions](./chapters/bitcoin/ordinals.md)
 
 #### Mining
 
 - [Proof of Work](./chapters/bitcoin/proof-of-work.md)
 - [Mining](./chapters/bitcoin/mining.md)
-- [Mining Difficulty](./chapters/bitcoin/difficulty.md)
 - [Difficulty Adjustment](./chapters/bitcoin/difficulty-adjustment.md)
-- [Nonce](./chapters/bitcoin/nonce.md)
-- [Block Rewards](./chapters/bitcoin/block-rewards.md)
 - [The Halving](./chapters/bitcoin/halving.md)
 - [Mining Pools](./chapters/bitcoin/mining-pools.md)
-- [ASICs](./chapters/bitcoin/asics.md)
-- [Hashrate](./chapters/bitcoin/hashrate.md)
-- [51% Attacks](./chapters/bitcoin/51-percent-attacks.md)
-- [Energy Consumption](./chapters/bitcoin/energy.md)
 
-#### Bitcoin monetary policy
+#### Protocol
 
-- [21 Million BTC](./chapters/bitcoin/21-million.md)
-- [Issuance Schedule](./chapters/bitcoin/issuance.md)
-- [Stock-to-Flow](./chapters/bitcoin/stock-to-flow.md)
-- [Lost Coins](./chapters/bitcoin/lost-coins.md)
-- [Fee Market](./chapters/bitcoin/fee-market.md)
-- [Long-Term Security Budget](./chapters/bitcoin/security-budget.md)
+- [Bitcoin Script](./chapters/bitcoin/script.md)
+- [SegWit](./chapters/bitcoin/segwit.md)
+- [Taproot](./chapters/bitcoin/taproot.md)
 
-### Forks and Protocol Upgrades
+</details>
 
-"Fork" can describe several different events. This section separates them.
+<details>
+<summary><strong>Wallets, Forks, and Scaling</strong> — key management, protocol upgrades, payment channels, and Lightning</summary>
 
+<br>
+
+- [Wallets](./chapters/wallets/README.md)
+- [Seed Phrases](./chapters/wallets/seed-phrases.md)
+- [HD Wallets](./chapters/wallets/hd-wallets.md)
 - [What Is a Fork?](./chapters/forks/README.md)
-- [Temporary Chain Forks](./chapters/forks/temporary-forks.md)
 - [Soft Forks](./chapters/forks/soft-forks.md)
 - [Hard Forks](./chapters/forks/hard-forks.md)
-- [Backward Compatibility](./chapters/forks/backward-compatibility.md)
-- [Protocol Upgrades](./chapters/forks/upgrades.md)
-- [BIPs](./chapters/forks/bips.md)
-- [Bitcoin Governance](./chapters/forks/governance.md)
-- [Miner Signaling](./chapters/forks/miner-signaling.md)
-- [User-Activated Soft Forks](./chapters/forks/uasf.md)
-
-Case studies:
-
-- [Bitcoin Cash](./chapters/forks/bitcoin-cash.md)
-- [Bitcoin SV](./chapters/forks/bitcoin-sv.md)
-- [SegWit2x](./chapters/forks/segwit2x.md)
-- [The Block Size Debate](./chapters/forks/block-size-war.md)
-
-### Wallets and Key Management
-
-A wallet does not literally store coins. It stores or manages the keys used to authorize spending.
-
-- [What Is a Wallet?](./chapters/wallets/README.md)
-- [Addresses](./chapters/wallets/addresses.md)
-- [Private Keys](./chapters/wallets/private-keys.md)
-- [Public Keys](./chapters/wallets/public-keys.md)
-- [Seed Phrases](./chapters/wallets/seed-phrases.md)
-- [BIP-39](./chapters/wallets/bip-39.md)
-- [HD Wallets](./chapters/wallets/hd-wallets.md)
-- [BIP-32](./chapters/wallets/bip-32.md)
-- [BIP-44](./chapters/wallets/bip-44.md)
-- [Derivation Paths](./chapters/wallets/derivation-paths.md)
-- [Hot Wallets](./chapters/wallets/hot-wallets.md)
-- [Cold Storage](./chapters/wallets/cold-storage.md)
-- [Hardware Wallets](./chapters/wallets/hardware-wallets.md)
-- [Multisig](./chapters/wallets/multisig.md)
-- [Custodial vs Non-Custodial Wallets](./chapters/wallets/custody.md)
-- [Key Backup and Recovery](./chapters/wallets/recovery.md)
-
-### Bitcoin Scaling
-
-Bitcoin's base layer deliberately limits block space. Scaling introduces additional tradeoffs.
-
 - [The Scaling Problem](./chapters/bitcoin-scaling/README.md)
-- [Block Size](./chapters/bitcoin-scaling/block-size.md)
-- [SegWit as a Scaling Upgrade](./chapters/bitcoin-scaling/segwit.md)
-- [Transaction Batching](./chapters/bitcoin-scaling/batching.md)
-- [Payment Channels](./chapters/bitcoin-scaling/payment-channels.md)
-
-#### Lightning Network
-
 - [Lightning Network](./chapters/lightning/README.md)
-- [Payment Channels](./chapters/lightning/payment-channels.md)
-- [Funding Transactions](./chapters/lightning/funding-transactions.md)
-- [Commitment Transactions](./chapters/lightning/commitment-transactions.md)
 - [HTLCs](./chapters/lightning/htlcs.md)
 - [Routing Payments](./chapters/lightning/routing.md)
-- [Liquidity](./chapters/lightning/liquidity.md)
-- [Channel Capacity](./chapters/lightning/channel-capacity.md)
-- [Watchtowers](./chapters/lightning/watchtowers.md)
-- [Lightning Nodes](./chapters/lightning/nodes.md)
 
-#### Other Bitcoin layers and systems
+</details>
 
-- [Sidechains](./chapters/bitcoin-scaling/sidechains.md)
-- [Liquid Network](./chapters/bitcoin-scaling/liquid.md)
-- [Federations](./chapters/bitcoin-scaling/federations.md)
-- [Statechains](./chapters/bitcoin-scaling/statechains.md)
-- [RGB](./chapters/bitcoin-scaling/rgb.md)
-- [Bitcoin Rollup Proposals](./chapters/bitcoin-scaling/rollups.md)
+<details>
+<summary><strong>Ethereum and EVM</strong> — accounts, state, gas, Proof of Stake, bytecode, and execution</summary>
 
-### Ethereum
-
-Ethereum adds general-purpose computation to blockchain systems.
+<br>
 
 - [What Is Ethereum?](./chapters/ethereum/README.md)
 - [Ethereum Accounts](./chapters/ethereum/accounts.md)
-- [Externally Owned Accounts](./chapters/ethereum/eoa.md)
-- [Contract Accounts](./chapters/ethereum/contract-accounts.md)
 - [Transactions](./chapters/ethereum/transactions.md)
 - [Gas](./chapters/ethereum/gas.md)
-- [Gas Price and Fees](./chapters/ethereum/fees.md)
-- [Blocks](./chapters/ethereum/blocks.md)
 - [Ethereum State](./chapters/ethereum/state.md)
-- [State Trie](./chapters/ethereum/state-trie.md)
 - [JSON-RPC](./chapters/ethereum/json-rpc.md)
-- [Ethereum Nodes](./chapters/ethereum/nodes.md)
-- [Execution Clients](./chapters/ethereum/execution-clients.md)
-- [Consensus Clients](./chapters/ethereum/consensus-clients.md)
-- [The Merge](./chapters/ethereum/the-merge.md)
 - [Proof of Stake](./chapters/ethereum/proof-of-stake.md)
-- [Validators](./chapters/ethereum/validators.md)
-- [Staking](./chapters/ethereum/staking.md)
-- [Slashing](./chapters/ethereum/slashing.md)
-- [Finality](./chapters/ethereum/finality.md)
-
-### Ethereum Virtual Machine
-
 - [The EVM](./chapters/evm/README.md)
 - [Bytecode](./chapters/evm/bytecode.md)
 - [Opcodes](./chapters/evm/opcodes.md)
-- [Stack](./chapters/evm/stack.md)
 - [Memory](./chapters/evm/memory.md)
 - [Storage](./chapters/evm/storage.md)
-- [Calldata](./chapters/evm/calldata.md)
-- [Message Calls](./chapters/evm/message-calls.md)
-- [Contract Creation](./chapters/evm/contract-creation.md)
-- [Gas Accounting](./chapters/evm/gas-accounting.md)
 
-### Smart Contracts
+</details>
+
+<details>
+<summary><strong>Smart Contracts, Tokens, and Web3</strong> — Solidity, ABI, token standards, wallets, RPC, and signatures</summary>
+
+<br>
 
 - [Smart Contracts](./chapters/contracts/README.md)
 - [Solidity](./chapters/contracts/solidity.md)
 - [Contract ABI](./chapters/contracts/abi.md)
-- [Functions](./chapters/contracts/functions.md)
-- [State Variables](./chapters/contracts/state.md)
-- [Mappings](./chapters/contracts/mappings.md)
 - [Events and Logs](./chapters/contracts/events.md)
-- [Modifiers](./chapters/contracts/modifiers.md)
-- [Errors and Reverts](./chapters/contracts/errors.md)
-- [Payable Functions](./chapters/contracts/payable.md)
-- [Inheritance](./chapters/contracts/inheritance.md)
-- [Libraries](./chapters/contracts/libraries.md)
-- [Proxy Contracts](./chapters/contracts/proxies.md)
-- [Upgradeable Contracts](./chapters/contracts/upgrades.md)
-- [Testing](./chapters/contracts/testing.md)
-- [Deployment](./chapters/contracts/deployment.md)
-
-### Tokens
-
-- [What Is a Token?](./chapters/tokens/README.md)
 - [ERC-20](./chapters/tokens/erc-20.md)
-- [Balances](./chapters/tokens/balances.md)
-- [Transfers](./chapters/tokens/transfers.md)
-- [Allowances and Approvals](./chapters/tokens/approvals.md)
 - [ERC-721](./chapters/tokens/erc-721.md)
 - [ERC-1155](./chapters/tokens/erc-1155.md)
-- [NFT Metadata](./chapters/tokens/nft-metadata.md)
-- [Minting and Burning](./chapters/tokens/minting-and-burning.md)
-- [Wrapped Assets](./chapters/tokens/wrapped-assets.md)
-- [Wrapped Ether](./chapters/tokens/weth.md)
-- [Token Supply](./chapters/tokens/token-supply.md)
-
-### Building Web3 Applications
-
 - [Web3 Application Architecture](./chapters/web3/README.md)
-- [RPC Providers](./chapters/web3/rpc-providers.md)
 - [Connecting Wallets](./chapters/web3/wallet-connections.md)
-- [WalletConnect](./chapters/web3/walletconnect.md)
-- [Reading Blockchain State](./chapters/web3/reading-state.md)
-- [Calling Contracts](./chapters/web3/calling-contracts.md)
 - [Sending Transactions](./chapters/web3/sending-transactions.md)
-- [Signing Messages](./chapters/web3/signing-messages.md)
 - [Typed Data and EIP-712](./chapters/web3/eip-712.md)
-- [Transaction Receipts](./chapters/web3/receipts.md)
-- [Event Indexing](./chapters/web3/event-indexing.md)
-- [viem](./chapters/web3/viem.md)
-- [wagmi](./chapters/web3/wagmi.md)
 
-Projects:
+</details>
 
-- [Wallet Stats](./examples/wallet-stats/)
-- [Transaction Explorer](./examples/transaction-explorer/)
-- [Token Balance Viewer](./examples/token-balances/)
-- [Simple Smart Contract App](./examples/dapp/)
+<details>
+<summary><strong>DeFi and Layer 2</strong> — AMMs, lending, stablecoins, rollups, sequencers, and bridges</summary>
 
-### DeFi
+<br>
 
 - [What Is DeFi?](./chapters/defi/README.md)
 - [Stablecoins](./chapters/defi/stablecoins.md)
-- [Collateralized Stablecoins](./chapters/defi/collateralized-stablecoins.md)
-- [Centralized Stablecoins](./chapters/defi/centralized-stablecoins.md)
-- [Decentralized Exchanges](./chapters/defi/dex.md)
 - [Automated Market Makers](./chapters/defi/amm.md)
 - [Constant Product Formula](./chapters/defi/constant-product.md)
 - [Liquidity Pools](./chapters/defi/liquidity-pools.md)
-- [Liquidity Providers](./chapters/defi/liquidity-providers.md)
-- [Impermanent Loss](./chapters/defi/impermanent-loss.md)
-- [Slippage](./chapters/defi/slippage.md)
 - [Lending](./chapters/defi/lending.md)
-- [Borrowing](./chapters/defi/borrowing.md)
-- [Collateral](./chapters/defi/collateral.md)
-- [Liquidations](./chapters/defi/liquidations.md)
-- [Flash Loans](./chapters/defi/flash-loans.md)
 - [Oracles](./chapters/defi/oracles.md)
-- [Yield](./chapters/defi/yield.md)
-- [Staking vs Lending](./chapters/defi/staking-vs-lending.md)
+- [Why Layer 2 Exists](./chapters/layer2/README.md)
+- [Rollups](./chapters/layer2/rollups.md)
+- [Optimistic Rollups](./chapters/layer2/optimistic-rollups.md)
+- [Zero-Knowledge Rollups](./chapters/layer2/zk-rollups.md)
+- [Sequencers](./chapters/layer2/sequencers.md)
+- [Bridges](./chapters/layer2/bridges.md)
 
-Protocol studies:
+</details>
 
-- [Uniswap](./chapters/defi/uniswap.md)
-- [Aave](./chapters/defi/aave.md)
-- [MakerDAO / Sky](./chapters/defi/maker.md)
-- [Curve](./chapters/defi/curve.md)
+<details>
+<summary><strong>Security and Infrastructure</strong> — exploits, defensive design, nodes, RPC, indexing, and reliability</summary>
 
-### Layer 2 and Scaling
-
-Layer 2 means different things in different ecosystems. This section focuses mainly on Ethereum's rollup-centric approach.
-
-- [Why Layer 2 Exists](./chapters/layer-2/README.md)
-- [Layer 1 vs Layer 2](./chapters/layer-2/l1-vs-l2.md)
-- [Rollups](./chapters/layer-2/rollups.md)
-- [Optimistic Rollups](./chapters/layer-2/optimistic-rollups.md)
-- [Fraud Proofs](./chapters/layer-2/fraud-proofs.md)
-- [Zero-Knowledge Rollups](./chapters/layer-2/zk-rollups.md)
-- [Validity Proofs](./chapters/layer-2/validity-proofs.md)
-- [Sequencers](./chapters/layer-2/sequencers.md)
-- [Data Availability](./chapters/layer-2/data-availability.md)
-- [Blobs](./chapters/layer-2/blobs.md)
-- [EIP-4844](./chapters/layer-2/eip-4844.md)
-- [Bridges](./chapters/layer-2/bridges.md)
-- [Canonical Bridges](./chapters/layer-2/canonical-bridges.md)
-- [Cross-Chain Messaging](./chapters/layer-2/cross-chain-messaging.md)
-
-Networks:
-
-- [Arbitrum](./chapters/layer-2/arbitrum.md)
-- [Optimism](./chapters/layer-2/optimism.md)
-- [Base](./chapters/layer-2/base.md)
-- [zkSync](./chapters/layer-2/zksync.md)
-- [Starknet](./chapters/layer-2/starknet.md)
-
-### Blockchain Security
+<br>
 
 - [Security Model](./chapters/security/README.md)
-- [Private Key Theft](./chapters/security/private-key-theft.md)
-- [Seed Phrase Theft](./chapters/security/seed-phrase-theft.md)
-- [Phishing](./chapters/security/phishing.md)
-- [Malicious Signatures](./chapters/security/malicious-signatures.md)
 - [Approval Attacks](./chapters/security/approval-attacks.md)
 - [Reentrancy](./chapters/security/reentrancy.md)
-- [Access Control](./chapters/security/access-control.md)
-- [Integer and Precision Bugs](./chapters/security/precision.md)
 - [Oracle Manipulation](./chapters/security/oracle-manipulation.md)
-- [Flash Loan Attacks](./chapters/security/flash-loan-attacks.md)
-- [Front Running](./chapters/security/front-running.md)
 - [MEV](./chapters/security/mev.md)
 - [Bridge Exploits](./chapters/security/bridge-exploits.md)
-- [Upgrade Risks](./chapters/security/upgrade-risks.md)
-- [Smart Contract Auditing](./chapters/security/auditing.md)
-- [Formal Verification](./chapters/security/formal-verification.md)
-
-Case studies should examine real exploits and explain the mechanism without turning them into exploit tutorials.
-
-### Blockchain Infrastructure
-
 - [Infrastructure Overview](./chapters/infrastructure/README.md)
 - [Running a Node](./chapters/infrastructure/running-a-node.md)
-- [RPC](./chapters/infrastructure/rpc.md)
 - [RPC Providers](./chapters/infrastructure/rpc-providers.md)
-- [Archive Nodes](./chapters/infrastructure/archive-nodes.md)
 - [Indexers](./chapters/infrastructure/indexers.md)
-- [The Graph](./chapters/infrastructure/the-graph.md)
-- [Block Explorers](./chapters/infrastructure/block-explorers.md)
-- [Mempool Infrastructure](./chapters/infrastructure/mempool.md)
-- [Blockchain Data Pipelines](./chapters/infrastructure/data-pipelines.md)
-- [Event Processing](./chapters/infrastructure/event-processing.md)
 - [Reorg Handling](./chapters/infrastructure/reorg-handling.md)
-- [Webhooks](./chapters/infrastructure/webhooks.md)
-- [Caching](./chapters/infrastructure/caching.md)
-- [Reliability](./chapters/infrastructure/reliability.md)
 
-### Governance
+</details>
 
-Blockchain protocols also have social and governance layers.
-
-- [Protocol Governance](./chapters/governance/README.md)
-- [Bitcoin Governance](./chapters/governance/bitcoin.md)
-- [Ethereum Governance](./chapters/governance/ethereum.md)
-- [BIPs](./chapters/governance/bips.md)
-- [EIPs](./chapters/governance/eips.md)
-- [Core Developers](./chapters/governance/core-developers.md)
-- [Validators and Miners](./chapters/governance/validators-and-miners.md)
-- [Users and Node Operators](./chapters/governance/users.md)
-- [DAOs](./chapters/governance/daos.md)
-- [On-Chain Governance](./chapters/governance/on-chain.md)
-- [Off-Chain Governance](./chapters/governance/off-chain.md)
-
-### Regulation and Society
-
-This section provides context rather than legal advice.
-
-- [Custody](./chapters/society/custody.md)
-- [Exchanges](./chapters/society/exchanges.md)
-- [KYC and AML](./chapters/society/kyc-aml.md)
-- [Privacy](./chapters/society/privacy.md)
-- [Financial Surveillance](./chapters/society/financial-surveillance.md)
-- [Censorship Resistance](./chapters/society/censorship-resistance.md)
-- [Self-Custody](./chapters/society/self-custody.md)
-- [Stablecoins and Dollarization](./chapters/society/stablecoins-and-dollarization.md)
-- [CBDCs](./chapters/society/cbdcs.md)
+For the complete chapter-by-chapter index, see [SUMMARY.md](./SUMMARY.md).
 
 ## Learning by building
 
-Each major section should contain at least one small experiment.
+| Level | Project | Concepts |
+| --- | --- | --- |
+| Foundation | Build a small blockchain | blocks, hashes, Proof of Work |
+| Foundation | Generate keys and signatures | cryptography |
+| Bitcoin | Decode a transaction | inputs, outputs, UTXOs |
+| Bitcoin | Inspect the mempool | fees, propagation |
+| Wallets | Derive addresses from a seed | keys, derivation paths |
+| Ethereum | Query a node | JSON-RPC |
+| Ethereum | Deploy a contract | Solidity, gas, ABI |
+| Web3 | Build Wallet Stats | balances, RPC, indexing |
+| DeFi | Inspect a Uniswap swap | AMMs, pools, events |
+| Layer 2 | Compare L1 and L2 transactions | settlement, fees, data availability |
+| Infrastructure | Build a small indexer | blocks, events, reorgs |
+| Security | Analyze a historical bug | root cause, impact, mitigation |
 
-| Area            | Project                                   |
-| --------------- | ----------------------------------------- |
-| Cryptography    | Generate keys, hashes, and signatures     |
-| Blockchain      | Build a small blockchain                  |
-| Bitcoin         | Decode a real transaction                 |
-| Bitcoin         | Inspect the mempool and block data        |
-| Wallets         | Derive addresses from a seed              |
-| Lightning       | Open a test payment channel               |
-| Ethereum        | Query a node with JSON-RPC                |
-| EVM             | Decode contract bytecode                  |
-| Smart contracts | Deploy a contract to a testnet            |
-| Tokens          | Create and interact with an ERC-20        |
-| Web3            | Build a wallet stats application          |
-| DeFi            | Inspect a Uniswap swap                    |
-| Layer 2         | Compare the same transaction on L1 and L2 |
-| Infrastructure  | Build a small blockchain indexer          |
-| Security        | Analyze a historical smart contract bug   |
+## By the end
 
-## How to read this book
+You should be able to explain:
 
-The sections are related, but the repository is not meant to force a single reading order.
+- how Bitcoin prevents double spending
+- what miners actually compute
+- how wallets derive and use keys
+- why Bitcoin uses UTXOs
+- how Ethereum executes smart contracts
+- what gas pays for
+- how token standards work
+- how AMMs price assets
+- what rollups move off-chain
+- why bridges are difficult to secure
+- how blockchain applications query and index on-chain data
 
-A beginner can follow:
+## Sources and writing
 
-```text
-Origins
-↓
-Money and Economics
-↓
-Cryptography
-↓
-Distributed Systems
-↓
-Blockchain Fundamentals
-↓
-Bitcoin
-↓
-Wallets
-↓
-Ethereum
-↓
-Smart Contracts
-↓
-Web3 Applications
-↓
-DeFi
-↓
-Layer 2
-↓
-Security
-↓
-Infrastructure
-```
+The book prioritizes primary sources, protocol specifications, original papers, source code, and original economic texts.
 
-A software engineer mainly interested in development can follow:
+See [WRITING.md](./WRITING.md) for research, sourcing, and editorial guidelines.
 
-```text
-Cryptography
-↓
-Blockchain Fundamentals
-↓
-Ethereum
-↓
-EVM
-↓
-Smart Contracts
-↓
-Tokens
-↓
-Web3 Applications
-↓
-Security
-```
-
-Someone interested mainly in Bitcoin can follow:
-
-```text
-Origins
-↓
-Money and Economics
-↓
-Cryptography
-↓
-Blockchain Fundamentals
-↓
-Bitcoin
-↓
-Forks
-↓
-Wallets
-↓
-Bitcoin Scaling
-↓
-Lightning Network
-```
-
-## Primary sources
-
-Whenever possible, chapters should link to original or primary material instead of relying only on summaries.
-
-Examples include:
-
-- Bitcoin whitepaper
-- Satoshi Nakamoto's public emails and forum posts
-- Bitcoin Core documentation and source code
-- Bitcoin Improvement Proposals
-- Ethereum documentation
-- Ethereum Yellow Paper
-- Ethereum Improvement Proposals
-- Solidity documentation
-- protocol specifications
-- academic papers
-- original protocol documentation
-
-Economic chapters should distinguish between:
-
-- what an economist actually wrote
-- later interpretations of that work
-- arguments made by Bitcoin advocates
-- arguments made by Bitcoin critics
-
-## Writing principles
-
-This book should explain mechanisms before terminology.
-
-Prefer:
-
-> A Bitcoin transaction spends previously created outputs and creates new outputs.
-
-Over:
-
-> Bitcoin uses a UTXO-based transaction architecture.
-
-Introduce the term after the mechanism is understood.
-
-When discussing controversial topics, present the underlying facts and the main competing arguments separately.
-
-Avoid treating:
-
-- decentralization
-- scarcity
-- censorship resistance
-- monetary policy
-- security
-- scalability
-
-as binary properties. Each one depends on design choices and tradeoffs.
-
-## Resources
-
-- [Resources](./resources.md)
-- [Glossary](./glossary.md)
-- [Examples](./examples/)
-- [Study notes](./notes/)
+> [!IMPORTANT]
+> Historical claims, especially claims about Satoshi Nakamoto, should distinguish documented evidence from inference and speculation.
 
 ## Status
 
 This book is a work in progress.
 
-I'm writing it while learning the subject, so chapters may change as my understanding improves. Corrections, primary sources, and technical reviews are welcome.
+See [PROGRESS.md](./PROGRESS.md) for the current status of each section.
 
 ## Contributing
 
-Found something wrong or unclear?
+Corrections, technical reviews, clearer explanations, and links to primary sources are welcome.
 
-Open an issue or pull request. Technical corrections, better explanations, and links to primary sources are especially useful.
+See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+> [!WARNING]
+> Never use production private keys, seed phrases, or meaningful funds while experimenting with code from this repository.
 
 ## Disclaimer
 
 This repository is about blockchain engineering, distributed systems, and software development.
 
 It is not financial, investment, legal, or tax advice.
-
-Never use production private keys, seed phrases, or funds while experimenting with code from this repository.
 
 ## License
 
