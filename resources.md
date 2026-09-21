@@ -102,7 +102,15 @@ A curated list of primary sources, specifications, and books referenced througho
 
 ## DeFi
 
-- TODO: add as the DeFi section is written
+- [Uniswap v2 whitepaper](https://uniswap.org/whitepaper.pdf)
+- [Uniswap v3 whitepaper](https://uniswap.org/whitepaper-v3.pdf)
+- [Uniswap v2 core contracts](https://github.com/Uniswap/v2-core)
+- [Curve StableSwap whitepaper](https://curve.fi/files/stableswap-paper.pdf): Michael Egorov
+- [Aave V2 whitepaper](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf)
+- [Aave documentation](https://aave.com/docs)
+- [MakerDAO whitepaper](https://makerdao.com/en/whitepaper/)
+- [Sky Protocol documentation](https://docs.sky.money/)
+- [Chainlink documentation: price feeds](https://docs.chain.link/data-feeds)
 
 ## Layer 2
 

@@ -12,6 +12,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Austrian economics**: An economic school founded by Carl Menger, developed further by Ludwig von Mises, Friedrich Hayek, and Murray Rothbard, emphasizing spontaneous market order and skepticism of centrally managed money. See [Money and Economics](./chapters/economics/README.md#austrian-economics).
 
+**AMM (Automated Market Maker)**: A smart contract that prices trades algorithmically from a pool's current token reserves, rather than matching buy and sell orders. See [Automated Market Makers](./chapters/defi/amm.md).
+
 ## B
 
 **Block reward / subsidy**: The newly created bitcoin a miner receives for a block, separate from transaction fees. Halves every 210,000 blocks. See [Block Rewards](./chapters/bitcoin/block-rewards.md).
@@ -56,6 +58,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Cypherpunk**: A participant in the cryptography- and privacy-focused mailing list and movement active from 1992 onward, whose members included several of Bitcoin's direct intellectual predecessors. See [The Cypherpunk Movement](./chapters/origins/cypherpunks.md).
 
+**Constant product formula**: The `x * y = k` pricing rule behind the most widely deployed class of AMM, requiring the product of a pool's two reserves to stay fixed across any swap. See [Constant Product Formula](./chapters/defi/constant-product.md).
+
+**Collateralization ratio**: The value of collateral locked against a loan, expressed relative to the amount borrowed; the inverse of loan-to-value. See [Collateral](./chapters/defi/collateral.md).
+
 ## D
 
 **Decimals**: An ERC-20 display convention (not a protocol rule) specifying how many places to divide a raw token balance by for human-readable display; USDC uses 6, most tokens use 18. See [Balances](./chapters/tokens/balances.md).
@@ -67,6 +73,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Deflation**: A sustained fall in the general price level, meaning a currency's purchasing power rises over time. See [Inflation and Deflation](./chapters/economics/inflation-and-deflation.md).
 
 **Double-spending**: The problem of a digital unit of value being spent more than once, since digital data can be copied. The central problem Bitcoin's design solves without a trusted third party. See [Why Digital Cash Was Hard](./chapters/origins/digital-cash.md).
+
+**DEX (Decentralized Exchange)**: A protocol letting users trade tokens directly against a smart contract, with no company operating an order book or holding custody of funds between trades. See [Decentralized Exchanges](./chapters/defi/dex.md).
 
 ## E
 
@@ -89,6 +97,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Fiat money**: Currency with value derived from legal tender laws and institutional credibility rather than a commodity backing. See [Fiat Money](./chapters/economics/fiat-money.md).
 
 **Fractional reserve banking**: A banking system in which banks hold only a fraction of deposits as reserves, lending out the rest. See [Banking and Credit](./chapters/economics/banking-and-credit.md).
+
+**Flash loan**: A loan with no collateral requirement, drawn and repaid, with a fee, entirely within a single transaction; if it isn't repaid, the whole transaction reverts. See [Flash Loans](./chapters/defi/flash-loans.md).
 
 ## G
 
@@ -120,9 +130,17 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Inflation**: A sustained rise in the general price level, meaning a currency's purchasing power falls over time. See [Inflation and Deflation](./chapters/economics/inflation-and-deflation.md).
 
+**Impermanent loss**: The value gap between an AMM liquidity provider's withdrawn position and what simply holding the same original tokens, unpooled, would have been worth; caused by the constant-product formula rebalancing a pool's reserves as price moves. See [Impermanent Loss](./chapters/defi/impermanent-loss.md).
+
 ## L
 
 **Lightning Network**: A network of bidirectional Bitcoin payment channels connected via HTLCs, enabling fast, low-fee off-chain payments settled periodically on-chain. See [Lightning Network](./chapters/lightning/README.md).
+
+**Liquidation**: The automated process that closes out an undercollateralized loan position before its debt can exceed its collateral's value, performed by any address in exchange for a bonus. See [Liquidations](./chapters/defi/liquidations.md).
+
+**Liquidity pool**: The smart contract holding an AMM's two token reserves, the balances the constant-product formula prices trades against. See [Liquidity Pools](./chapters/defi/liquidity-pools.md).
+
+**LP token**: A token minted to a liquidity provider representing a proportional claim on a pool's reserves, burned to withdraw. See [Liquidity Pools](./chapters/defi/liquidity-pools.md#lp-tokens-a-receipt-for-a-share-of-the-pool).
 
 ## M
 
@@ -149,6 +167,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Nonce**: A 4-byte block header field miners vary while searching for a valid proof-of-work hash; also, in ECDSA, the random or deterministic value used in each signature. See [Nonce](./chapters/bitcoin/nonce.md).
 
 **Network effect**: A property where a good becomes more valuable to each user as more people use it; money is a network good. See [Network Effects in Money](./chapters/economics/network-effects.md).
+
+## O
+
+**Oracle**: Infrastructure that gets external data, most often asset prices, onto a blockchain in a form a smart contract can read, since a contract cannot query an external API directly. See [Oracles](./chapters/defi/oracles.md).
 
 ## P
 
@@ -192,11 +214,17 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Sybil attack**: An attack where one party creates many fake identities to gain disproportionate influence over a system that assumes one identity equals one vote. See [Sybil Attacks](./chapters/distributed-systems/sybil-attacks.md).
 
+**Slippage**: The difference between a trade's expected price and its actual executed price, driven by the trade's own price impact on a pool's reserves and by other trades landing before it. See [Slippage](./chapters/defi/slippage.md).
+
+**Stablecoin**: A token designed to hold a roughly constant value relative to some reference, almost always the US dollar, via fiat-backed reserves or crypto over-collateralization. See [Stablecoins](./chapters/defi/stablecoins.md).
+
 ## T
 
 **Taproot**: A 2021 soft fork bringing Schnorr signatures to Bitcoin, making complex spending conditions indistinguishable on-chain from simple ones. See [Taproot](./chapters/bitcoin/taproot.md).
 
 **Trusted third party**: An intermediary (bank, payment processor, issuer) required by a system to resolve disputes or prevent fraud, at the cost of that party being able to freeze, reverse, or surveil activity. See [Why Digital Cash Was Hard](./chapters/origins/digital-cash.md).
+
+**TWAP (Time-Weighted Average Price)**: A price averaged over a trading window rather than read instantaneously, used as an on-chain oracle specifically because it's far more expensive to manipulate than a pool's spot price. See [Oracles](./chapters/defi/oracles.md#twap-oracles-deriving-price-from-an-amms-own-trading-history).
 
 ## U
 
@@ -205,6 +233,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **UTXO (Unspent Transaction Output)**: A specific output from a past transaction not yet spent. Bitcoin has no account balances; a wallet's balance is the sum of its spendable UTXOs. See [The UTXO Model](./chapters/bitcoin/utxo.md).
 
 **Unit of account**: A function of money: the standard used to measure and compare the value of goods, debts, and contracts. See [Functions of Money](./chapters/economics/functions-of-money.md).
+
+**Utilization rate**: The fraction of a lending pool's deposits currently borrowed out, the variable that algorithmically drives both deposit and borrow interest rates. See [Lending](./chapters/defi/lending.md#interest-rates-set-by-utilization-not-by-a-central-decision).
 
 ## V
 

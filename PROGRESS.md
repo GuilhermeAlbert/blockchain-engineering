@@ -21,7 +21,7 @@ A section is `Complete` only when every linked chapter exists, is substantive (n
 | Contracts | Complete | 15 chapters + README. Nearly every non-trivial Solidity snippet compiled with solc 0.8.26 and confirmed clean, including a working minimal proxy with inline Yul assembly. |
 | Tokens | Complete | 11 chapters + README. All interfaces/contracts compile with solc 0.8.26; WETH's real mainnet address verified live via viem (returns name/symbol correctly). |
 | Web3 | Complete | 12 chapters + README. Nearly every non-browser example run live against mainnet (receipts, eth_getLogs, EIP-712 round-trip, EIP-191 round-trip). |
-| DeFi | Planned | AMMs, lending, oracles, Uniswap/Aave case studies. |
+| DeFi | Complete | 22 chapters + README. Impermanent loss and constant-product slippage derived and verified numerically across multiple scenarios; protocol case studies (Uniswap, Aave, MakerDAO/Sky, Curve) fact-checked against primary sources, including exact dates and the July 2023 Vyper compiler exploit's root cause. |
 | Layer 2 | Planned | Rollups, data availability, blobs, bridges. |
 | Security | Planned | Defensive-only; historical case studies. |
 | Infrastructure | Planned | Nodes, RPC, indexing, reorg handling. |
@@ -40,5 +40,6 @@ A section is `Complete` only when every linked chapter exists, is substantive (n
 ## Working notes
 
 - Filenames carry no numeric prefixes; reading order comes from links in section README files and the top-level README.
-- Every chapter must end with a navigation footer linking to the previous chapter, the section index, and the next chapter.
+- Every chapter must end with a navigation footer linking to the previous chapter, the section index, and the next chapter, chained continuously across section boundaries so the whole book reads as one sequence.
 - Run a link check after each batch of new files (see `notes/link-check.md` once created).
+- No em dashes anywhere in the book's prose; use a period, comma, parentheses, or a colon instead, whichever the sentence actually calls for.
