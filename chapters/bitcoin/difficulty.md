@@ -4,7 +4,7 @@
 
 ## Difficulty as a ratio
 
-Bitcoin's genesis block used the maximum possible target — the easiest difficulty the protocol allows, defined as **difficulty 1**. Every subsequent difficulty value is expressed as a ratio: how many times harder the current target is than that original, easiest target.
+Bitcoin's genesis block used the maximum possible target. The easiest difficulty the protocol allows, defined as **difficulty 1**. Every subsequent difficulty value is expressed as a ratio: how many times harder the current target is than that original, easiest target.
 
 ```text
 difficulty = (difficulty-1 target) / (current target)
@@ -14,7 +14,7 @@ Because a *smaller* numeric target means *fewer* valid hash outputs and therefor
 
 ## The compact "bits" encoding
 
-Storing a full 256-bit target directly in every block header would be needlessly large, given how much of that number's high-order bits are typically all zeros (which is precisely what a small target looks like). Bitcoin instead stores a **compact representation** in the header's "bits" field — a 4-byte value encoding a coefficient and an exponent, similar in spirit to floating-point scientific notation, that expands to the full 256-bit target through a defined formula. This is a pure space-saving encoding trick; it doesn't change the underlying target value or the probability calculations, only how compactly that value is represented in the 80-byte header.
+Storing a full 256-bit target directly in every block header would be needlessly large, given how much of that number's high-order bits are typically all zeros (which is precisely what a small target looks like). Bitcoin instead stores a **compact representation** in the header's "bits" field, a 4-byte value encoding a coefficient and an exponent, similar in spirit to floating-point scientific notation, that expands to the full 256-bit target through a defined formula. This is a pure space-saving encoding trick; it doesn't change the underlying target value or the probability calculations, only how compactly that value is represented in the 80-byte header.
 
 ## Example: converting bits to a target
 
@@ -46,13 +46,13 @@ This matches Bitcoin's well-documented genesis-era difficulty-1 target.
 
 ## Why difficulty exists as a separate concept from the raw target
 
-Difficulty gives humans (and mining hardware displays, pool dashboards, and public statistics) a single, intuitively scaling number to track over time, without needing to reason about enormous 256-bit target values directly — "difficulty doubled this year" is more immediately meaningful than comparing two 78-digit numbers. The actual consensus rule, though, operates on the target (via its compact "bits" encoding) directly; "difficulty" as a named quantity is a derived, human-facing convenience built on top of it.
+Difficulty gives humans (and mining hardware displays, pool dashboards, and public statistics) a single, intuitively scaling number to track over time, without needing to reason about enormous 256-bit target values directly. "Difficulty doubled this year" is more immediately meaningful than comparing two 78-digit numbers. The actual consensus rule, though, operates on the target (via its compact "bits" encoding) directly; "difficulty" as a named quantity is a derived, human-facing convenience built on top of it.
 
 ## Common misconceptions
 
-**Difficulty is not adjusted continuously, block by block.** It changes only at fixed intervals (every 2016 blocks) — see [Difficulty Adjustment](./difficulty-adjustment.md) for exactly how and why.
+**Difficulty is not adjusted continuously, block by block.** It changes only at fixed intervals (every 2016 blocks), see [Difficulty Adjustment](./difficulty-adjustment.md) for exactly how and why.
 
-**A higher difficulty does not mean SHA-256 itself has gotten "harder" or changed in any way.** The hash function is unchanged; only the target threshold a valid hash must fall below has shrunk, requiring more attempts on average to find a qualifying hash — see [Preimage Resistance](../cryptography/preimage-resistance.md).
+**A higher difficulty does not mean SHA-256 itself has gotten "harder" or changed in any way.** The hash function is unchanged; only the target threshold a valid hash must fall below has shrunk, requiring more attempts on average to find a qualifying hash, see [Preimage Resistance](../cryptography/preimage-resistance.md).
 
 ## Further reading
 

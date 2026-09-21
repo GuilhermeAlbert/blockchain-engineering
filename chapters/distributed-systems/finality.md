@@ -1,6 +1,6 @@
 # Finality
 
-Finality is the property of a transaction or block becoming permanent and irreversible. This chapter defines the general concept and the three broad categories blockchain systems fall into — deterministic, probabilistic, and economic finality — before the next chapter, [Probabilistic Finality](./probabilistic-finality.md), works through Bitcoin's specific case with the actual numbers.
+Finality is the property of a transaction or block becoming permanent and irreversible. This chapter defines the general concept and the three broad categories blockchain systems fall into (deterministic, probabilistic, and economic finality) before the next chapter, [Probabilistic Finality](./probabilistic-finality.md), works through Bitcoin's specific case with the actual numbers.
 
 ## What finality means, precisely
 
@@ -10,11 +10,11 @@ A transaction has reached finality when it is no longer possible (or no longer p
 
 ### Deterministic (absolute) finality
 
-A transaction is deterministically final if, once a specific event occurs (a block is committed by a classical Byzantine fault tolerant protocol, for instance), it is **mathematically guaranteed** never to be reversed under the protocol's stated assumptions — there's no probability distribution involved, just a binary before/after. Classical BFT consensus protocols like PBFT (covered in [Consensus](./consensus.md)) provide this kind of finality: once a decision is committed by the required supermajority, it's final, full stop, as long as the assumed fraction of Byzantine participants isn't exceeded.
+A transaction is deterministically final if, once a specific event occurs (a block is committed by a classical Byzantine fault tolerant protocol, for instance), it is **mathematically guaranteed** never to be reversed under the protocol's stated assumptions. There's no probability distribution involved, just a binary before/after. Classical BFT consensus protocols like PBFT (covered in [Consensus](./consensus.md)) provide this kind of finality: once a decision is committed by the required supermajority, it's final, full stop, as long as the assumed fraction of Byzantine participants isn't exceeded.
 
 ### Probabilistic finality
 
-A transaction has probabilistic finality if the *chance* it gets reversed shrinks over time and additional confirmations, approaching but never mathematically reaching exactly zero. Bitcoin is the paradigm example: a transaction included in a block has some (typically already very small) chance of being reversed if that block turns out not to be part of the eventual longest chain, and that chance shrinks further, roughly exponentially, with each additional block mined on top of it — but strictly speaking, no finite number of confirmations makes reversal mathematically impossible, only astronomically improbable. This is covered with the actual formula and numbers in [Probabilistic Finality](./probabilistic-finality.md).
+A transaction has probabilistic finality if the *chance* it gets reversed shrinks over time and additional confirmations, approaching but never mathematically reaching exactly zero. Bitcoin is the paradigm example: a transaction included in a block has some (typically already very small) chance of being reversed if that block turns out not to be part of the eventual longest chain, and that chance shrinks further, roughly exponentially, with each additional block mined on top of it, but strictly speaking, no finite number of confirmations makes reversal mathematically impossible, only astronomically improbable. This is covered with the actual formula and numbers in [Probabilistic Finality](./probabilistic-finality.md).
 
 ### Economic finality
 
@@ -34,9 +34,9 @@ The choice of finality model directly shapes how businesses and users should beh
 
 ## Common misconceptions
 
-**"Confirmed" does not mean "mathematically guaranteed forever" on a probabilistic-finality chain.** Even transactions with many confirmations retain a nonzero, if vanishingly small, theoretical probability of reversal — see [Probabilistic Finality](./probabilistic-finality.md) for exactly how small, as a function of confirmation count and assumed attacker resources.
+**"Confirmed" does not mean "mathematically guaranteed forever" on a probabilistic-finality chain.** Even transactions with many confirmations retain a nonzero, if vanishingly small, theoretical probability of reversal, see [Probabilistic Finality](./probabilistic-finality.md) for exactly how small, as a function of confirmation count and assumed attacker resources.
 
-**Deterministic finality is not strictly "better" in every dimension.** It generally requires knowing the exact set of participants in advance (see [Consensus](./consensus.md#two-dimensions-of-difficulty)), which is incompatible with the fully permissionless, anyone-can-join model Bitcoin was specifically designed to support — the choice of finality model is entangled with, not independent of, the choice of participant model.
+**Deterministic finality is not strictly "better" in every dimension.** It generally requires knowing the exact set of participants in advance (see [Consensus](./consensus.md#two-dimensions-of-difficulty)), which is incompatible with the fully permissionless, anyone-can-join model Bitcoin was specifically designed to support. The choice of finality model is entangled with, not independent of, the choice of participant model.
 
 ## Further reading
 

@@ -15,17 +15,17 @@ A mobile wallet app and a desktop browser running a dapp are two entirely separa
 
 ## Why encryption matters here specifically
 
-Because the dapp and wallet are genuinely separate devices communicating over the open internet (relayed through WalletConnect's infrastructure, not a direct connection), the session is end-to-end encrypted specifically so that the relay infrastructure itself — a third party neither the dapp author nor the wallet user necessarily has any direct relationship with — cannot read the actual transaction or signature data passing through it, only that *some* encrypted traffic is flowing between two paired sessions.
+Because the dapp and wallet are genuinely separate devices communicating over the open internet (relayed through WalletConnect's infrastructure, not a direct connection), the session is end-to-end encrypted specifically so that the relay infrastructure itself (a third party neither the dapp author nor the wallet user necessarily has any direct relationship with) cannot read the actual transaction or signature data passing through it, only that *some* encrypted traffic is flowing between two paired sessions.
 
 ## What WalletConnect does and doesn't change about the underlying trust model
 
-This is worth stating precisely, since it's easy to assume a new connection mechanism changes the underlying security properties: WalletConnect changes **how** a signature or transaction request reaches the wallet for approval — it does not change **what** that request actually contains, or the user's fundamental responsibility to review it carefully before approving. The same phishing and malicious-signature risks covered in [Connecting Wallets](./wallet-connections.md#why-this-distinction-matters-for-security) apply identically over a WalletConnect session as they do over a direct browser-extension connection — a disguised, malicious request looks the same regardless of which transport carried it to the wallet for approval.
+This is worth stating precisely, since it's easy to assume a new connection mechanism changes the underlying security properties: WalletConnect changes **how** a signature or transaction request reaches the wallet for approval. It does not change **what** that request actually contains, or the user's fundamental responsibility to review it carefully before approving. The same phishing and malicious-signature risks covered in [Connecting Wallets](./wallet-connections.md#why-this-distinction-matters-for-security) apply identically over a WalletConnect session as they do over a direct browser-extension connection, a disguised, malicious request looks the same regardless of which transport carried it to the wallet for approval.
 
 ## Common misconceptions
 
-**WalletConnect is not itself a wallet** — it's a connection protocol; the actual signing, key custody, and transaction approval happen entirely within whichever wallet app the user has chosen to use, exactly as with a browser-extension connection.
+**WalletConnect is not itself a wallet**. It's a connection protocol; the actual signing, key custody, and transaction approval happen entirely within whichever wallet app the user has chosen to use, exactly as with a browser-extension connection.
 
-**A WalletConnect session being "encrypted" does not mean a malicious dapp cannot send a malicious request through it** — encryption protects the *transport* from eavesdropping by the relay infrastructure; it says nothing about whether the *content* being transported (a specific transaction or signature request) is itself honest or safe to approve, which remains entirely the user's own responsibility to evaluate.
+**A WalletConnect session being "encrypted" does not mean a malicious dapp cannot send a malicious request through it**. Encryption protects the *transport* from eavesdropping by the relay infrastructure; it says nothing about whether the *content* being transported (a specific transaction or signature request) is itself honest or safe to approve, which remains entirely the user's own responsibility to evaluate.
 
 ## Further reading
 

@@ -4,7 +4,7 @@ Hashrate is the total computational power currently being applied to Bitcoin min
 
 ## Why hashrate can't be measured directly
 
-No central registry tracks how much mining hardware exists or how fast it's running — hashrate is inferred, not observed, from the one piece of public information the network actually provides: **how quickly blocks are being found relative to the current difficulty**. Because difficulty defines a known, calculable probability of finding a valid block per hash attempt (see [Mining Difficulty](./difficulty.md) and [Proof of Work](./proof-of-work.md)), the *observed* average time between blocks can be worked backward into an *implied* total hashrate, using the same relationship in reverse.
+No central registry tracks how much mining hardware exists or how fast it's running. Hashrate is inferred, not observed, from the one piece of public information the network actually provides: **how quickly blocks are being found relative to the current difficulty**. Because difficulty defines a known, calculable probability of finding a valid block per hash attempt (see [Mining Difficulty](./difficulty.md) and [Proof of Work](./proof-of-work.md)), the *observed* average time between blocks can be worked backward into an *implied* total hashrate, using the same relationship in reverse.
 
 ## The estimation formula
 
@@ -35,21 +35,21 @@ Estimated hashrate (H/s): 6.665e+20
 Estimated hashrate (EH/s): 666.5
 ```
 
-These numbers use an illustrative, not live, difficulty figure — replace it with a specific, dated, cited value from a live source before treating any hashrate figure in this chapter as current.
+These numbers use an illustrative, not live, difficulty figure, replace it with a specific, dated, cited value from a live source before treating any hashrate figure in this chapter as current.
 
 ## Why hashrate estimates from different sources sometimes disagree
 
-Different tracking services use different observation windows (the last 24 hours of blocks versus the last week, for instance) and slightly different smoothing methodologies, which can produce visibly different hashrate estimates at any given moment even though they're all working from the same underlying, publicly available block timestamps and difficulty value — a real source of the minor inconsistency you'll notice comparing hashrate figures across different block explorers or statistics sites.
+Different tracking services use different observation windows (the last 24 hours of blocks versus the last week, for instance) and slightly different smoothing methodologies, which can produce visibly different hashrate estimates at any given moment even though they're all working from the same underlying, publicly available block timestamps and difficulty value, a real source of the minor inconsistency you'll notice comparing hashrate figures across different block explorers or statistics sites.
 
 ## Why hashrate matters for security
 
-Hashrate is the practical, real-world quantity behind the abstract "attacker's share of hash power" (`q`) used throughout [Probabilistic Finality](../distributed-systems/probabilistic-finality.md) and [51% Attacks](./51-percent-attacks.md) — a higher total honest network hashrate directly means an attacker needs to acquire and operate proportionally more hardware to reach any given fraction of total network power, which is why sustained hashrate growth is generally treated within the Bitcoin community as a positive indicator of the network's overall security margin, even though it says nothing directly about decentralization (see [Mining Pools](./mining-pools.md#the-centralization-concern)), which is a separate, distinct concern.
+Hashrate is the practical, real-world quantity behind the abstract "attacker's share of hash power" (`q`) used throughout [Probabilistic Finality](../distributed-systems/probabilistic-finality.md) and [51% Attacks](./51-percent-attacks.md), a higher total honest network hashrate directly means an attacker needs to acquire and operate proportionally more hardware to reach any given fraction of total network power, which is why sustained hashrate growth is generally treated within the Bitcoin community as a positive indicator of the network's overall security margin, even though it says nothing directly about decentralization (see [Mining Pools](./mining-pools.md#the-centralization-concern)), which is a separate, distinct concern.
 
 ## Common misconceptions
 
-**Hashrate figures reported by public dashboards are estimates, not exact measurements** — treat any specific cited hashrate figure as an approximation with some inherent uncertainty and methodology-dependent variation, not a precisely known ground truth.
+**Hashrate figures reported by public dashboards are estimates, not exact measurements**, treat any specific cited hashrate figure as an approximation with some inherent uncertainty and methodology-dependent variation, not a precisely known ground truth.
 
-**Rising hashrate does not automatically mean rising decentralization**, and can in fact coincide with the opposite if the growth is concentrated among a small number of very large operators or pools — hashrate (total security) and decentralization (distribution of control over that security) are related but distinct properties, both covered across this section.
+**Rising hashrate does not automatically mean rising decentralization**, and can in fact coincide with the opposite if the growth is concentrated among a small number of very large operators or pools, hashrate (total security) and decentralization (distribution of control over that security) are related but distinct properties, both covered across this section.
 
 ## Further reading
 

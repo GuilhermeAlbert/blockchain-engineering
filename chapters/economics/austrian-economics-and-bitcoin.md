@@ -1,13 +1,13 @@
 # Austrian Economics and Bitcoin
 
-The preceding chapters covered [Menger](./menger.md), [Mises](./mises.md), [Hayek](./hayek.md), and [Rothbard](./rothbard.md) on their own terms, each explicitly noting where later writers have projected Bitcoin-era interpretations onto arguments these economists made before Bitcoin existed. This chapter is where those interpretations are addressed directly — not to dismiss them, but to separate three distinct categories of claim that get routinely blended together in popular writing: **(1) what these economists actually argued**, **(2) how later Bitcoin advocates have applied that reasoning to Bitcoin**, and **(3) the criticisms of those applications**, including criticisms from within the Austrian tradition itself.
+The preceding chapters covered [Menger](./menger.md), [Mises](./mises.md), [Hayek](./hayek.md), and [Rothbard](./rothbard.md) on their own terms, each explicitly noting where later writers have projected Bitcoin-era interpretations onto arguments these economists made before Bitcoin existed. This chapter is where those interpretations are addressed directly, not to dismiss them, but to separate three distinct categories of claim that get routinely blended together in popular writing: **(1) what these economists actually argued**, **(2) how later Bitcoin advocates have applied that reasoning to Bitcoin**, and **(3) the criticisms of those applications**, including criticisms from within the Austrian tradition itself.
 
 ## Why Austrian economics and Bitcoin ended up linked
 
-The connection is not accidental or purely rhetorical. Several early, influential Bitcoin community members and writers were explicitly influenced by Austrian economics, and Satoshi Nakamoto's own writing shows some direct engagement with these ideas — most notably, Satoshi's 2009 P2P Foundation forum post explaining Bitcoin's origin cites the 2008 banking crisis and criticizes central-bank-managed currency in language that echoes Austrian critiques of fiat money and fractional reserve banking:
+The connection is not accidental or purely rhetorical. Several early, influential Bitcoin community members and writers were explicitly influenced by Austrian economics, and Satoshi Nakamoto's own writing shows some direct engagement with these ideas, most notably, Satoshi's 2009 P2P Foundation forum post explaining Bitcoin's origin cites the 2008 banking crisis and criticizes central-bank-managed currency in language that echoes Austrian critiques of fiat money and fractional reserve banking:
 
 > "The root problem with conventional currency is all the trust that's required to make it work. The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust."
-> — Satoshi Nakamoto, [P2P Foundation forum post](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source), February 11, 2009
+> Satoshi Nakamoto, [P2P Foundation forum post](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source), February 11, 2009
 
 This is a documented, verifiable fact: Satoshi's own writing expresses concerns structurally similar to Austrian monetary critiques. What is not documented is any specific citation by Satoshi of Menger, Mises, Hayek, or Rothbard by name, or confirmation that Satoshi had read their work directly rather than absorbing similar ideas from the broader cypherpunk and libertarian-adjacent discourse of the era, which drew on many sources beyond the Austrian school specifically. TODO: verify whether any of Satoshi's known private correspondence references Austrian economists by name before stating this more strongly either way.
 
@@ -17,9 +17,9 @@ This is a documented, verifiable fact: Satoshi's own writing expresses concerns 
 
 **What Menger actually argued:** that money emerges spontaneously from the market ranking goods by saleableness, without central design (see [Carl Menger and the Origin of Money](./menger.md)).
 
-**The Bitcoin-era application:** Bitcoin advocates argue its adoption pattern — no company or government designating it as money, adoption spreading through individual, decentralized choices to accept and hold it — is a live, real-time demonstration of exactly the process Menger described in the abstract for historical commodities.
+**The Bitcoin-era application:** Bitcoin advocates argue its adoption pattern (no company or government designating it as money, adoption spreading through individual, decentralized choices to accept and hold it) is a live, real-time demonstration of exactly the process Menger described in the abstract for historical commodities.
 
-**The criticism:** critics note Bitcoin's initial adoption was also driven by factors Menger's framework does not directly address — ideological commitment among early cypherpunk-adjacent adopters, speculative price appreciation expectations, and criminal-market demand in Bitcoin's earliest years (see [KYC and AML](../society/kyc-aml.md)) — meaning the case is not a clean, controlled test of Menger's theory in isolation from these other drivers.
+**The criticism:** critics note Bitcoin's initial adoption was also driven by factors Menger's framework does not directly address (ideological commitment among early cypherpunk-adjacent adopters, speculative price appreciation expectations, and criminal-market demand in Bitcoin's earliest years (see [KYC and AML](../society/kyc-aml.md))) meaning the case is not a clean, controlled test of Menger's theory in isolation from these other drivers.
 
 ### "Bitcoin proves the regression theorem, or disproves it"
 
@@ -29,13 +29,13 @@ Covered in full in [The Regression Theorem](./regression-theorem.md): this is a 
 
 **What Hayek actually argued:** that removing the government monopoly on currency issuance and allowing competing, privately issued, *actively managed* currencies would produce better monetary outcomes than a state monopoly (see [Friedrich Hayek and Competing Currencies](./hayek.md)).
 
-**The gap:** Hayek's proposed currencies were meant to be actively managed toward price stability by accountable issuers — the opposite of Bitcoin's unmanaged, fixed-supply design. Calling Bitcoin "Hayek's vision realized" requires ignoring this specific, stated design requirement in Hayek's own proposal.
+**The gap:** Hayek's proposed currencies were meant to be actively managed toward price stability by accountable issuers, the opposite of Bitcoin's unmanaged, fixed-supply design. Calling Bitcoin "Hayek's vision realized" requires ignoring this specific, stated design requirement in Hayek's own proposal.
 
 ### "Rothbard would have endorsed Bitcoin"
 
 **What Rothbard actually argued:** that a return to a strict, 100%-reserve, gold-redeemable currency was the correct remedy for the problems of fiat money and fractional reserve banking (see [Murray Rothbard and Sound Money](./rothbard.md)).
 
-**The gap:** Rothbard's specific proposed remedy was physical commodity backing, not a computational scarcity mechanism. Whether Rothbard would have viewed Bitcoin's proof-of-work-based scarcity as an adequate substitute for physical gold backing is unknowable — he died in 1995 and never addressed the question. Some later Austrian-influenced economists (including writers publishing through Austrian-aligned outlets) have argued Rothbard's underlying hostility toward centrally managed, unbacked currency would likely have made him sympathetic to Bitcoin's goals even without physical backing; others note his explicit skepticism, elsewhere in his writing, of purely confidence-based monetary schemes cuts the other way. Both readings are speculative inferences, not documented positions, and this book does not adjudicate between them.
+**The gap:** Rothbard's specific proposed remedy was physical commodity backing, not a computational scarcity mechanism. Whether Rothbard would have viewed Bitcoin's proof-of-work-based scarcity as an adequate substitute for physical gold backing is unknowable. He died in 1995 and never addressed the question. Some later Austrian-influenced economists (including writers publishing through Austrian-aligned outlets) have argued Rothbard's underlying hostility toward centrally managed, unbacked currency would likely have made him sympathetic to Bitcoin's goals even without physical backing; others note his explicit skepticism, elsewhere in his writing, of purely confidence-based monetary schemes cuts the other way. Both readings are speculative inferences, not documented positions, and this book does not adjudicate between them.
 
 ## What the Austrian tradition contributes to understanding Bitcoin, independent of the "did they predict it" question
 
@@ -57,7 +57,7 @@ Austrian economics genuinely influenced the intellectual environment Bitcoin eme
 
 ## Further reading
 
-- [P2P Foundation forum, Satoshi Nakamoto's original Bitcoin announcement](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source) — February 11, 2009
+- [P2P Foundation forum, Satoshi Nakamoto's original Bitcoin announcement](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source): February 11, 2009
 - All primary sources linked in [Menger](./menger.md), [Mises](./mises.md), [Hayek](./hayek.md), and [Rothbard](./rothbard.md)
 
 ---

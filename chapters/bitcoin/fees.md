@@ -8,7 +8,7 @@ As shown in [The UTXO Model](./utxo.md#example-computing-a-wallets-balance), a B
 
 ## Why fees are priced per byte (or per weight unit), not flat
 
-Block space is scarce — a block has a maximum size (more precisely, a maximum **weight**, see below), so only a limited amount of transaction data fits in each roughly-10-minute block. A larger, more complex transaction (more inputs, more outputs, larger unlocking scripts) consumes more of that scarce space than a small, simple one, so fees are priced per byte (historically) or per weight unit (post-SegWit) rather than as a flat amount per transaction — a transaction paying the same total fee but using less space is more attractive to a miner assembling a block, because it leaves more room for additional fee-paying transactions.
+Block space is scarce. A block has a maximum size (more precisely, a maximum **weight**, see below), so only a limited amount of transaction data fits in each roughly-10-minute block. A larger, more complex transaction (more inputs, more outputs, larger unlocking scripts) consumes more of that scarce space than a small, simple one, so fees are priced per byte (historically) or per weight unit (post-SegWit) rather than as a flat amount per transaction, a transaction paying the same total fee but using less space is more attractive to a miner assembling a block, because it leaves more room for additional fee-paying transactions.
 
 ## Transaction size and weight
 
@@ -19,11 +19,11 @@ weight = (non-witness bytes × 4) + (witness bytes × 1)
 vsize (virtual size, used for fee-rate calculations) = weight / 4
 ```
 
-This formula gives witness data an effective 75% discount relative to non-witness data, reflected in the fee a transaction needs to pay — a deliberate incentive for wallets to adopt SegWit, since SegWit transactions became measurably cheaper to send for equivalent economic content, without needing to change the underlying 4 million weight unit block limit (roughly equivalent to a maximum of 4 MB in an all-witness-data hypothetical, or closer to 1-2 MB of typical, mixed transaction data in practice).
+This formula gives witness data an effective 75% discount relative to non-witness data, reflected in the fee a transaction needs to pay, a deliberate incentive for wallets to adopt SegWit, since SegWit transactions became measurably cheaper to send for equivalent economic content, without needing to change the underlying 4 million weight unit block limit (roughly equivalent to a maximum of 4 MB in an all-witness-data hypothetical, or closer to 1-2 MB of typical, mixed transaction data in practice).
 
 ## The fee market: an auction for block space
 
-Because miners are economically rational (see [Mining Economics](./mining.md#mining-economics)) and want to maximize the fees collected from whichever transactions they include, they generally prioritize transactions offering the highest fee rate (satoshis per virtual byte), not the highest absolute fee. When many transactions compete for limited block space — during periods of high network demand — fee rates rise, since users willing to pay more get prioritized ahead of those unwilling to. This dynamic is covered fully, with its longer-term implications for Bitcoin's security budget, in [Fee Market](./fee-market.md).
+Because miners are economically rational (see [Mining Economics](./mining.md#mining-economics)) and want to maximize the fees collected from whichever transactions they include, they generally prioritize transactions offering the highest fee rate (satoshis per virtual byte), not the highest absolute fee. When many transactions compete for limited block space (during periods of high network demand) fee rates rise, since users willing to pay more get prioritized ahead of those unwilling to. This dynamic is covered fully, with its longer-term implications for Bitcoin's security budget, in [Fee Market](./fee-market.md).
 
 ## Example: estimating a fee
 
@@ -47,13 +47,13 @@ TODO: replace the illustrative `feeRateSatsPerVbyte` value with a note pointing 
 
 ## Replace-By-Fee (RBF)
 
-A transaction sitting unconfirmed in the mempool with too low a fee rate to be prioritized can, if it explicitly signals support for **Replace-By-Fee** (BIP 125 — done by setting its sequence number below a specific threshold), be replaced by a new transaction spending the same inputs with a higher fee, letting the sender effectively bid the fee up after the fact rather than waiting indefinitely or creating a conflicting double-spend attempt. This is covered further in [The Mempool](./mempool.md#replace-by-fee).
+A transaction sitting unconfirmed in the mempool with too low a fee rate to be prioritized can, if it explicitly signals support for **Replace-By-Fee** (BIP 125, done by setting its sequence number below a specific threshold), be replaced by a new transaction spending the same inputs with a higher fee, letting the sender effectively bid the fee up after the fact rather than waiting indefinitely or creating a conflicting double-spend attempt. This is covered further in [The Mempool](./mempool.md#replace-by-fee).
 
 ## Common misconceptions
 
-**A higher fee does not buy a faster block time.** It buys higher *priority* for inclusion in whichever block is found next — if the network happens to find no blocks for 40 minutes due to ordinary random variance (see [Block Time](../blockchain/block-time.md)), even a very high fee transaction still waits that long; fees affect ordering among competing transactions, not the network's underlying block discovery rate.
+**A higher fee does not buy a faster block time.** It buys higher *priority* for inclusion in whichever block is found next, if the network happens to find no blocks for 40 minutes due to ordinary random variance (see [Block Time](../blockchain/block-time.md)), even a very high fee transaction still waits that long; fees affect ordering among competing transactions, not the network's underlying block discovery rate.
 
-**Fees are not paid to "Bitcoin" or to any protocol treasury.** They're paid entirely to whichever miner successfully mines the block including that transaction, as part of that block's coinbase reward — see [Coinbase Transactions](./coinbase-transactions.md).
+**Fees are not paid to "Bitcoin" or to any protocol treasury.** They're paid entirely to whichever miner successfully mines the block including that transaction, as part of that block's coinbase reward, see [Coinbase Transactions](./coinbase-transactions.md).
 
 ## Further reading
 

@@ -1,10 +1,10 @@
 # Addresses
 
-A Bitcoin address is a short, shareable string that tells the network where to send funds — but it is not itself a key, and it is not the same thing as a public key either, despite being derived from one. This chapter covers exactly what an address is, why it exists as a separate thing from a public key, and the three address formats in active use today.
+A Bitcoin address is a short, shareable string that tells the network where to send funds, but it is not itself a key, and it is not the same thing as a public key either, despite being derived from one. This chapter covers exactly what an address is, why it exists as a separate thing from a public key, and the three address formats in active use today.
 
 ## Why addresses exist at all, separately from public keys
 
-As established in [ScriptPubKey and ScriptSig](../bitcoin/scripts.md#why-p2pk-gave-way-to-p2pkh), the earliest Bitcoin locking scripts (P2PK) embedded a full public key directly. Addresses exist because hashing the public key first — before it's ever revealed on-chain — provides real security value: an address reveals nothing about the underlying public key until the corresponding output is actually spent, closing off any possibility of attacking the public key (including, speculatively, via a future sufficiently powerful quantum computer, see [Elliptic Curves](../cryptography/elliptic-curves.md#scalar-multiplication-and-the-hard-problem)) before that point. An address is, mechanically, `hash(publicKey)`, encoded for human use — never the public key itself.
+As established in [ScriptPubKey and ScriptSig](../bitcoin/scripts.md#why-p2pk-gave-way-to-p2pkh), the earliest Bitcoin locking scripts (P2PK) embedded a full public key directly. Addresses exist because hashing the public key first (before it's ever revealed on-chain) provides real security value: an address reveals nothing about the underlying public key until the corresponding output is actually spent, closing off any possibility of attacking the public key (including, speculatively, via a future sufficiently powerful quantum computer, see [Elliptic Curves](../cryptography/elliptic-curves.md#scalar-multiplication-and-the-hard-problem)) before that point. An address is, mechanically, `hash(publicKey)`, encoded for human use, never the public key itself.
 
 ## The three formats in active use
 
@@ -17,11 +17,11 @@ As established in [ScriptPubKey and ScriptSig](../bitcoin/scripts.md#why-p2pk-ga
 
 ## Base58Check, precisely
 
-Base58 uses a 58-character alphabet — the ordinary base62 alphanumeric set with `0` (zero), `O` (capital o), `I` (capital i), and `l` (lowercase L) deliberately removed, since these are easy to visually confuse, especially in handwritten or low-resolution-printed backups. **Base58Check** adds a version byte (identifying network and address type) and a 4-byte checksum, computed as the first four bytes of `SHA256(SHA256(versionByte + payload))`, appended before encoding — letting a wallet detect nearly every accidental typo or transcription error in an address before broadcasting funds to it, rather than silently sending to an unintended, likely-unspendable destination.
+Base58 uses a 58-character alphabet (the ordinary base62 alphanumeric set with `0` (zero), `O` (capital o), `I` (capital i), and `l` (lowercase L) deliberately removed, since these are easy to visually confuse, especially in handwritten or low-resolution-printed backups. **Base58Check** adds a version byte (identifying network and address type) and a 4-byte checksum, computed as the first four bytes of `SHA256(SHA256(versionByte + payload))`, appended before encoding) letting a wallet detect nearly every accidental typo or transcription error in an address before broadcasting funds to it, rather than silently sending to an unintended, likely-unspendable destination.
 
 ## Bech32 and Bech32m
 
-[SegWit](../bitcoin/segwit.md#address-formats-bech32) introduced **Bech32** (BIP 173), a different encoding using a 32-character alphabet, entirely lowercase (or entirely uppercase — mixed case is explicitly rejected as invalid, which itself catches a class of transcription errors), and a mathematically stronger error-detection code than Base58Check's checksum, capable of both detecting and, for short error runs, identifying the specific character position likely mistyped. Taproot uses a refined variant, **Bech32m** (BIP 350), which fixes a subtle bug discovered in the original Bech32 specification that could, in rare cases, let certain errors go undetected specifically for longer encoded strings — Bech32m changes one constant in the checksum calculation to close this gap, which is why Taproot addresses use a `bc1p` prefix distinct from native SegWit's `bc1q`, making the two formats visually distinguishable at a glance.
+[SegWit](../bitcoin/segwit.md#address-formats-bech32) introduced **Bech32** (BIP 173), a different encoding using a 32-character alphabet, entirely lowercase (or entirely uppercase. Mixed case is explicitly rejected as invalid, which itself catches a class of transcription errors), and a mathematically stronger error-detection code than Base58Check's checksum, capable of both detecting and, for short error runs, identifying the specific character position likely mistyped. Taproot uses a refined variant, **Bech32m** (BIP 350), which fixes a subtle bug discovered in the original Bech32 specification that could, in rare cases, let certain errors go undetected specifically for longer encoded strings. Bech32m changes one constant in the checksum calculation to close this gap, which is why Taproot addresses use a `bc1p` prefix distinct from native SegWit's `bc1q`, making the two formats visually distinguishable at a glance.
 
 ## Example: deriving an address from a public key
 
@@ -60,13 +60,13 @@ A full Base58Check encoding implementation is left as the [Try It Yourself](#try
 
 ## Tradeoffs
 
-Deriving addresses from a hash rather than exposing the public key directly costs a small amount of extra computation (two additional hash operations) and a small amount of extra data in older, non-SegWit script types, in exchange for the security and privacy benefit of not revealing the public key until spend time — a tradeoff essentially every wallet and protocol designer since Bitcoin's earliest years has judged worthwhile, given how cheap hashing is relative to the benefit.
+Deriving addresses from a hash rather than exposing the public key directly costs a small amount of extra computation (two additional hash operations) and a small amount of extra data in older, non-SegWit script types, in exchange for the security and privacy benefit of not revealing the public key until spend time, a tradeoff essentially every wallet and protocol designer since Bitcoin's earliest years has judged worthwhile, given how cheap hashing is relative to the benefit.
 
 ## Common misconceptions
 
-**Reusing the same address for multiple incoming payments is not incorrect or invalid, but it does have a real privacy cost**, discussed in [Privacy](../society/privacy.md) — every transaction to or from that address becomes trivially linkable to every other one, which is why modern wallets generate a fresh address for each new transaction by default (see [HD Wallets](./hd-wallets.md)).
+**Reusing the same address for multiple incoming payments is not incorrect or invalid, but it does have a real privacy cost**, discussed in [Privacy](../society/privacy.md), every transaction to or from that address becomes trivially linkable to every other one, which is why modern wallets generate a fresh address for each new transaction by default (see [HD Wallets](./hd-wallets.md)).
 
-**An address is not "yours" in the way a bank account number is tied to your identity** — nothing in the address itself encodes who controls it; an address only becomes linked to a real-world identity through external information (KYC records at an exchange, for instance — see [KYC and AML](../society/kyc-aml.md)), not through anything in the Bitcoin protocol itself.
+**An address is not "yours" in the way a bank account number is tied to your identity**, nothing in the address itself encodes who controls it; an address only becomes linked to a real-world identity through external information (KYC records at an exchange, for instance, see [KYC and AML](../society/kyc-aml.md)), not through anything in the Bitcoin protocol itself.
 
 ## Try it yourself
 

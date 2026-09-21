@@ -58,7 +58,7 @@ q=0.10, z=10: P(reversal) = 0.0000012414021748015377
 
 ## What the numbers actually say
 
-The table below extends this same computation across several attacker hash-power shares — verified directly by running the code above with different `q` values:
+The table below extends this same computation across several attacker hash-power shares, verified directly by running the code above with different `q` values:
 
 | Confirmations (z) | q = 10% | q = 30% | q = 45% |
 | --- | --- | --- | --- |
@@ -68,27 +68,27 @@ The table below extends this same computation across several attacker hash-power
 | 10 | 0.00012% | 4.2% | 68.5% |
 | 20 | ~0% | 0.25% | 53.7% |
 
-Two things stand out. First, at a modest attacker share (10% of hash power — already a very large, expensive amount of real mining hardware to control), confidence grows extremely fast with confirmations: by 6 confirmations, the reversal probability has fallen below one in four thousand, and by 10 confirmations it's below one in a million. This is why "6 confirmations" (roughly an hour, at Bitcoin's ~10-minute average block time — see [Block Time](../blockchain/block-time.md)) became a widely used informal standard for considering a Bitcoin payment settled for most practical purposes, and why exchanges historically required more confirmations for larger deposits.
+Two things stand out. First, at a modest attacker share (10% of hash power, already a very large, expensive amount of real mining hardware to control), confidence grows extremely fast with confirmations: by 6 confirmations, the reversal probability has fallen below one in four thousand, and by 10 confirmations it's below one in a million. This is why "6 confirmations" (roughly an hour, at Bitcoin's ~10-minute average block time, see [Block Time](../blockchain/block-time.md)) became a widely used informal standard for considering a Bitcoin payment settled for most practical purposes, and why exchanges historically required more confirmations for larger deposits.
 
-Second, and just as important: **against an attacker with close to 50% of network hash power, no number of confirmations makes the reversal probability negligible.** At `q = 45%`, even 20 confirmations still leaves over a 50% chance the attacker eventually catches up, because the attacker's mining power is so close to the honest network's that the race stays close indefinitely — this is the mathematical content behind the term "51% attack" (see [51% Attacks](../bitcoin/51-percent-attacks.md)): the entire security model assumes the attacker's share stays meaningfully, not just marginally, below half.
+Second, and just as important: **against an attacker with close to 50% of network hash power, no number of confirmations makes the reversal probability negligible.** At `q = 45%`, even 20 confirmations still leaves over a 50% chance the attacker eventually catches up, because the attacker's mining power is so close to the honest network's that the race stays close indefinitely. This is the mathematical content behind the term "51% attack" (see [51% Attacks](../bitcoin/51-percent-attacks.md)): the entire security model assumes the attacker's share stays meaningfully, not just marginally, below half.
 
 ## Under the hood: why waiting helps
 
-Intuitively, every additional confirmation is another round the attacker's private chain has to keep pace with or overtake, and because the attacker has strictly less hash power than the honest network (by assumption — this whole model breaks down once an attacker actually exceeds 50%), each additional round is, on average, another round the attacker falls further behind rather than catching up. The Poisson term accounts for the real-world randomness in exactly how many blocks each side finds in a given stretch of time, rather than assuming a perfectly steady, deterministic pace.
+Intuitively, every additional confirmation is another round the attacker's private chain has to keep pace with or overtake, and because the attacker has strictly less hash power than the honest network (by assumption. This whole model breaks down once an attacker actually exceeds 50%), each additional round is, on average, another round the attacker falls further behind rather than catching up. The Poisson term accounts for the real-world randomness in exactly how many blocks each side finds in a given stretch of time, rather than assuming a perfectly steady, deterministic pace.
 
 ## Tradeoffs
 
-Choosing how many confirmations to wait for is a direct, quantifiable risk decision, not an arbitrary convention — a transaction worth $10 and a transaction worth $10 million warrant different confirmation thresholds given the same underlying probability curve, which is exactly why the "right" number of confirmations depends on the value at risk and the discloser's assumption about realistic attacker hash-power share, not a single universal rule.
+Choosing how many confirmations to wait for is a direct, quantifiable risk decision, not an arbitrary convention, a transaction worth $10 and a transaction worth $10 million warrant different confirmation thresholds given the same underlying probability curve, which is exactly why the "right" number of confirmations depends on the value at risk and the discloser's assumption about realistic attacker hash-power share, not a single universal rule.
 
 ## Common misconceptions
 
-**Zero confirmations does not mean zero security, but it means very little security against a determined double-spend attempt** — an unconfirmed transaction sitting in the mempool can, in principle, be replaced by a conflicting transaction before it's mined (see [Replace-by-Fee](../bitcoin/mempool.md)), which is why merchants accepting instant, unconfirmed payments for high-value goods carry real, documented risk.
+**Zero confirmations does not mean zero security, but it means very little security against a determined double-spend attempt**, an unconfirmed transaction sitting in the mempool can, in principle, be replaced by a conflicting transaction before it's mined (see [Replace-by-Fee](../bitcoin/mempool.md)), which is why merchants accepting instant, unconfirmed payments for high-value goods carry real, documented risk.
 
-**More confirmations do not reduce the probability to exactly zero at any finite number**, as the table above shows directly — the model only produces vanishingly small, not literally zero, probabilities, which is the precise meaning of "probabilistic" in this chapter's title.
+**More confirmations do not reduce the probability to exactly zero at any finite number**, as the table above shows directly. The model only produces vanishingly small, not literally zero, probabilities, which is the precise meaning of "probabilistic" in this chapter's title.
 
 ## Further reading
 
-- [Bitcoin whitepaper, Section 11 (Calculations)](https://bitcoin.org/bitcoin.pdf) — the original formula and table this chapter verifies and extends
+- [Bitcoin whitepaper, Section 11 (Calculations)](https://bitcoin.org/bitcoin.pdf): the original formula and table this chapter verifies and extends
 
 ---
 

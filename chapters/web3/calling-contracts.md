@@ -26,7 +26,7 @@ The distinction traces directly back to [Functions](../contracts/functions.md#vi
 
 ## Simulating a write before sending it
 
-A well-built application generally **simulates** a state-changing call before actually sending it as a transaction — using `eth_call` against the exact same function and arguments the real transaction will use, specifically to catch a failure (a revert, an insufficient balance, invalid arguments) **before** paying any real gas or waiting for a real confirmation:
+A well-built application generally **simulates** a state-changing call before actually sending it as a transaction, using `eth_call` against the exact same function and arguments the real transaction will use, specifically to catch a failure (a revert, an insufficient balance, invalid arguments) **before** paying any real gas or waiting for a real confirmation:
 
 ```typescript
 // Simulates the write, catching failures for free, before spending real gas.
@@ -41,13 +41,13 @@ const { request } = await client.simulateContract({
 const hash = await walletClient.writeContract(request);
 ```
 
-This two-step pattern (simulate, then send exactly what simulation validated) is standard practice specifically because a failed on-chain transaction still costs the gas consumed up to its failure point (recall [Gas](../ethereum/gas.md#what-happens-when-a-transaction-runs-out-of-gas)) — simulating first catches most preventable failures for free.
+This two-step pattern (simulate, then send exactly what simulation validated) is standard practice specifically because a failed on-chain transaction still costs the gas consumed up to its failure point (recall [Gas](../ethereum/gas.md#what-happens-when-a-transaction-runs-out-of-gas)), simulating first catches most preventable failures for free.
 
 ## Common misconceptions
 
-**A successful simulation does not guarantee the real transaction will also succeed** — state can change between simulation and the transaction actually being mined (another transaction could execute first, altering a balance or a contract's state in a way that makes the originally-simulated call now fail) — simulation reduces, but does not eliminate, the risk of a failed transaction, particularly for time-sensitive or contested on-chain conditions (see [Front Running](../security/front-running.md)).
+**A successful simulation does not guarantee the real transaction will also succeed** (state can change between simulation and the transaction actually being mined (another transaction could execute first, altering a balance or a contract's state in a way that makes the originally-simulated call now fail)) simulation reduces, but does not eliminate, the risk of a failed transaction, particularly for time-sensitive or contested on-chain conditions (see [Front Running](../security/front-running.md)).
 
-**Calling a `view` function through a wallet's transaction-sending flow (rather than a plain read) is not "more correct" or "more secure"** — it's simply unnecessary: a `view` function makes no state changes for a wallet signature to meaningfully authorize, so routing it through the transaction flow only adds needless friction (a wallet popup, a wait for confirmation) for no additional benefit over a plain, free `readContract` call.
+**Calling a `view` function through a wallet's transaction-sending flow (rather than a plain read) is not "more correct" or "more secure"**. It's simply unnecessary: a `view` function makes no state changes for a wallet signature to meaningfully authorize, so routing it through the transaction flow only adds needless friction (a wallet popup, a wait for confirmation) for no additional benefit over a plain, free `readContract` call.
 
 ## Further reading
 

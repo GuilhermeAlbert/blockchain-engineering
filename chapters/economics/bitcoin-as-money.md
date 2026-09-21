@@ -1,6 +1,6 @@
 # Bitcoin as Money
 
-Having covered what money is, what functions it performs, and the main historical forms it has taken, this chapter asks the question directly: does Bitcoin function as money? The honest answer, using the framework from [Functions of Money](./functions-of-money.md), is function-by-function and non-binary — Bitcoin performs some monetary functions reasonably well, performs others weakly by mainstream standards, and the balance has shifted meaningfully since 2009.
+Having covered what money is, what functions it performs, and the main historical forms it has taken, this chapter asks the question directly: does Bitcoin function as money? The honest answer, using the framework from [Functions of Money](./functions-of-money.md), is function-by-function and non-binary. Bitcoin performs some monetary functions reasonably well, performs others weakly by mainstream standards, and the balance has shifted meaningfully since 2009.
 
 ## Medium of exchange
 
@@ -10,15 +10,15 @@ The [Lightning Network](../lightning/README.md) was built specifically to addres
 
 ## Unit of account
 
-This is Bitcoin's weakest function by conventional measures. Prices for goods and services are overwhelmingly quoted in national fiat currencies worldwide, even in jurisdictions with meaningful Bitcoin adoption; merchants that accept Bitcoin typically price in the local fiat currency and convert at the point of sale, rather than setting native Bitcoin-denominated prices. This is a direct consequence of the volatility discussed in [Volatility and Monetary Adoption](./volatility.md) — a good unit of account requires short-term price stability, and Bitcoin's price has historically moved by double-digit percentages within single weeks on multiple occasions, making native Bitcoin pricing impractical for most ordinary commerce.
+This is Bitcoin's weakest function by conventional measures. Prices for goods and services are overwhelmingly quoted in national fiat currencies worldwide, even in jurisdictions with meaningful Bitcoin adoption; merchants that accept Bitcoin typically price in the local fiat currency and convert at the point of sale, rather than setting native Bitcoin-denominated prices. This is a direct consequence of the volatility discussed in [Volatility and Monetary Adoption](./volatility.md). A good unit of account requires short-term price stability, and Bitcoin's price has historically moved by double-digit percentages within single weeks on multiple occasions, making native Bitcoin pricing impractical for most ordinary commerce.
 
 ## Store of value
 
-This is the function most emphasized by Bitcoin advocates and is where the strongest empirical case exists: Bitcoin's fixed supply (see [21 Million BTC](../bitcoin/21-million.md)) and its long-term price trajectory since 2009 have led a growing number of individuals and, more recently, some institutional investors and corporate treasuries to hold Bitcoin explicitly as a long-term savings vehicle, often described using the analogy "digital gold." This use case does not require Bitcoin to function well as a medium of exchange or unit of account simultaneously — gold itself has historically functioned primarily as a store of value while being relatively impractical for everyday transactions (see [Commodity Money](./commodity-money.md)). Critics counter that Bitcoin's price history, while trending upward over its full history, has also included severe, multi-year drawdowns (over 80% peak-to-trough on more than one occasion, including 2013–2015 and 2021–2022), which is a volatility profile very different from traditional stores of value like gold or investment-grade bonds, and that the store-of-value case rests significantly on continued future adoption rather than an established, decades-long track record.
+This is the function most emphasized by Bitcoin advocates and is where the strongest empirical case exists: Bitcoin's fixed supply (see [21 Million BTC](../bitcoin/21-million.md)) and its long-term price trajectory since 2009 have led a growing number of individuals and, more recently, some institutional investors and corporate treasuries to hold Bitcoin explicitly as a long-term savings vehicle, often described using the analogy "digital gold." This use case does not require Bitcoin to function well as a medium of exchange or unit of account simultaneously. Gold itself has historically functioned primarily as a store of value while being relatively impractical for everyday transactions (see [Commodity Money](./commodity-money.md)). Critics counter that Bitcoin's price history, while trending upward over its full history, has also included severe, multi-year drawdowns (over 80% peak-to-trough on more than one occasion, including 2013–2015 and 2021–2022), which is a volatility profile very different from traditional stores of value like gold or investment-grade bonds, and that the store-of-value case rests significantly on continued future adoption rather than an established, decades-long track record.
 
 ## What determines the answer
 
-Whether Bitcoin "is money" is not resolvable as a single yes-or-no fact — it depends on which function you're asking about, which population of users you're asking about (a Bitcoin holder in a country with a stable fiat currency uses it very differently than someone in a country experiencing hyperinflation or capital controls, see [Bitcoin and Monetary Sovereignty](./monetary-sovereignty.md)), and over what time horizon. This book treats the question as an open, evolving empirical one rather than a matter of ideological commitment, and presents the strongest documented case on each side in the relevant linked chapters rather than declaring a verdict here.
+Whether Bitcoin "is money" is not resolvable as a single yes-or-no fact. It depends on which function you're asking about, which population of users you're asking about (a Bitcoin holder in a country with a stable fiat currency uses it very differently than someone in a country experiencing hyperinflation or capital controls, see [Bitcoin and Monetary Sovereignty](./monetary-sovereignty.md)), and over what time horizon. This book treats the question as an open, evolving empirical one rather than a matter of ideological commitment, and presents the strongest documented case on each side in the relevant linked chapters rather than declaring a verdict here.
 
 | Function | Strength today | Primary limiting factor |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Whether Bitcoin "is money" is not resolvable as a single yes-or-no fact — it d
 
 ## Further reading
 
-- [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf) — Satoshi Nakamoto, for the originally intended use case
+- [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf): Satoshi Nakamoto, for the originally intended use case
 - See also: [Critiques of Bitcoin as Money](./bitcoin-criticism.md) and [Austrian Economics and Bitcoin](./austrian-economics-and-bitcoin.md)
 
 ---
