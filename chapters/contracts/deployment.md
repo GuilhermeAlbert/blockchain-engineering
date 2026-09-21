@@ -42,3 +42,5 @@ Before deploying to a real network with real value at stake, deployment is typic
 [← Previous: Testing](./testing.md)
 ·
 [Back to Smart Contracts](./README.md)
+·
+[Next: ERC-20 →](../tokens/erc-20.md)

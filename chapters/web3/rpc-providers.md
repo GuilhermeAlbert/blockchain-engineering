@@ -32,6 +32,8 @@ Beyond raw trust considerations, practical factors most real applications weigh 
 
 ---
 
+[← Previous: Token Supply](../tokens/token-supply.md)
+·
 [Back to Building Web3 Applications](./README.md)
 ·
 [Next: Connecting Wallets →](./wallet-connections.md)

@@ -38,3 +38,5 @@ Both positions had real, substantive technical merit and real, documented tradeo
 [← Previous: SegWit2x](./segwit2x.md)
 ·
 [Back to Forks and Protocol Upgrades](./README.md)
+·
+[Next: Addresses →](../wallets/addresses.md)

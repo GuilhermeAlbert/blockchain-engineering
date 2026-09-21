@@ -62,3 +62,5 @@ Two structural consequences of this early period persist in how Bitcoin works no
 [← Previous: The Genesis Block](./genesis-block.md)
 ·
 [Back to Origins](./README.md)
+·
+[Next: What Is Money? →](../economics/money.md)

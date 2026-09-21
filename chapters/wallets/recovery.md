@@ -37,3 +37,5 @@ Backup strategy is a genuine, unavoidable tradeoff: a single backup copy, stored
 [← Previous: Custodial vs Non-Custodial Wallets](./custody.md)
 ·
 [Back to Wallets and Key Management](./README.md)
+·
+[Next: Block Size →](../bitcoin-scaling/block-size.md)

@@ -41,3 +41,5 @@ A significant amount of blockchain-adjacent marketing over the 2010s and 2020s d
 [← Previous: Fork Choice](./fork-choice.md)
 ·
 [Back to Blockchain Fundamentals](./README.md)
+·
+[Next: Bitcoin Nodes →](../bitcoin/nodes.md)

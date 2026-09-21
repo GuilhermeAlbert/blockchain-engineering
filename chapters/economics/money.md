@@ -55,6 +55,8 @@ Money is usually defined not by what it is physically, but by what it does. The 
 
 ---
 
+[← Previous: Early Bitcoin History](../origins/early-bitcoin.md)
+·
 [Back to Economics](./README.md)
 ·
 [Next: Functions of Money →](./functions-of-money.md)

@@ -59,6 +59,8 @@ Almost no one writes raw bytecode by hand for real contracts — [Solidity](../c
 
 ---
 
+[← Previous: Finality](../ethereum/finality.md)
+·
 [Back to The EVM](./README.md)
 ·
 [Next: Opcodes →](./opcodes.md)

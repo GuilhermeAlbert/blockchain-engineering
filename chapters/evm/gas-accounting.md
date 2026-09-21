@@ -63,3 +63,5 @@ Every gas cost mentioned throughout this section — 21,000 for base transaction
 [← Previous: Contract Creation](./contract-creation.md)
 ·
 [Back to The EVM](./README.md)
+·
+[Next: Solidity →](../contracts/solidity.md)

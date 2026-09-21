@@ -75,6 +75,8 @@ That last line is worth noting: this particular example address turns out to be 
 
 ---
 
+[← Previous: Lightning Nodes](../lightning/nodes.md)
+·
 [Back to Ethereum](./README.md)
 ·
 [Next: Externally Owned Accounts →](./eoa.md)

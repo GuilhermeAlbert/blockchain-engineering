@@ -95,3 +95,5 @@ Choosing how many confirmations to wait for is a direct, quantifiable risk decis
 [← Previous: Finality](./finality.md)
 ·
 [Back to Distributed Systems](./README.md)
+·
+[Next: Blocks →](../blockchain/blocks.md)

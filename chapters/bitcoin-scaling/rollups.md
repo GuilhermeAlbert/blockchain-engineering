@@ -34,3 +34,5 @@ Given how much more established Ethereum's rollup ecosystem is, claims of "Bitco
 [← Previous: RGB](./rgb.md)
 ·
 [Back to Bitcoin Scaling](./README.md)
+·
+[Next: Payment Channels →](../lightning/payment-channels.md)

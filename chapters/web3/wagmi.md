@@ -50,3 +50,5 @@ This mirrors a common, sensible pattern in software architecture generally: a lo
 [← Previous: viem](./viem.md)
 ·
 [Back to Building Web3 Applications](./README.md)
+·
+[Next: Stablecoins →](../defi/stablecoins.md)

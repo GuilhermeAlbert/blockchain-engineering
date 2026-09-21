@@ -52,3 +52,5 @@ Requiring **two consecutive** justified checkpoints, rather than finalizing imme
 [← Previous: Slashing](./slashing.md)
 ·
 [Back to Ethereum](./README.md)
+·
+[Next: Bytecode →](../evm/bytecode.md)

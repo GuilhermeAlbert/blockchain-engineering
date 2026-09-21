@@ -59,6 +59,8 @@ A peer-to-peer architecture removes the single point of control and failure that
 
 ---
 
+[← Previous: Zero-Knowledge Proofs](../cryptography/zero-knowledge.md)
+·
 [Back to Distributed Systems](./README.md)
 ·
 [Next: Replication →](./replication.md)

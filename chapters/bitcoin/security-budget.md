@@ -41,3 +41,5 @@ This is a genuinely open, actively studied question within Bitcoin's technical a
 [← Previous: Fee Market](./fee-market.md)
 ·
 [Back to Bitcoin](./README.md)
+·
+[Next: Temporary Chain Forks →](../forks/temporary-forks.md)

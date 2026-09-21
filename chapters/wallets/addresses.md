@@ -80,7 +80,7 @@ Extend the example above with a full Base58Check encoder (version byte `0x00` fo
 
 ---
 
-[← Previous: What Is a Wallet?](./README.md)
+[← Previous: The Block Size Debate](../forks/block-size-war.md)
 ·
 [Back to Wallets and Key Management](./README.md)
 ·

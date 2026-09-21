@@ -59,4 +59,4 @@ Zero-knowledge proofs let a verifier gain confidence in a computation's correctn
 ·
 [Back to Cryptography](./README.md)
 ·
-[Next: Distributed Systems →](../distributed-systems/README.md)
+[Next: Peer-to-Peer Networks →](../distributed-systems/p2p.md)

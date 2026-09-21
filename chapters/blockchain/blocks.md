@@ -116,6 +116,8 @@ Run the code example above, then modify one character in one transaction string 
 
 ---
 
+[← Previous: Probabilistic Finality](../distributed-systems/probabilistic-finality.md)
+·
 [Back to Blockchain Fundamentals](./README.md)
 ·
 [Next: Block Headers →](./block-headers.md)

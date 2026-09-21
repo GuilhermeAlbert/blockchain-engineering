@@ -22,6 +22,8 @@ Naming this kind of fork explicitly matters because news coverage and casual con
 
 ---
 
+[← Previous: Long-Term Security Budget](../bitcoin/security-budget.md)
+·
 [Back to Forks and Protocol Upgrades](./README.md)
 ·
 [Next: Soft Forks →](./soft-forks.md)

@@ -30,3 +30,5 @@ Not every Lightning node participates in routing other people's payments. A **ro
 [← Previous: Watchtowers](./watchtowers.md)
 ·
 [Back to Lightning Network](./README.md)
+·
+[Next: Ethereum Accounts →](../ethereum/accounts.md)

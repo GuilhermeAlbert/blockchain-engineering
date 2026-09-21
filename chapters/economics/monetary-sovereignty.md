@@ -34,3 +34,5 @@ Individuals in countries with weak monetary institutions and a history of curren
 [← Previous: Deflationary Money](./deflationary-money.md)
 ·
 [Back to Economics](./README.md)
+·
+[Next: Hash Functions →](../cryptography/hashes.md)

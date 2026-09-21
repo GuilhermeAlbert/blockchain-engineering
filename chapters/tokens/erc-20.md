@@ -96,6 +96,8 @@ Nothing in the ERC-20 standard or the EVM itself verifies that a `totalSupply` v
 
 ---
 
+[← Previous: Deployment](../contracts/deployment.md)
+·
 [Back to Tokens](./README.md)
 ·
 [Next: Balances →](./balances.md)

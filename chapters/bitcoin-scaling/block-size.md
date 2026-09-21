@@ -30,6 +30,8 @@ The rest of this section covers two structurally different responses to the same
 
 ---
 
+[← Previous: Key Backup and Recovery](../wallets/recovery.md)
+·
 [Back to Bitcoin Scaling](./README.md)
 ·
 [Next: SegWit as a Scaling Upgrade →](./segwit.md)
