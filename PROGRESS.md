@@ -22,7 +22,7 @@ A section is `Complete` only when every linked chapter exists, is substantive (n
 | Tokens | Complete | 11 chapters + README. All interfaces/contracts compile with solc 0.8.26; WETH's real mainnet address verified live via viem (returns name/symbol correctly). |
 | Web3 | Complete | 12 chapters + README. Nearly every non-browser example run live against mainnet (receipts, eth_getLogs, EIP-712 round-trip, EIP-191 round-trip). |
 | DeFi | Complete | 22 chapters + README. Impermanent loss and constant-product slippage derived and verified numerically across multiple scenarios; protocol case studies (Uniswap, Aave, MakerDAO/Sky, Curve) fact-checked against primary sources, including exact dates and the July 2023 Vyper compiler exploit's root cause. |
-| Layer 2 | Planned | Rollups, data availability, blobs, bridges. |
+| Layer 2 | Complete | 18 chapters + README. EIP-4844 blob base fee formula independently computed and verified against a range of excess-demand scenarios; rollup decentralization claims (Arbitrum's BOLD, Base's Stage 1 status) checked against current, dated sources rather than launch-era assumptions. |
 | Security | Planned | Defensive-only; historical case studies. |
 | Infrastructure | Planned | Nodes, RPC, indexing, reorg handling. |
 | Governance | Planned | BIPs, EIPs, DAOs, on/off-chain governance. |

@@ -30,6 +30,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Block**: A batch of transactions bundled together, hashed, and linked to the previous block, forming the blockchain. See [Blocks](./chapters/blockchain/blocks.md).
 
+**Blob**: Ethereum's dedicated, temporarily-retained data type for rollup batch data, introduced by EIP-4844 with its own separate fee market. See [Blobs](./chapters/layer2/blobs.md).
+
+**Bridge**: Infrastructure moving value or messages between two separate blockchains, via a verification mechanism ranging from a trusted multisig to a trust-minimized light client. See [Bridges](./chapters/layer2/bridges.md).
+
 ## C
 
 **Cold storage**: Keeping private keys entirely offline, never present on any internet-connected device. See [Cold Storage](./chapters/wallets/cold-storage.md).
@@ -62,6 +66,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Collateralization ratio**: The value of collateral locked against a loan, expressed relative to the amount borrowed; the inverse of loan-to-value. See [Collateral](./chapters/defi/collateral.md).
 
+**Canonical bridge**: A rollup's own official bridge to L1, which inherits security directly from the rollup's fraud-proof or validity-proof mechanism rather than a separate trust assumption. See [Canonical Bridges](./chapters/layer2/canonical-bridges.md).
+
 ## D
 
 **Decimals**: An ERC-20 display convention (not a protocol rule) specifying how many places to divide a raw token balance by for human-readable display; USDC uses 6, most tokens use 18. See [Balances](./chapters/tokens/balances.md).
@@ -75,6 +81,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Double-spending**: The problem of a digital unit of value being spent more than once, since digital data can be copied. The central problem Bitcoin's design solves without a trusted third party. See [Why Digital Cash Was Hard](./chapters/origins/digital-cash.md).
 
 **DEX (Decentralized Exchange)**: A protocol letting users trade tokens directly against a smart contract, with no company operating an order book or holding custody of funds between trades. See [Decentralized Exchanges](./chapters/defi/dex.md).
+
+**Data availability**: The guarantee that a rollup's underlying transaction data is actually published somewhere anyone can retrieve it, distinct from the guarantee that the data describes a correct state transition. See [Data Availability](./chapters/layer2/data-availability.md).
 
 ## E
 
@@ -93,6 +101,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 ## F
 
 **Finality**: The property of a transaction or block becoming permanent and irreversible; deterministic, probabilistic, or economic depending on the consensus mechanism. See [Finality](./chapters/distributed-systems/finality.md).
+
+**Fraud proof**: A submitted proof that a rollup's published state claim is wrong, produced through an interactive process that narrows a dispute down to one cheaply-verifiable execution step. See [Fraud Proofs](./chapters/layer2/fraud-proofs.md).
 
 **Fiat money**: Currency with value derived from legal tender laws and institutional credibility rather than a commodity backing. See [Fiat Money](./chapters/economics/fiat-money.md).
 
@@ -142,6 +152,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **LP token**: A token minted to a liquidity provider representing a proportional claim on a pool's reserves, burned to withdraw. See [Liquidity Pools](./chapters/defi/liquidity-pools.md#lp-tokens-a-receipt-for-a-share-of-the-pool).
 
+**L1 / L2**: Layer 1 (a base blockchain, like Ethereum mainnet) and Layer 2 (a separate system built on top of it, inheriting its security through a specific, verifiable mechanism rather than a fresh trust assumption). See [L1 vs. L2](./chapters/layer2/l1-vs-l2.md).
+
 ## M
 
 **Multisig**: A wallet requiring more than one private key to authorize spending. See [Multisig](./chapters/wallets/multisig.md).
@@ -172,6 +184,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Oracle**: Infrastructure that gets external data, most often asset prices, onto a blockchain in a form a smart contract can read, since a contract cannot query an external API directly. See [Oracles](./chapters/defi/oracles.md).
 
+**Optimistic rollup**: A rollup that accepts a published state claim by default, giving anyone a challenge period to dispute it with a fraud proof before it's treated as final. See [Optimistic Rollups](./chapters/layer2/optimistic-rollups.md).
+
 ## P
 
 **Preimage resistance**: The property that makes a hash function one-way: given an output, no practical method exists to find an input that produces it, other than brute-force search. See [Preimage Resistance](./chapters/cryptography/preimage-resistance.md).
@@ -193,6 +207,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Regression theorem**: Ludwig von Mises's argument that money's value must trace back to a good's prior non-monetary use. Central to a specific, unresolved debate about Bitcoin. See [The Regression Theorem](./chapters/economics/regression-theorem.md).
 
 **RPOW (Reusable Proof of Work)**: Hal Finney's 2004 system letting Hashcash-style proof-of-work tokens be exchanged for transferable, signed tokens. See [Hashcash](./chapters/origins/hashcash.md#from-hashcash-to-rpow).
+
+**Rollup**: An L2 system that executes transactions off L1, then publishes the underlying data and a way to verify correctness (fraud or validity proofs) back to L1. See [Rollups](./chapters/layer2/rollups.md).
 
 ## S
 
@@ -218,6 +234,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Stablecoin**: A token designed to hold a roughly constant value relative to some reference, almost always the US dollar, via fiat-backed reserves or crypto over-collateralization. See [Stablecoins](./chapters/defi/stablecoins.md).
 
+**Sequencer**: The component of a rollup that orders and provisionally executes transactions before they're batched and published to L1; centralized on every major rollup as of 2026. See [Sequencers](./chapters/layer2/sequencers.md).
+
 ## T
 
 **Taproot**: A 2021 soft fork bringing Schnorr signatures to Bitcoin, making complex spending conditions indistinguishable on-chain from simple ones. See [Taproot](./chapters/bitcoin/taproot.md).
@@ -242,6 +260,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Velocity of money**: How many times, on average, a unit of currency is spent within a given period. See [Money Supply](./chapters/economics/money-supply.md).
 
+**Validity proof**: A cryptographic proof, submitted alongside a rollup batch, demonstrating its new state root correctly followed from the previous state and the batch's transactions. See [Validity Proofs](./chapters/layer2/validity-proofs.md).
+
 ## Z
 
 **Zero-knowledge proof**: A method for proving a statement is true without revealing anything beyond that fact. See [Zero-Knowledge Proofs](./chapters/cryptography/zero-knowledge.md).
+
+**ZK rollup**: A rollup that proves its state transitions correct upfront with a validity proof, rather than assuming correctness and relying on a challenge period. See [ZK Rollups](./chapters/layer2/zk-rollups.md).

@@ -114,7 +114,19 @@ A curated list of primary sources, specifications, and books referenced througho
 
 ## Layer 2
 
-- TODO: add as the Layer 2 section is written
+- [EIP-4844: Shard Blob Transactions](https://eips.ethereum.org/EIPS/eip-4844)
+- [EIP-7892: Blob Parameter Only Hardforks](https://eips.ethereum.org/EIPS/eip-7892)
+- [Ethereum: a rollup-centric roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698): Vitalik Buterin, 2020
+- [Arbitrum Nitro whitepaper](https://github.com/OffchainLabs/nitro/blob/master/docs/Nitro-whitepaper.pdf)
+- [Arbitrum documentation](https://docs.arbitrum.io/)
+- [OP Stack specification](https://specs.optimism.io/)
+- [Optimism documentation](https://docs.optimism.io/)
+- [Base documentation](https://docs.base.org/)
+- [L2Beat: rollup stages framework](https://l2beat.com/scaling/stages)
+- [zkSync documentation](https://docs.zksync.io/)
+- [StarkNet documentation](https://docs.starknet.io/)
+- [LayerZero documentation](https://docs.layerzero.network/)
+- [Wormhole documentation](https://docs.wormhole.com/)
 
 ## Security
 
