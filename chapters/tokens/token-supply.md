@@ -19,7 +19,7 @@ Given how directly this maps onto real, documented risk, this book states it pla
 
 ## Common misconceptions
 
-**A token's `totalSupply` being large is not, by itself, evidence of anything about its value or legitimacy**, supply figures across different tokens aren't directly comparable in isolation; a token with a `totalSupply` of 1,000 and one with a `totalSupply` of 1 trillion could represent identical total value, differing only in how many units that value is divided into (closely related to the `decimals` display convention covered in [Balances](./balances.md#why-decimals-exists-and-what-it-actually-changes)).
+**A token's `totalSupply` being large is not, by itself, evidence of anything about its value or legitimacy**, supply figures across different tokens aren't directly comparable in isolation; a token with a `totalSupply` of 1,000 and one with a `totalSupply` of 1 trillion could represent identical total value, differing only in how many units that value is divided into (closely related to the `decimals` display convention covered in [Balances](./balances.md#where-a-balance-actually-lives)).
 
 **Circulating supply and total supply are not necessarily the same number** (many tokens distinguish a `totalSupply` (everything ever minted) from a smaller circulating figure (excluding tokens locked in vesting contracts, held in a team treasury, or otherwise not yet freely tradeable)) a distinction not enforced by the ERC-20 standard itself, and one that requires checking a specific project's own disclosures or on-chain vesting contract logic to verify accurately.
 
@@ -34,4 +34,4 @@ Given how directly this maps onto real, documented risk, this book states it pla
 ·
 [Back to Tokens](./README.md)
 ·
-[Next: RPC Providers →](../web3/rpc-providers.md)
+[Next: Web3 Application Architecture →](../web3/README.md)

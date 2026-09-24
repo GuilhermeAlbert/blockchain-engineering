@@ -30,7 +30,7 @@ Both positions had real, substantive technical merit and real, documented tradeo
 
 ## Further reading
 
-- [Satoshi Nakamoto's early mailing-list comments on block size scaling](https://satoshi.nakamotoinstitute.org/posts/bitcointalk/threads/416/): TODO: verify this specific archive link resolves to the correct, complete thread before publication
+- [Satoshi Nakamoto's archived discussion of raising the block-size limit](https://satoshi.nakamotoinstitute.org/posts/bitcointalk/threads/416/)
 - See also: [SegWit](../bitcoin/segwit.md), [SegWit2x](./segwit2x.md), [Bitcoin Cash](./bitcoin-cash.md)
 
 ---
@@ -39,4 +39,4 @@ Both positions had real, substantive technical merit and real, documented tradeo
 ·
 [Back to Forks and Protocol Upgrades](./README.md)
 ·
-[Next: Addresses →](../wallets/addresses.md)
+[Next: What Is a Wallet? →](../wallets/README.md)

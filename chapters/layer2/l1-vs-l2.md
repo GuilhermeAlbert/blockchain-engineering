@@ -27,7 +27,7 @@ An L2 doesn't just claim to be secure because it's associated with Ethereum. It 
 
 ---
 
-[← Previous: Curve](../defi/curve.md)
+[← Previous: Layer 2](./README.md)
 ·
 [Back to Layer 2](./README.md)
 ·

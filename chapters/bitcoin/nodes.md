@@ -37,7 +37,7 @@ Because the distinction has real, practical consequences for security and resour
 
 ---
 
-[← Previous: Permissionless vs Permissioned Networks](../blockchain/permissionless-vs-permissioned.md)
+[← Previous: How Bitcoin Works](./README.md)
 ·
 [Back to Bitcoin](./README.md)
 ·

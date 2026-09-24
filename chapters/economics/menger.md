@@ -34,7 +34,7 @@ What Menger's framework *does* provide, legitimately, is an analytical lens late
 
 ## Common misconceptions
 
-**Menger's theory does not claim gold is money "by nature" in some absolute sense.** His argument is comparative and historically contingent: gold and silver won out over cattle, salt, and other historically used commodities because of specific properties (durability, divisibility, portability, and so on, see [What Is Money?](./money.md#what-makes-a-good-moneyness")) that made them more saleable in the specific conditions of the societies that adopted them, not because of an inherent metaphysical status.
+**Menger's theory does not claim gold is money "by nature" in some absolute sense.** His argument is comparative and historically contingent: gold and silver won out over cattle, salt, and other historically used commodities because of specific properties (durability, divisibility, portability, and so on, see [What Is Money?](./money.md#what-makes-a-good-moneyness)) that made them more saleable in the specific conditions of the societies that adopted them, not because of an inherent metaphysical status.
 
 **Menger was an economist, not a political ideologue advocating any specific policy for Bitcoin, gold, or anything else.** His 1892 article is a work of positive economic theory (explaining how money arises) rather than a normative argument about what monetary policy governments should pursue, that normative project is more associated with his later successors, particularly Mises and Rothbard, covered in the following chapters.
 

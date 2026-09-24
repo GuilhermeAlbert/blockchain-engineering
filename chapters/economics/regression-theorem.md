@@ -23,7 +23,7 @@ Graf's paper also makes a second, distinct point: Bitcoin did not emerge into a 
 
 This is not a settled question even within Austrian economics. Some Austrian-influenced economists have accepted Graf's resolution as sufficient; others maintain that stretching "non-monetary use" to include purely psychological or speculative motivations empties the regression theorem of most of its explanatory content, since almost any speculative asset could then claim to satisfy it retroactively. Mainstream (non-Austrian) monetary economists mostly do not treat the regression theorem as a binding constraint at all, since it is a specifically Austrian theoretical framework rather than a widely shared requirement across the economics profession, meaning this entire debate is, in a sense, internal to one school of thought rather than a universal test Bitcoin must pass to be considered economically legitimate.
 
-This book presents the debate without declaring a winner, because doing so would require taking a side in an active, unresolved dispute among people working within the same theoretical tradition Mises founded, exactly the kind of disputed interpretation this book's [historical accuracy](../../README.md#writing-principles) commitments require labeling as disputed rather than settled.
+This book presents the debate without declaring a winner, because doing so would require taking a side in an active, unresolved dispute among people working within the same theoretical tradition Mises founded, exactly the kind of disputed interpretation this book's [historical accuracy](../../README.md#sources-and-writing) commitments require labeling as disputed rather than settled.
 
 ## Common misconceptions
 

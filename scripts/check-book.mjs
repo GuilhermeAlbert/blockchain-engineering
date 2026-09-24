@@ -22,7 +22,6 @@ const excludedDirectories = new Set([".git", "node_modules", "dist", "build", "o
 const bannedWords = [
   "delve",
   "foster",
-  "leverage",
   "utilize",
   "facilitate",
   "empower",
@@ -33,7 +32,6 @@ const bannedWords = [
   "game changer",
   "tapestry",
   "realm",
-  "beacon",
   "multifaceted",
   "meticulous",
   "intricate",

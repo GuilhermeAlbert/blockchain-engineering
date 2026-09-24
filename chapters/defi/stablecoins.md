@@ -29,7 +29,7 @@ Even a well-designed, well-collateralized stablecoin isn't perfectly, permanentl
 
 ---
 
-[← Previous: wagmi](../web3/wagmi.md)
+[← Previous: Decentralized Finance](./README.md)
 ·
 [Back to DeFi](./README.md)
 ·

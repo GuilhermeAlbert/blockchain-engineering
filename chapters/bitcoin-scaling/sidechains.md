@@ -34,7 +34,7 @@ A sidechain's own internal consensus can be as decentralized and secure as its d
 
 ## Common misconceptions
 
-**A sidechain is not the same thing as a Layer 2 rollup** in the sense covered in [Layer 2](../layer-2/README.md). A sidechain runs its own, independent consensus mechanism and doesn't inherit its security directly from the base chain the way a rollup's validity or fraud proofs tie its state back to the settlement layer; a sidechain's security is a separate question from Bitcoin's own security, connected only through the peg.
+**A sidechain is not the same thing as a Layer 2 rollup** in the sense covered in [Layer 2](../layer2/README.md). A sidechain runs its own, independent consensus mechanism and doesn't inherit its security directly from the base chain the way a rollup's validity or fraud proofs tie its state back to the settlement layer; a sidechain's security is a separate question from Bitcoin's own security, connected only through the peg.
 
 **Bitcoin locked in a sidechain peg is not literally the same bitcoin actively circulating on Bitcoin's base layer during that time**. It's locked, illiquid on the base layer, and represented by a sidechain-native token until a peg-out completes; conflating the two overstates how directly a sidechain "extends" Bitcoin's own base-layer security.
 

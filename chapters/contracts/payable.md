@@ -42,7 +42,7 @@ Solidity offers three low-level ways to send ether to another address, each with
 
 ## Common misconceptions
 
-**Using `call` to send ether is not automatically less secure than `transfer`**, despite `transfer`'s gas-limiting behavior having originally been framed as a safety feature. Current Solidity guidance generally recommends `call` specifically *combined with* the [checks-effects-interactions pattern](../security/reentrancy.md#the-fix-checks-effects-interactions) as the safer overall approach, rather than relying on an arbitrary, increasingly unreliable gas stipend to prevent reentrancy.
+**Using `call` to send ether is not automatically less secure than `transfer`**, despite `transfer`'s gas-limiting behavior having originally been framed as a safety feature. Current Solidity guidance generally recommends `call` specifically *combined with* the [checks-effects-interactions pattern](../security/reentrancy.md#checks-effects-interactions) as the safer overall approach, rather than relying on an arbitrary, increasingly unreliable gas stipend to prevent reentrancy.
 
 **A contract with no `receive()` or `payable fallback()` is not necessarily immune to ever holding ether**, while it will reject ordinary ether transfers, ether can still reach such a contract through other means (being the target of a `SELFDESTRUCT` from another contract, or being pre-funded before deployment via a `CREATE2` address, see [Contract Creation](../evm/contract-creation.md#common-misconceptions)), a detail that occasionally surprises developers who assumed "no payable function" meant "can never hold a balance."
 

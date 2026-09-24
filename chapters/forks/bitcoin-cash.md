@@ -29,7 +29,7 @@ Bitcoin Cash itself later experienced its own significant internal governance di
 ## Further reading
 
 - [Bitcoin ABC](https://www.bitcoinabc.org/): the primary client implementation
-- [Bitcoin.com's contemporary coverage of the 2017 split](https://www.bitcoin.com/): TODO: link a specific, dated, primary contemporary article rather than the general site before publication
+- [Bitcoin Cash project history](https://bitcoincash.org/): the fork's own account of its goals and development
 
 ---
 

@@ -13,7 +13,7 @@ This connects directly to [Full Nodes](../bitcoin/full-nodes.md) versus [Light C
 ## Practical mitigations
 
 - **Querying multiple independent providers** and cross-checking responses for critical operations, rather than trusting any single provider's answer unconditionally.
-- **Verifying responses against cryptographic proofs where possible**: a Merkle proof against a trusted block header (see [State Trie](../ethereum/state-trie.md#why-a-state-root-specifically)) can be independently checked without needing to trust the party that supplied it, for applications sophisticated enough to implement this verification layer themselves.
+- **Verifying responses against cryptographic proofs where possible**: a Merkle proof against a trusted block header (see [State Trie](../ethereum/blocks.md#why-a-state-root-specifically)) can be independently checked without needing to trust the party that supplied it, for applications sophisticated enough to implement this verification layer themselves.
 - **Running your own node** for anything where the trust cost outweighs the operational burden, the same tradeoff [Full Nodes](../bitcoin/full-nodes.md#tradeoffs) already covered for Bitcoin applies identically here.
 
 ## Choosing a provider in practice
@@ -32,7 +32,7 @@ Beyond raw trust considerations, practical factors most real applications weigh 
 
 ---
 
-[← Previous: Token Supply](../tokens/token-supply.md)
+[← Previous: Web3 Application Architecture](./README.md)
 ·
 [Back to Building Web3 Applications](./README.md)
 ·

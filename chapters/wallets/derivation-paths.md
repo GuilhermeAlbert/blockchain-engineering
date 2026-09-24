@@ -18,7 +18,7 @@ m / 84' / 0' / 0' / 0 / 5
 
 ## Why different wallets sometimes show different addresses for "the same" seed
 
-This is the single most common source of user confusion this chapter exists to resolve: restoring an identical seed phrase into two different wallets can produce two different sets of default addresses if the wallets default to different purpose-field conventions (see [BIP-44](./bip-44.md#purpose-field-variants-for-different-bitcoin-script-types")) (one defaulting to `m/44'/...` (legacy), another to `m/84'/...` (native SegWit). **The funds are not lost or missing** in this scenario) they exist at whatever path they were originally sent to; the new wallet is simply not checking that specific path by default. Most modern wallets let you manually specify a custom derivation path, or automatically scan several common paths during recovery, precisely to handle this.
+This is the single most common source of user confusion this chapter exists to resolve: restoring an identical seed phrase into two different wallets can produce two different sets of default addresses if the wallets default to different purpose-field conventions (see [BIP-44](./bip-44.md#purpose-field-variants-for-different-bitcoin-script-types)) (one defaulting to `m/44'/...` (legacy), another to `m/84'/...` (native SegWit). **The funds are not lost or missing** in this scenario) they exist at whatever path they were originally sent to; the new wallet is simply not checking that specific path by default. Most modern wallets let you manually specify a custom derivation path, or automatically scan several common paths during recovery, precisely to handle this.
 
 ## Example: deriving the same path across several common conventions
 

@@ -17,7 +17,7 @@ An Ethereum transaction directly debits a sender's account balance and credits a
 Ethereum has used more than one transaction format over its history, distinguished by a **type byte**:
 
 - **Type 0 (legacy)**: the original format, using a single `gasPrice` field, the sender specifies exactly how much they're willing to pay per unit of gas, and (before EIP-1559) the entire amount goes to the miner/validator who includes the transaction.
-- **Type 2 (EIP-1559)**: introduced in the **London upgrade** (August 5, 2021) and the default format since, replacing the single `gasPrice` with two separate fields (`maxFeePerGas` and `maxPriorityFeePerGas`) feeding into the base-fee-and-tip mechanism covered fully in [Gas Price and Fees](./fees.md#eip-1559-the-base-fee-and-tip-model).
+- **Type 2 (EIP-1559)**: introduced in the **London upgrade** (August 5, 2021) and the default format since, replacing the single `gasPrice` with two separate fields (`maxFeePerGas` and `maxPriorityFeePerGas`) feeding into the base-fee-and-tip mechanism covered fully in [Gas Price and Fees](./fees.md#eip-1559-base-fee-plus-tip).
 
 ## Example: constructing and inspecting a transaction's fields with viem
 

@@ -76,7 +76,7 @@ Verified: this compiles cleanly with solc 0.8.26 (structurally, it's the exact `
 
 ## Why deposit and withdraw are symmetric and always honor 1:1
 
-`deposit` credits the caller's WETH balance with exactly the ether sent (`msg.value`); `withdraw` burns WETH and sends back exactly that much ether. Because every unit of WETH in existence corresponds to ether actually held by this specific contract (there is no minting mechanism independent of an actual, matching ether deposit), WETH maintains a hard, contract-enforced 1:1 backing, a meaningfully stronger, more directly verifiable guarantee than WBTC's custodian-based peg from [Wrapped Assets](./wrapped-assets.md#wbtc-bitcoin-wrapped-for-ethereum"), since anyone can independently verify the backing simply by checking this contract's own ether balance against its total WETH supply, with no custodian's honesty to trust at all.
+`deposit` credits the caller's WETH balance with exactly the ether sent (`msg.value`); `withdraw` burns WETH and sends back exactly that much ether. Because every unit of WETH in existence corresponds to ether actually held by this specific contract (there is no minting mechanism independent of an actual, matching ether deposit), WETH maintains a hard, contract-enforced 1:1 backing, a meaningfully stronger, more directly verifiable guarantee than WBTC's custodian-based peg from [Wrapped Assets](./wrapped-assets.md#wbtc-bitcoin-wrapped-for-ethereum), since anyone can independently verify the backing simply by checking this contract's own ether balance against its total WETH supply, with no custodian's honesty to trust at all.
 
 ## Common misconceptions
 

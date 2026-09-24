@@ -20,7 +20,7 @@ This is the more important, and more reassuring, half of the picture, and it's w
 
 ## Historical incidents
 
-Bitcoin's own mainnet has not, to date, experienced a confirmed, sustained majority attack of the kind described above at meaningful scale, its total hash rate and the capital cost of acquiring a genuine majority share have grown large enough to make such an attack extraordinarily expensive relative to the plausible gain from double-spending. Several smaller proof-of-work cryptocurrencies with much lower total hash rate (a lower barrier for an attacker to rent or acquire majority hash power against) have experienced real, documented 51% attacks and resulting double-spends, including Bitcoin Gold (2018) and Ethereum Classic (multiple incidents, including 2019 and 2020), illustrating that this is a real, demonstrated risk for smaller networks even though it has not materialized against Bitcoin's own, much larger, mainnet. TODO: verify the specific financial impact figures reported for these incidents against primary sources (exchange post-mortems or blockchain analysis reports) before citing a specific dollar amount.
+Bitcoin's own mainnet has not experienced a confirmed, sustained majority attack of the kind described above at meaningful scale. Its hash rate and the capital required to acquire a genuine majority make such an attack unusually expensive. Smaller proof-of-work networks have suffered documented majority attacks and double-spends, including Bitcoin Gold in 2018 and Ethereum Classic in 2019 and 2020. Those incidents establish the technical risk without requiring uncertain estimates of their dollar impact.
 
 ## Why the threshold is called "51%" rather than exactly 50%
 

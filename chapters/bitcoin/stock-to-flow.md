@@ -30,7 +30,7 @@ Stock-to-flow remains a real, historically-grounded *concept* in commodity econo
 
 ## Further reading
 
-- PlanB, "Modeling Bitcoin's Value with Scarcity," Medium, March 2019 (the original model), TODO: verify the exact current URL before publication, as the author's Medium handle/URL structure may have changed since 2019
+- [PlanB, "Modeling Bitcoin's Value with Scarcity"](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25), Medium, March 2019 (the original model)
 - [Nic Carter, "The Bitcoin Stock-to-Flow Model Is Fundamentally Flawed"](https://www.coindesk.com/markets/2020/06/30/why-the-stock-to-flow-bitcoin-valuation-model-is-wrong), CoinDesk, 2020
 
 ---

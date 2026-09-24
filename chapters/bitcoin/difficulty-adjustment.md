@@ -55,7 +55,7 @@ The first scenario (3 weeks instead of 2) produces a raw ratio of 1.5, within th
 
 ## Why fixed 2016-block intervals, not continuous adjustment
 
-Adjusting only periodically, rather than after every block, is a deliberate stability choice: continuous, per-block adjustment based on very recent, noisy timing data (recall that individual block intervals vary considerably around the average purely by chance, per [Block Time](../blockchain/block-time.md#under-the-hood-how-the-target-interval-is-actually-maintained)) would risk the target chasing short-term statistical noise rather than genuine, sustained shifts in network hash power. A two-week averaging window smooths out this noise considerably while still responding to real, sustained changes within a reasonable time frame.
+Adjusting only periodically, rather than after every block, is a deliberate stability choice: continuous, per-block adjustment based on very recent, noisy timing data (recall that individual block intervals vary considerably around the average purely by chance, per [Block Time](../blockchain/block-time.md#how-the-target-interval-is-actually-maintained)) would risk the target chasing short-term statistical noise rather than genuine, sustained shifts in network hash power. A two-week averaging window smooths out this noise considerably while still responding to real, sustained changes within a reasonable time frame.
 
 ## What happens during a sudden hash power drop
 

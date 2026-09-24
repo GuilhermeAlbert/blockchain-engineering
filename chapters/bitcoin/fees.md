@@ -43,7 +43,7 @@ console.log("Estimated vsize:", txVsize, "vbytes");
 console.log("Estimated fee:", txVsize * feeRateSatsPerVbyte, "satoshis");
 ```
 
-TODO: replace the illustrative `feeRateSatsPerVbyte` value with a note pointing readers to a live fee estimation API (such as a public mempool/fee-estimation endpoint) rather than a hardcoded figure, since real fee rates fluctuate constantly with network demand.
+The `feeRateSatsPerVbyte` value is illustrative, not a recommendation. A wallet connected to Bitcoin Core can call [`estimatesmartfee`](https://developer.bitcoin.org/reference/rpc/estimatesmartfee.html) with a target number of blocks, then decide how much urgency and estimation uncertainty the user accepts.
 
 ## Replace-By-Fee (RBF)
 

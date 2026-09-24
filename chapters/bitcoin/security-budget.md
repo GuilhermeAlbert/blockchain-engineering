@@ -8,7 +8,7 @@ As covered in [Block Rewards](./block-rewards.md#subsidy-versus-total-reward) an
 
 ## Why this isn't automatically guaranteed
 
-This is where the concern becomes genuinely open rather than a settled technical question: fee revenue depends on sustained, high demand for scarce block space (see [Fee Market](./fee-market.md)), which in turn depends on continued, growing usage of Bitcoin's base layer for transactions people are willing to pay meaningfully for. If a large share of everyday Bitcoin-denominated activity moves to [Layer 2](../lightning/README.md) systems like the Lightning Network specifically to *avoid* base-layer fees (a reasonable, expected outcome of Layer 2 systems succeeding at their stated purpose. See [Why Layer 2 Exists](../layer-2/README.md)), base-layer fee revenue could, in principle, grow more slowly than needed to fully offset the shrinking subsidy, even as overall Bitcoin adoption and usage (broadly construed, across all layers) continues growing.
+This is where the concern becomes genuinely open rather than a settled technical question: fee revenue depends on sustained, high demand for scarce block space (see [Fee Market](./fee-market.md)), which in turn depends on continued, growing usage of Bitcoin's base layer for transactions people are willing to pay meaningfully for. If a large share of everyday Bitcoin-denominated activity moves to [Layer 2](../lightning/README.md) systems like the Lightning Network specifically to *avoid* base-layer fees (a reasonable, expected outcome of Layer 2 systems succeeding at their stated purpose. See [Why Layer 2 Exists](../layer2/README.md)), base-layer fee revenue could, in principle, grow more slowly than needed to fully offset the shrinking subsidy, even as overall Bitcoin adoption and usage (broadly construed, across all layers) continues growing.
 
 ## Arguments that this will work out
 
@@ -42,4 +42,4 @@ This is a genuinely open, actively studied question within Bitcoin's technical a
 ·
 [Back to Bitcoin](./README.md)
 ·
-[Next: Temporary Chain Forks →](../forks/temporary-forks.md)
+[Next: What Is a Fork? →](../forks/README.md)

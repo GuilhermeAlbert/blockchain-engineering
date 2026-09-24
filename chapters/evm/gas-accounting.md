@@ -64,4 +64,4 @@ Every gas cost mentioned throughout this section (21,000 for base transaction co
 ·
 [Back to The EVM](./README.md)
 ·
-[Next: Solidity →](../contracts/solidity.md)
+[Next: Smart Contracts →](../contracts/README.md)

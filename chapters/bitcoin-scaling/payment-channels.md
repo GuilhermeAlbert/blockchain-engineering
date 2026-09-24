@@ -28,7 +28,7 @@ A naive version of this scheme has an obvious problem: what stops a dishonest pa
 
 ## The general pattern this establishes
 
-Payment channels are the foundational building block for [Layer 2](../layer-2/README.md) scaling generally, not just Bitcoin's specific Lightning Network, the same core idea (commit on-chain once, transact off-chain many times, settle on-chain once) reappears, in various forms, across Ethereum's own Layer 2 landscape (see [Why Layer 2 Exists](../layer-2/README.md)), even though the specific technical implementations differ substantially between a Bitcoin-Script-based payment channel and an Ethereum rollup.
+Payment channels are the foundational building block for [Layer 2](../layer2/README.md) scaling generally, not just Bitcoin's specific Lightning Network, the same core idea (commit on-chain once, transact off-chain many times, settle on-chain once) reappears, in various forms, across Ethereum's own Layer 2 landscape (see [Why Layer 2 Exists](../layer2/README.md)), even though the specific technical implementations differ substantially between a Bitcoin-Script-based payment channel and an Ethereum rollup.
 
 ## Tradeoffs
 

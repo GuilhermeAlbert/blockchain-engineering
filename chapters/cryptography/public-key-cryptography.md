@@ -39,7 +39,7 @@ Public-key cryptography solves the key-distribution problem symmetric cryptograp
 ## Further reading
 
 - [New Directions in Cryptography](https://ee.stanford.edu/~hellman/publications/24.pdf): Whitfield Diffie and Martin Hellman, 1976
-- GCHQ's declassified account of Ellis, Cocks, and Williamson's earlier, independent, classified work on public-key cryptography, TODO: link the specific official GCHQ or CESG historical release once verified
+- [James Ellis](https://www.gchq.gov.uk/person/james-ellis): GCHQ's account of Ellis, Clifford Cocks, and Malcolm Williamson's classified work on public-key cryptography
 
 ---
 

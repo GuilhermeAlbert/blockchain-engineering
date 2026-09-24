@@ -96,4 +96,4 @@ Choosing how many confirmations to wait for is a direct, quantifiable risk decis
 ·
 [Back to Distributed Systems](./README.md)
 ·
-[Next: Blocks →](../blockchain/blocks.md)
+[Next: What Is a Blockchain? →](../blockchain/README.md)

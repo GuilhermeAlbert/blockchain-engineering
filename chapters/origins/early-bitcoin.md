@@ -19,7 +19,7 @@ On **January 12, 2009**, Satoshi sent Finney **10 BTC** in the transaction recor
 
 ## Early mining
 
-For roughly the first year, Bitcoin mining ran entirely on ordinary CPUs, using the mining code built directly into the reference client. Because so few people were running the software, difficulty (see [Mining Difficulty](../bitcoin/difficulty.md)) stayed at or near its protocol-defined minimum for months, and Satoshi is understood, from blockchain analysis of mining patterns during this period, to have mined a substantial share of the earliest blocks alone before other participants joined in meaningful numbers. Independent researcher Sergio Demian Lerner has published on-chain analysis identifying a distinctive pattern (sometimes called the "Patoshi pattern") in early block nonces and timestamps, consistent with a single miner using a specific, methodical approach to block creation during Bitcoin's first year. TODO: cite Lerner's published analysis directly rather than restating its conclusions secondhand.
+For roughly the first year, Bitcoin mining ran on ordinary CPUs using code built into the reference client. With few participants, difficulty (see [Mining Difficulty](../bitcoin/difficulty.md)) stayed at or near its protocol minimum for months. Researcher Sergio Demian Lerner identified a recurring pattern in early block nonces and timestamps, often called the "Patoshi pattern," that is consistent with one miner producing a large share of early blocks. The pattern is an inference from public chain data, not proof of the miner's identity. See Lerner's [original analysis](https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/).
 
 ## Early development
 
@@ -63,4 +63,4 @@ Two structural consequences of this early period persist in how Bitcoin works no
 ·
 [Back to Origins](./README.md)
 ·
-[Next: What Is Money? →](../economics/money.md)
+[Next: Money and Economics →](../economics/README.md)

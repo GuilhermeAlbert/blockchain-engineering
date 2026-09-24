@@ -12,7 +12,7 @@ Not every country has full practical monetary sovereignty even with its own nomi
 
 Bitcoin adoption by individuals within a country does not remove that country's monetary sovereignty at the government level, the government retains its own currency, its central bank, and its policy tools regardless of how many residents also hold bitcoin. What it can do, at a large enough scale of individual adoption, is weaken the *effectiveness* of that sovereignty: if a large share of an economy's savings, or even everyday transactions, moves into a currency the central bank does not control, the central bank's tools (interest rate changes, money supply management) have a smaller and less predictable effect on the economy, since they can no longer influence the portion of economic activity denominated in the alternative currency.
 
-This dynamic is already documented, though at a currently small scale relative to whole economies, in countries that have experienced severe currency instability, most notably Venezuela and Argentina, where cryptocurrency adoption (Bitcoin, stablecoins, and others) has grown as part of a broader pattern of residents seeking alternatives to a rapidly depreciating local currency, alongside longer-established dollarization. El Salvador's 2021 decision to make Bitcoin legal tender alongside the US dollar (itself already El Salvador's primary currency since 2001, following its own earlier loss of full monetary sovereignty through dollarization) is the most direct, government-level case study of a state formally incorporating Bitcoin into its monetary system, and its outcomes (adoption levels, effects on remittances, fiscal and reserve management, and IMF engagement) have been studied and reported on by multiple institutions with differing assessments. TODO: add a specific, dated source analyzing El Salvador's Bitcoin legal tender policy outcomes before making specific quantitative claims about its results.
+This dynamic is visible, at a small scale relative to whole economies, in countries that have experienced severe currency instability. Residents may use Bitcoin, stablecoins, or foreign currency alongside the local unit. El Salvador's 2021 decision to make Bitcoin legal tender alongside the US dollar is the clearest state-level experiment. Its effects on adoption, remittances, public finances, and relations with the IMF must be evaluated with dated evidence, not treated as proof that every country would get the same result.
 
 ## The core tradeoff, stated plainly
 
@@ -35,4 +35,4 @@ Individuals in countries with weak monetary institutions and a history of curren
 ·
 [Back to Economics](./README.md)
 ·
-[Next: Hash Functions →](../cryptography/hashes.md)
+[Next: What Cryptography Does →](../cryptography/README.md)

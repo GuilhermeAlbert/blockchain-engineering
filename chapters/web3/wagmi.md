@@ -51,4 +51,4 @@ This mirrors a common, sensible pattern in software architecture generally: a lo
 ·
 [Back to Building Web3 Applications](./README.md)
 ·
-[Next: Stablecoins →](../defi/stablecoins.md)
+[Next: Decentralized Finance →](../defi/README.md)

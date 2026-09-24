@@ -53,4 +53,4 @@ Requiring **two consecutive** justified checkpoints, rather than finalizing imme
 ·
 [Back to Ethereum](./README.md)
 ·
-[Next: Bytecode →](../evm/bytecode.md)
+[Next: The EVM →](../evm/README.md)

@@ -4,7 +4,7 @@ Proof of stake replaces Bitcoin's [proof-of-work](../bitcoin/proof-of-work.md) S
 
 ## The core substitution
 
-Recall from [Sybil Attacks](../distributed-systems/sybil-attacks.md#bitcoins-specific-defense") that Bitcoin ties influence over consensus to a resource that's expensive to acquire in large quantities, computational hash power. Proof of stake ties that same influence to a different expensive-to-acquire resource: **ether locked as a stake**, called a validator's **deposit**. Both mechanisms solve the identical underlying problem (preventing cheap, unlimited fake-identity creation from gaining disproportionate influence), through different specific economic mechanisms with different specific tradeoffs, covered directly in [Finality](./finality.md#deterministic-versus-probabilistic-guarantees-compared) and this book's earlier general treatment in [Finality](../distributed-systems/finality.md#economic-finality).
+Recall from [Sybil Attacks](../distributed-systems/sybil-attacks.md#bitcoins-specific-defense) that Bitcoin ties influence over consensus to a resource that's expensive to acquire in large quantities, computational hash power. Proof of stake ties that same influence to a different expensive-to-acquire resource: **ether locked as a stake**, called a validator's **deposit**. Both mechanisms solve the identical underlying problem (preventing cheap, unlimited fake-identity creation from gaining disproportionate influence), through different specific economic mechanisms with different specific tradeoffs, covered directly in [Finality](./finality.md#deterministic-versus-probabilistic-guarantees-compared) and this book's earlier general treatment in [Finality](../distributed-systems/finality.md#economic-finality).
 
 ## Becoming a validator
 
@@ -27,7 +27,7 @@ Not every slot necessarily produces a block, if the assigned validator is offlin
 
 ## Attestations: how validators vote
 
-Every active validator, once per epoch, submits an **attestation**, a signed vote specifying which block they consider the current chain head, and which checkpoint they consider justified for finality purposes (see [Finality](./finality.md#how-justification-and-finalization-actually-work)). These attestations, aggregated across the validator set, are what Ethereum's fork-choice rule (**LMD-GHOST**, a variant of the general [fork choice](../blockchain/fork-choice.md) concept, weighted by attesting validators' stake rather than by proof-of-work) uses to determine the canonical chain, directly analogous in *purpose* to Bitcoin's cumulative-proof-of-work rule, but computed from validator votes rather than accumulated computational work.
+Every active validator, once per epoch, submits an **attestation**, a signed vote specifying which block they consider the current chain head, and which checkpoint they consider justified for finality purposes (see [Finality](./finality.md#checkpoints-justification-and-finalization)). These attestations, aggregated across the validator set, are what Ethereum's fork-choice rule (**LMD-GHOST**, a variant of the general [fork choice](../blockchain/fork-choice.md) concept, weighted by attesting validators' stake rather than by proof-of-work) uses to determine the canonical chain, directly analogous in *purpose* to Bitcoin's cumulative-proof-of-work rule, but computed from validator votes rather than accumulated computational work.
 
 ## Why this requires knowing the validator set, unlike Bitcoin
 

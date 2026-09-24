@@ -51,7 +51,7 @@ This mechanism has an important, unavoidable requirement worth stating clearly: 
 
 ---
 
-[← Previous: Bitcoin Rollup Proposals](../bitcoin-scaling/rollups.md)
+[← Previous: Lightning Network](./README.md)
 ·
 [Back to Lightning Network](./README.md)
 ·

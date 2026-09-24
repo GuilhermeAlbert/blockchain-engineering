@@ -8,7 +8,7 @@ Deploying a contract means broadcasting a contract-creation transaction (see [Co
 forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter
 ```
 
-This compiles `Counter.sol`, constructs a contract-creation transaction with the compiled bytecode as its `data` field (recall from [Contract Creation](../evm/contract-creation.md#how-a-contract-account-comes-into-existence) that this data is *init code*, executed once, whose return value becomes the deployed runtime code), signs it with the provided key, and broadcasts it via the specified RPC endpoint (see [RPC Providers](../web3/rpc-providers.md)). For contracts with constructor arguments, Foundry's `--constructor-args` flag ABI-encodes and appends them to the deployment transaction's data, exactly the encoding scheme covered in [Contract ABI](./abi.md#encoding-arguments).
+This compiles `Counter.sol`, constructs a contract-creation transaction with the compiled bytecode as its `data` field (recall from [Contract Creation](../evm/contract-creation.md#create-address-determined-by-sender-and-nonce) that this data is *init code*, executed once, whose return value becomes the deployed runtime code), signs it with the provided key, and broadcasts it via the specified RPC endpoint (see [RPC Providers](../web3/rpc-providers.md)). For contracts with constructor arguments, Foundry's `--constructor-args` flag ABI-encodes and appends them to the deployment transaction's data, exactly the encoding scheme covered in [Contract ABI](./abi.md#encoding-arguments).
 
 ## Foundry scripts: deployment as code
 
@@ -20,7 +20,7 @@ Once deployed, a contract's on-chain presence is just bytecode. Nobody observing
 
 ## Why deployment addresses matter for CREATE vs. CREATE2
 
-Recall [Contract Creation](../evm/contract-creation.md#create-address-determined-by-sender-and-nonce): an ordinary deployment's address depends on the deployer's nonce at deployment time, meaning redeploying (after a failed transaction, or from a different environment) can produce a different address than expected if other transactions from the same account happened in between. Projects that need address predictability across multiple chains or deployment attempts (a common requirement for [Layer 2](../layer-2/README.md) infrastructure and some DeFi protocols) generally use `CREATE2` with a fixed, chosen salt specifically to sidestep this nonce-dependency entirely.
+Recall [Contract Creation](../evm/contract-creation.md#create-address-determined-by-sender-and-nonce): an ordinary deployment's address depends on the deployer's nonce at deployment time, meaning redeploying (after a failed transaction, or from a different environment) can produce a different address than expected if other transactions from the same account happened in between. Projects that need address predictability across multiple chains or deployment attempts (a common requirement for [Layer 2](../layer2/README.md) infrastructure and some DeFi protocols) generally use `CREATE2` with a fixed, chosen salt specifically to sidestep this nonce-dependency entirely.
 
 ## Testnets and local nodes
 
@@ -43,4 +43,4 @@ Before deploying to a real network with real value at stake, deployment is typic
 ·
 [Back to Smart Contracts](./README.md)
 ·
-[Next: ERC-20 →](../tokens/erc-20.md)
+[Next: What Is a Token? →](../tokens/README.md)

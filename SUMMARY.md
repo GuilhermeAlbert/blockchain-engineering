@@ -8,6 +8,7 @@ For a shorter overview and suggested reading paths, see [README.md](./README.md)
 
 ## Origins
 
+- [Origins of Digital Cash](./chapters/origins/README.md)
 - [Why Digital Cash Was Hard](./chapters/origins/digital-cash.md)
 - [The Cypherpunk Movement](./chapters/origins/cypherpunks.md)
 - [David Chaum and DigiCash](./chapters/origins/digicash.md)
@@ -21,6 +22,7 @@ For a shorter overview and suggested reading paths, see [README.md](./README.md)
 
 ## Money and Economics
 
+- [Money and Economics](./chapters/economics/README.md)
 - [What Is Money?](./chapters/economics/money.md)
 - [Functions of Money](./chapters/economics/functions-of-money.md)
 - [Commodity Money](./chapters/economics/commodity-money.md)
@@ -63,11 +65,11 @@ For a shorter overview and suggested reading paths, see [README.md](./README.md)
 - [Preimage Resistance](./chapters/cryptography/preimage-resistance.md)
 - [Public-Key Cryptography](./chapters/cryptography/public-key-cryptography.md)
 - [Private and Public Keys](./chapters/cryptography/keys.md)
+- [Elliptic Curves](./chapters/cryptography/elliptic-curves.md)
+- [secp256k1](./chapters/cryptography/secp256k1.md)
 - [Digital Signatures](./chapters/cryptography/digital-signatures.md)
 - [ECDSA](./chapters/cryptography/ecdsa.md)
 - [Schnorr Signatures](./chapters/cryptography/schnorr.md)
-- [Elliptic Curves](./chapters/cryptography/elliptic-curves.md)
-- [secp256k1](./chapters/cryptography/secp256k1.md)
 - [Merkle Trees](./chapters/cryptography/merkle-trees.md)
 - [Merkle Proofs](./chapters/cryptography/merkle-proofs.md)
 - [Commitments](./chapters/cryptography/commitments.md)

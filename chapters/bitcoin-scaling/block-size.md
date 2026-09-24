@@ -22,7 +22,7 @@ The rest of this section covers two structurally different responses to the same
 
 **The block size limit is not literally "1 MB" anymore** and hasn't been the single governing constraint since SegWit's weight-based accounting replaced a pure byte-size limit. See [SegWit](../bitcoin/segwit.md#weight-and-the-effective-capacity-increase) for exactly how that transition worked technically.
 
-**A low base-layer throughput ceiling does not mean Bitcoin as a whole is limited to that transaction rate.** It specifically limits *base-layer, on-chain* transaction volume. Systems like the Lightning Network are designed precisely to let far more actual payments occur than the base layer could ever directly process, settling only periodically on-chain (see [Why Layer 2 Exists](../layer-2/README.md) for the general pattern this follows, shared with Ethereum's own Layer 2 ecosystem).
+**A low base-layer throughput ceiling does not mean Bitcoin as a whole is limited to that transaction rate.** It specifically limits *base-layer, on-chain* transaction volume. Systems like the Lightning Network are designed precisely to let far more actual payments occur than the base layer could ever directly process, settling only periodically on-chain (see [Why Layer 2 Exists](../layer2/README.md) for the general pattern this follows, shared with Ethereum's own Layer 2 ecosystem).
 
 ## Further reading
 
@@ -30,7 +30,7 @@ The rest of this section covers two structurally different responses to the same
 
 ---
 
-[← Previous: Key Backup and Recovery](../wallets/recovery.md)
+[← Previous: The Scaling Problem](./README.md)
 ·
 [Back to Bitcoin Scaling](./README.md)
 ·

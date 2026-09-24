@@ -9,7 +9,7 @@ Murray Rothbard (1926–1995) was an American economist and a student of Ludwig 
 Rothbard's central claim is that each of these steps represents government expanding its ability to control and, in his account, exploit the monetary system for its own benefit, primarily by enabling debasement and inflation as a hidden form of taxation, transferring real wealth from currency holders to the government and favored recipients of newly created money, a mechanism closely related to [The Cantillon Effect](./cantillon-effect.md):
 
 > "Inflation is thus like a giant, and invisible, tax on the public, an artful and subtle device whereby the public's real resources are unknowingly siphoned off to pay for the government's extra spending."
-> Murray Rothbard, *What Has Government Done to Our Money?*, 1963 (paraphrased argument; TODO: verify exact wording against a specific edition before quoting directly)
+> Paraphrase of Murray Rothbard's argument in *What Has Government Done to Our Money?* (1963), not a direct quotation.
 
 Rothbard's policy conclusion is a return to a strict commodity-money standard, and ultimately his preferred proposal, developed further in his companion essay *The Case for a 100 Percent Gold Dollar*, is a currency fully and permanently redeemable in gold, with banks required to hold 100% reserves rather than practicing fractional reserve lending, a considerably stricter standard than the historical gold standards discussed in [Commodity Money](./commodity-money.md), which generally operated with fractional reserves.
 

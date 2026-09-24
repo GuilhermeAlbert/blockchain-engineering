@@ -44,7 +44,7 @@ This book's Solidity examples are written for [Foundry](https://getfoundry.sh/),
 
 ---
 
-[← Previous: Gas Accounting](../evm/gas-accounting.md)
+[← Previous: Smart Contracts](./README.md)
 ·
 [Back to Smart Contracts](./README.md)
 ·

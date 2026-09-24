@@ -38,7 +38,7 @@ An application's transaction-tracking logic needs to handle both cases explicitl
 
 ## Speeding up or canceling a stuck transaction
 
-Because Ethereum transactions include a nonce (see [EOAs](../ethereum/eoa.md#the-nonce-and-why-it-matters-more-than-it-might-first-appear")), a stuck transaction can be replaced by submitting a **new** transaction with the identical nonce but a higher gas price, either the same intended action (a "speed up") or a no-op transaction to self (a "cancel"), exactly the same nonce-based replacement principle behind Bitcoin's [Replace-By-Fee](../bitcoin/mempool.md#replace-by-fee), applied to Ethereum's own mempool and fee mechanics instead.
+Because Ethereum transactions include a nonce (see [EOAs](../ethereum/eoa.md#the-nonce-and-why-it-matters-more-than-it-might-first-appear)), a stuck transaction can be replaced by submitting a **new** transaction with the identical nonce but a higher gas price, either the same intended action (a "speed up") or a no-op transaction to self (a "cancel"), exactly the same nonce-based replacement principle behind Bitcoin's [Replace-By-Fee](../bitcoin/mempool.md#replace-by-fee), applied to Ethereum's own mempool and fee mechanics instead.
 
 ## Common misconceptions
 

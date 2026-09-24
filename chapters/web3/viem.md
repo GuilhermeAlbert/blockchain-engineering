@@ -4,7 +4,7 @@ Every code example throughout this book's Ethereum, EVM, Tokens, and Web3 chapte
 
 ## What viem actually provides, on top of raw JSON-RPC
 
-Recall [JSON-RPC](../ethereum/json-rpc.md#why-higher-level-libraries-exist-on-top-of-this"): raw JSON-RPC calls require manually encoding function calls, manually converting hex values, and manually handling dozens of method-specific parameter formats. `viem` wraps this in a type-safe, ergonomic API (`readContract`, `writeContract`, `getLogs`, and the other functions used throughout this book's examples) while remaining a thin, transparent layer: every `viem` call in this book's verified examples ultimately compiles down to exactly the raw JSON-RPC calls demonstrated directly in [JSON-RPC](../ethereum/json-rpc.md#example-a-raw-json-rpc-call-no-library).
+Recall [JSON-RPC](../ethereum/json-rpc.md#why-higher-level-libraries-exist-on-top-of-this): raw JSON-RPC calls require manually encoding function calls, manually converting hex values, and manually handling dozens of method-specific parameter formats. `viem` wraps this in a type-safe, ergonomic API (`readContract`, `writeContract`, `getLogs`, and the other functions used throughout this book's examples) while remaining a thin, transparent layer: every `viem` call in this book's verified examples ultimately compiles down to exactly the raw JSON-RPC calls demonstrated directly in [JSON-RPC](../ethereum/json-rpc.md#example-a-raw-json-rpc-call-no-library).
 
 ## Public clients versus wallet clients
 

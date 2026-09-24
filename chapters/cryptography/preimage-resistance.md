@@ -58,7 +58,7 @@ Running this repeatedly will show the attempt count varies but clusters around a
 
 ## Tradeoffs
 
-Preimage resistance is exactly what makes proof-of-work function as a fair, unforgeable measure of effort: because there's no shortcut, the only way to find a valid block hash is to actually spend the computational work, which means the resulting proof genuinely reflects real expended effort rather than being fakeable by anyone with mathematical cleverness instead of computing power. The cost of this is the same cost discussed in [Hashcash](../origins/hashcash.md#tradeoffs) and [Proof of Work](../bitcoin/proof-of-work.md#tradeoffs): the search is, by design, wasteful in the sense that failed attempts produce no useful output beyond ruling out one candidate.
+Preimage resistance is exactly what makes proof-of-work function as a fair, unforgeable measure of effort: because there's no shortcut, the only way to find a valid block hash is to actually spend the computational work, which means the resulting proof genuinely reflects real expended effort rather than being fakeable by anyone with mathematical cleverness instead of computing power. The cost of this is the same cost discussed in [Hashcash](../origins/hashcash.md#tradeoffs) and [Proof of Work](../bitcoin/proof-of-work.md#why-proof-of-work-specifically-secures-the-chain): the search is, by design, wasteful in the sense that failed attempts produce no useful output beyond ruling out one candidate.
 
 ## Common misconceptions
 

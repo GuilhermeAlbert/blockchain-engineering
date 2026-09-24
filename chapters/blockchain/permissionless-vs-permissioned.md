@@ -42,4 +42,4 @@ A significant amount of blockchain-adjacent marketing over the 2010s and 2020s d
 ·
 [Back to Blockchain Fundamentals](./README.md)
 ·
-[Next: Bitcoin Nodes →](../bitcoin/nodes.md)
+[Next: How Bitcoin Works →](../bitcoin/README.md)

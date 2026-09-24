@@ -24,4 +24,4 @@ Before the chapters below, one piece of everyday vocabulary worth defining up fr
 
 ## Next
 
-This completes the book's Bitcoin-focused chapters. Continue to [Ethereum](../ethereum/README.md), a different blockchain, built on a different transaction model (accounts, not UTXOs), with its own approach to scaling covered in depth in [Layer 2](../layer-2/README.md) later in this book.
+This completes the book's Bitcoin-focused chapters. Continue to [Ethereum](../ethereum/README.md), a different blockchain, built on a different transaction model (accounts, not UTXOs), with its own approach to scaling covered in depth in [Layer 2](../layer2/README.md) later in this book.

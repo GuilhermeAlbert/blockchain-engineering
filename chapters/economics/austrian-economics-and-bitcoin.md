@@ -9,7 +9,7 @@ The connection is not accidental or purely rhetorical. Several early, influentia
 > "The root problem with conventional currency is all the trust that's required to make it work. The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust."
 > Satoshi Nakamoto, [P2P Foundation forum post](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source), February 11, 2009
 
-This is a documented, verifiable fact: Satoshi's own writing expresses concerns structurally similar to Austrian monetary critiques. What is not documented is any specific citation by Satoshi of Menger, Mises, Hayek, or Rothbard by name, or confirmation that Satoshi had read their work directly rather than absorbing similar ideas from the broader cypherpunk and libertarian-adjacent discourse of the era, which drew on many sources beyond the Austrian school specifically. TODO: verify whether any of Satoshi's known private correspondence references Austrian economists by name before stating this more strongly either way.
+Satoshi's own writing expresses concerns structurally similar to Austrian monetary critiques. What is not documented in the public record is a citation by Satoshi to Menger, Mises, Hayek, or Rothbard, or confirmation that Satoshi had read them directly. The overlap supports a comparison of ideas, not a claim of intellectual lineage.
 
 ## Claim by claim
 

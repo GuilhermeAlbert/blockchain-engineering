@@ -71,7 +71,7 @@ Run the code sample above with a few different inputs, including very long ones 
 
 ---
 
-[← Previous: Bitcoin and Monetary Sovereignty](../economics/monetary-sovereignty.md)
+[← Previous: What Cryptography Does](./README.md)
 ·
 [Back to Cryptography](./README.md)
 ·

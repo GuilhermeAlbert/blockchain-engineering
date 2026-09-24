@@ -34,4 +34,4 @@ The Curve exploit is a useful, concrete case for a point [Smart Contract Auditin
 ·
 [Back to DeFi](./README.md)
 ·
-[Next: Layer 2 Overview →](../layer2/l1-vs-l2.md)
+[Next: Layer 2 →](../layer2/README.md)

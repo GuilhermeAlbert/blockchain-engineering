@@ -20,7 +20,7 @@ Introduced in [Transaction Fees](./fees.md#replace-by-fee-rbf), **Replace-By-Fee
 
 ## Full Replace-By-Fee versus opt-in
 
-Bitcoin Core historically supported only **opt-in RBF**. A transaction had to explicitly signal it was replaceable, and nodes/miners were not required to relay or accept a replacement for a transaction that hadn't opted in. Some Bitcoin Core releases have moved toward treating replacement more permissively by default, a policy change that generated genuine debate within the Bitcoin development community about tradeoffs between usability (letting senders correct underpriced fees) and merchant risk assumptions (some merchants previously relied on non-signaling transactions being harder to replace as a weak, zero-confirmation acceptance heuristic, see [Transaction Confirmation](./confirmation.md#zero-confirmation-risk)). TODO: verify the specific current default RBF policy in the latest Bitcoin Core release before stating it definitively, since this has been an area of active, evolving policy discussion.
+Bitcoin Core historically supported **opt-in RBF**, where a transaction signaled that it was replaceable. Bitcoin Core 28.0 changed the default value of `mempoolfullrbf` to `1`, so a default node may accept replacements even when the original transaction did not signal replaceability. This is relay policy, not consensus, and operators can configure it. The change also reinforces why an unconfirmed payment is not final. See the [Bitcoin Core 28.0 release notes](https://bitcoincore.org/en/releases/28.0/).
 
 ## Common misconceptions
 

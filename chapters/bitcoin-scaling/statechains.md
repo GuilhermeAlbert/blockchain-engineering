@@ -30,7 +30,7 @@ The security of a statechain transfer depends entirely on the **previous owner's
 
 ## Why use one despite this tradeoff
 
-The appeal is speed and cost: transferring ownership of a statechain-held UTXO is fast (no waiting for block confirmation) and doesn't consume any on-chain block space or incur on-chain fees, useful for scenarios involving frequent ownership changes of the same underlying value (some proposed and experimental use cases include fast, low-cost transfers of specific, larger UTXOs among a set of semi-trusted participants). This is explicitly a different tradeoff point than the Lightning Network's approach, which achieves trust-minimization through cryptographic penalty enforcement (see [Payment Channels](./payment-channels.md#why-an-old-commitment-cant-simply-be-rebroadcast-to-cheat")) rather than through an operator's promise to delete old key material.
+The appeal is speed and cost: transferring ownership of a statechain-held UTXO is fast (no waiting for block confirmation) and doesn't consume any on-chain block space or incur on-chain fees, useful for scenarios involving frequent ownership changes of the same underlying value (some proposed and experimental use cases include fast, low-cost transfers of specific, larger UTXOs among a set of semi-trusted participants). This is explicitly a different tradeoff point than the Lightning Network's approach, which achieves trust-minimization through cryptographic penalty enforcement (see [Payment Channels](./payment-channels.md#why-an-old-commitment-cant-simply-be-rebroadcast-to-cheat)) rather than through an operator's promise to delete old key material.
 
 ## Current status
 
@@ -44,7 +44,7 @@ Statechains remain a comparatively niche, experimental technology relative to th
 
 ## Further reading
 
-- [Statechains: Non-Custodial Off-Chain Bitcoin Transfer](https://www.commerceblock.com/statechains-non-custodial-off-chain-bitcoin-transfer/): TODO: verify this specific link resolves correctly before publication; statechain documentation has moved across several projects and URLs over time
+- [Statechains: Non-Custodial Off-Chain Bitcoin Transfer](https://www.commerceblock.com/statechains-non-custodial-off-chain-bitcoin-transfer/): an introduction to the original statechain design and its trust model
 
 ---
 

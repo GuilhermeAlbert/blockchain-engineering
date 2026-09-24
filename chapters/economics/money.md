@@ -51,11 +51,11 @@ Money is usually defined not by what it is physically, but by what it does. The 
 
 - [On the Origin of Money](https://mises.org/library/origin-money): Carl Menger, 1892 (Economic Journal)
 - [The State Theory of Money](https://archive.org/details/statetheoryofmon00knapuoft): Georg Friedrich Knapp, 1905 (English translation, 1924)
-- Karl Polanyi, *The Great Transformation* (1944), for an anthropological counter-perspective on markets and money's social origins. TODO: add a direct primary-source link or citation with page numbers
+- Karl Polanyi, *The Great Transformation* (1944), chapters 4 through 6, for a counter-perspective on markets and money's social origins
 
 ---
 
-[← Previous: Early Bitcoin History](../origins/early-bitcoin.md)
+[← Previous: Money and Economics](./README.md)
 ·
 [Back to Economics](./README.md)
 ·

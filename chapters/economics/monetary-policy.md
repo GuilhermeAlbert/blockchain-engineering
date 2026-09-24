@@ -43,7 +43,7 @@ Bitcoin has no discretionary monetary policy at all: its issuance schedule is fi
 ## Further reading
 
 - [Federal Reserve, Monetary Policy](https://www.federalreserve.gov/monetarypolicy.htm)
-- Milton Friedman, *A Program for Monetary Stability* (Fordham University Press, 1959), TODO: link a hosted primary-source edition once verified
+- Milton Friedman, *A Program for Monetary Stability* (Fordham University Press, 1959)
 
 ---
 

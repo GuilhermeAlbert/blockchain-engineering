@@ -75,7 +75,7 @@ That last line is worth noting: this particular example address turns out to be 
 
 ---
 
-[← Previous: Lightning Nodes](../lightning/nodes.md)
+[← Previous: What Is Ethereum?](./README.md)
 ·
 [Back to Ethereum](./README.md)
 ·

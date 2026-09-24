@@ -47,7 +47,7 @@ Reading the proposal against Bitcoin, several structural ideas appear nearly two
 
 Satoshi cites b-money in the whitepaper's references and, before publishing the paper widely, emailed Wei Dai directly to ask him to review a draft. Evidence Satoshi had read the essay closely rather than citing it in passing. Dai has said publicly (in a 2014 email exchange later published by Nathaniel Popper and others) that Satoshi's message referenced b-money and asked for feedback, though Dai did not respond in detail before the whitepaper's public release. In a 2013 interview and subsequent public statements, Dai has said he was "cryptocurrency-agnostic" and did not initially grasp Bitcoin's significance, only recognizing it in hindsight as b-money's ordering problem finally solved.
 
-TODO: verify the exact date and content of Satoshi's private email to Wei Dai against a primary-source transcript before quoting it directly; existing public accounts of this exchange are secondhand rather than a published original email.
+The surviving public evidence for this exchange is Dai's later account rather than a cryptographically authenticated archive of the original mailbox. For that reason, this chapter summarizes the exchange and does not quote an exact date or wording as independently verified fact.
 
 ## Common misconceptions
 

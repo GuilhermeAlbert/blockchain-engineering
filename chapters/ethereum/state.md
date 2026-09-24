@@ -8,7 +8,7 @@ This distinction matters and is easy to blur: **state** is Ethereum's current sn
 
 ## What state execution actually does
 
-Processing a block means taking the previous block's state, applying every transaction in the new block in order, and arriving at a new state. Each transaction reads some current state (account balances, contract storage) and, if valid, writes updated values back. This is deterministic: every honest node, given the identical previous state and the identical block, computes the identical resulting state, which is exactly what lets the block header's `stateRoot` field (see [Ethereum Blocks](./blocks.md#header-fields-beyond-what-bitcoin's-header-carries)) serve as a universally checkable commitment; any node can independently verify a claimed state root by actually re-executing the block itself and confirming its own computed root matches.
+Processing a block means taking the previous block's state, applying every transaction in the new block in order, and arriving at a new state. Each transaction reads some current state (account balances, contract storage) and, if valid, writes updated values back. This is deterministic: every honest node, given the identical previous state and the identical block, computes the identical resulting state, which is exactly what lets the block header's `stateRoot` field (see [Ethereum Blocks](./blocks.md#header-fields-beyond-what-bitcoins-header-carries)) serve as a universally checkable commitment; any node can independently verify a claimed state root by actually re-executing the block itself and confirming its own computed root matches.
 
 ## Why state size is a real, ongoing engineering concern
 

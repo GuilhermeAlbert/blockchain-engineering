@@ -16,7 +16,7 @@ A federation's practical security rests on several distinct, independently impor
 
 ## Where else this pattern appears
 
-Beyond Bitcoin sidechains like Liquid, federated trust models appear throughout the broader blockchain ecosystem covered later in this book: many cross-chain [bridges](../layer-2/bridges.md) use federated or multisig-based validation for authorizing asset transfers between chains, and some early blockchain oracle designs (see [Oracles](../defi/oracles.md)) rely on a federated set of data providers rather than a fully trust-minimized mechanism. Recognizing the pattern in one context (Liquid's functionaries) makes it easier to correctly evaluate the same underlying trust tradeoff when it recurs elsewhere under a different name.
+Beyond Bitcoin sidechains like Liquid, federated trust models appear throughout the broader blockchain ecosystem covered later in this book: many cross-chain [bridges](../layer2/bridges.md) use federated or multisig-based validation for authorizing asset transfers between chains, and some early blockchain oracle designs (see [Oracles](../defi/oracles.md)) rely on a federated set of data providers rather than a fully trust-minimized mechanism. Recognizing the pattern in one context (Liquid's functionaries) makes it easier to correctly evaluate the same underlying trust tradeoff when it recurs elsewhere under a different name.
 
 ## Common misconceptions
 
@@ -26,7 +26,7 @@ Beyond Bitcoin sidechains like Liquid, federated trust models appear throughout 
 
 ## Further reading
 
-- See also: [Liquid Network](./liquid.md), [Multisig](../wallets/multisig.md), [Bridges](../layer-2/bridges.md)
+- See also: [Liquid Network](./liquid.md), [Multisig](../wallets/multisig.md), [Bridges](../layer2/bridges.md)
 
 ---
 

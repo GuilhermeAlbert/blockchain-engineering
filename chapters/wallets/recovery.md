@@ -38,4 +38,4 @@ Backup strategy is a genuine, unavoidable tradeoff: a single backup copy, stored
 ·
 [Back to Wallets and Key Management](./README.md)
 ·
-[Next: Block Size →](../bitcoin-scaling/block-size.md)
+[Next: The Scaling Problem →](../bitcoin-scaling/README.md)

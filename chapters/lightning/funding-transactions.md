@@ -4,7 +4,7 @@ A funding transaction is the single on-chain event that opens a Lightning channe
 
 ## Structure
 
-A funding transaction creates one output: a **2-of-2 multisig** (see [Multisig](../wallets/multisig.md)) requiring both channel participants' signatures to spend. Modern Lightning implementations typically use Taproot's key-aggregation capabilities (see [Taproot](../bitcoin/taproot.md#why-bitcoin-adopted-it-linearity)) so this 2-of-2 arrangement, when both parties cooperate, looks on-chain like an ordinary single-signature output, one more instance of the general privacy benefit covered in [Multisig](../wallets/multisig.md#taproot-aggregated-signatures).
+A funding transaction creates one output: a **2-of-2 multisig** (see [Multisig](../wallets/multisig.md)) requiring both channel participants' signatures to spend. Modern Lightning implementations typically use Taproot's key-aggregation capabilities (see [Taproot](../bitcoin/taproot.md#schnorrs-role)) so this 2-of-2 arrangement, when both parties cooperate, looks on-chain like an ordinary single-signature output, one more instance of the general privacy benefit covered in [Multisig](../wallets/multisig.md#taproot-aggregated-signatures).
 
 ```text
 Funding transaction

@@ -32,7 +32,7 @@ Bitcoin advocates frequently cite the Cantillon effect as an argument for a fixe
 
 ## Further reading
 
-- Richard Cantillon, *Essai sur la Nature du Commerce en Général* (written c. 1730, published 1755), an English translation, *Essay on the Nature of Trade in General*, is available via the Mises Institute and other academic archives; TODO: confirm a specific stable primary-source link before publication
+- Richard Cantillon, *Essai sur la Nature du Commerce en Général* (written c. 1730, published 1755), especially the chapters on changes in the quantity and circulation of money
 - [What Has Government Done to Our Money?](https://mises.org/library/what-has-government-done-our-money): Murray Rothbard, 1963
 
 ---

@@ -115,7 +115,7 @@ flowchart LR
 ## Explore the book
 
 <details>
-<summary><strong>Origins</strong> — digital cash, Cypherpunks, Satoshi, and the work that came before Bitcoin</summary>
+<summary><strong>Origins</strong>: digital cash, Cypherpunks, Satoshi, and the work that came before Bitcoin</summary>
 
 <br>
 
@@ -133,7 +133,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>Money and Economics</strong> — money, banking, monetary policy, Austrian economics, and competing views</summary>
+<summary><strong>Money and Economics</strong>: money, banking, monetary policy, Austrian economics, and competing views</summary>
 
 <br>
 
@@ -158,7 +158,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>Cryptography</strong> — hashes, keys, signatures, elliptic curves, and Merkle trees</summary>
+<summary><strong>Cryptography</strong>: hashes, keys, signatures, elliptic curves, and Merkle trees</summary>
 
 <br>
 
@@ -176,7 +176,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>Bitcoin</strong> — transactions, UTXOs, mining, Script, SegWit, Taproot, and monetary policy</summary>
+<summary><strong>Bitcoin</strong>: transactions, UTXOs, mining, Script, SegWit, Taproot, and monetary policy</summary>
 
 <br>
 
@@ -205,7 +205,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>Wallets, Forks, and Scaling</strong> — key management, protocol upgrades, payment channels, and Lightning</summary>
+<summary><strong>Wallets, Forks, and Scaling</strong>: key management, protocol upgrades, payment channels, and Lightning</summary>
 
 <br>
 
@@ -223,7 +223,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>Ethereum and EVM</strong> — accounts, state, gas, Proof of Stake, bytecode, and execution</summary>
+<summary><strong>Ethereum and EVM</strong>: accounts, state, gas, Proof of Stake, bytecode, and execution</summary>
 
 <br>
 
@@ -243,7 +243,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>Smart Contracts, Tokens, and Web3</strong> — Solidity, ABI, token standards, wallets, RPC, and signatures</summary>
+<summary><strong>Smart Contracts, Tokens, and Web3</strong>: Solidity, ABI, token standards, wallets, RPC, and signatures</summary>
 
 <br>
 
@@ -262,7 +262,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>DeFi and Layer 2</strong> — AMMs, lending, stablecoins, rollups, sequencers, and bridges</summary>
+<summary><strong>DeFi and Layer 2</strong>: AMMs, lending, stablecoins, rollups, sequencers, and bridges</summary>
 
 <br>
 
@@ -283,7 +283,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>Security and Infrastructure</strong> — exploits, defensive design, nodes, RPC, indexing, and reliability</summary>
+<summary><strong>Security and Infrastructure</strong>: exploits, defensive design, nodes, RPC, indexing, and reliability</summary>
 
 <br>
 
@@ -307,18 +307,13 @@ For the complete chapter-by-chapter index, see [SUMMARY.md](./SUMMARY.md).
 
 | Level | Project | Concepts |
 | --- | --- | --- |
-| Foundation | Build a small blockchain | blocks, hashes, Proof of Work |
-| Foundation | Generate keys and signatures | cryptography |
-| Bitcoin | Decode a transaction | inputs, outputs, UTXOs |
-| Bitcoin | Inspect the mempool | fees, propagation |
-| Wallets | Derive addresses from a seed | keys, derivation paths |
-| Ethereum | Query a node | JSON-RPC |
-| Ethereum | Deploy a contract | Solidity, gas, ABI |
-| Web3 | Build Wallet Stats | balances, RPC, indexing |
-| DeFi | Inspect a Uniswap swap | AMMs, pools, events |
-| Layer 2 | Compare L1 and L2 transactions | settlement, fees, data availability |
-| Infrastructure | Build a small indexer | blocks, events, reorgs |
-| Security | Analyze a historical bug | root cause, impact, mitigation |
+| Foundation | [Build a small blockchain](./examples/simple-blockchain/) | blocks, hashes, Proof of Work |
+| Bitcoin | [Decode a transaction](./examples/bitcoin/) | serialization, txids, block headers, Proof of Work |
+| Ethereum | [Query a node](./examples/ethereum-rpc/) | raw JSON-RPC, blocks, balances, logs |
+| Ethereum | [Compile and inspect contracts](./examples/solidity/) | Solidity, ABI, bytecode, compiler errors |
+| Web3 | [Build Wallet Stats](./examples/wallet-stats/) | balances, RPC, contract detection, token balances |
+| DeFi | [Model an AMM](./examples/defi/) | constant product, fees, slippage, price impact |
+| Infrastructure | [Build a reorg-safe indexer](./examples/indexer/) | blocks, events, checkpoints, reorganizations |
 
 ## By the end
 
@@ -347,9 +342,9 @@ See [WRITING.md](./WRITING.md) for research, sourcing, and editorial guidelines.
 
 ## Status
 
-This book is a work in progress.
+The first complete edition is finished. All 21 sections, 332 chapter and section pages, the glossary, resources, and seven runnable projects have passed the repository's link, navigation, editorial, test, and type-check checks.
 
-See [PROGRESS.md](./PROGRESS.md) for the current status of each section.
+See [PROGRESS.md](./PROGRESS.md) for the section-by-section record and verification commands.
 
 ## Contributing
 

@@ -45,7 +45,7 @@ console.log("Expected time to find a block (seconds):", expected / networkHashra
 console.log("Expected time to find a block (minutes):", expected / networkHashrateHz / 60);
 ```
 
-TODO: replace the illustrative difficulty and network hashrate figures with values pulled from a live source (or a specific, dated snapshot with a citation) before treating any specific number as current. Both figures change continuously and any hardcoded value in this book will become stale.
+The figures above are deliberately illustrative. For a live observation, query a Bitcoin Core node with [`getmininginfo`](https://developer.bitcoin.org/reference/rpc/getmininginfo.html), which reports the current difficulty, and [`getnetworkhashps`](https://developer.bitcoin.org/reference/rpc/getnetworkhashps.html), which estimates network hash rate from recent blocks.
 
 Running this with realistic order-of-magnitude figures produces an expected time close to Bitcoin's 10-minute target, which is not a coincidence, but the entire point of [difficulty adjustment](./difficulty-adjustment.md): the network continuously recalibrates the target specifically to keep this expected time near 10 minutes, regardless of how much total hash power is actually competing.
 

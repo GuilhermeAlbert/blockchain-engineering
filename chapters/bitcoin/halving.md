@@ -19,7 +19,7 @@ Projected dates for future halvings are estimates based on the average 10-minute
 
 ## Why every 210,000 blocks specifically
 
-210,000 blocks at a 10-minute average block time works out to almost exactly four years (210,000 × 10 minutes ÷ 60 ÷ 24 ÷ 365.25 ≈ 3.99 years). This specific number appears to have been chosen by Satoshi for this approximate four-year cadence, though (consistent with this book's general approach to unverified claims about Satoshi's private reasoning) no known public writing definitively explains the exact choice of "four years" as a target beyond it being a plausible, round-ish design decision. TODO: check Satoshi's mailing-list and forum archives for any direct statement about the reasoning behind the 210,000-block interval before stating a specific motivation as documented fact.
+210,000 blocks at a 10-minute average block time works out to almost exactly four years (210,000 × 10 minutes ÷ 60 ÷ 24 ÷ 365.25 ≈ 3.99 years). The code fixes the interval at 210,000 blocks, but Satoshi's surviving public writings do not document why that exact number was chosen. The four-year cadence is an effect of the parameters, not evidence of a stated private motive.
 
 ## Why halvings matter beyond the subsidy number itself
 

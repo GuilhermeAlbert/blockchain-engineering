@@ -10,7 +10,7 @@ Volatility is typically measured as the standard deviation of an asset's returns
 
 Bitcoin has, at various points in its history, moved by more than 10% in a single day and has experienced peak-to-trough declines exceeding 80% on more than one occasion, most notably from late 2013 into 2015, and again from late 2021 into 2022. By comparison, major fiat currency pairs (such as EUR/USD) typically move well under 1% on an ordinary trading day, and even a volatile developed-market equity index like the S&P 500 rarely sees single-day moves above 3–4% outside of acute crisis periods (such as March 2020). Gold, often cited as Bitcoin's closest analogue as a non-yielding store-of-value asset, has historically exhibited meaningfully lower volatility than Bitcoin across comparable time periods, though gold too has had its own volatile episodes, including sharp moves during the 1970s after the end of the gold standard's fixed exchange-rate era.
 
-Bitcoin's volatility has generally trended downward as its market capitalization and trading liquidity have grown, a pattern broadly consistent with how volatility tends to decline as an asset matures and its holder base broadens, but this decline has not been smooth or monotonic, and Bitcoin still exhibits substantially higher volatility than major fiat currencies and most traditional financial assets as of the time of this writing. TODO: update with current-year volatility comparison data from a specific dated source before treating any specific numeric range as current.
+Bitcoin's volatility changes sharply across market cycles. It has sometimes declined as market depth and participation grew, but the decline has not been smooth or permanent. Comparisons with gold, equities, or currency pairs depend on the period, sampling interval, and volatility measure. This chapter therefore explains the mechanism without presenting a short-lived numeric range as a durable property.
 
 ## Why volatility specifically undermines two of the three monetary functions
 
@@ -33,7 +33,7 @@ Bitcoin's supply growth is fixed and highly predictable (see [21 Million BTC](..
 ## Further reading
 
 - [Cambridge Bitcoin Electricity Consumption Index](https://ccaf.io/cbnsi/cbeci) and related Cambridge Centre for Alternative Finance research on Bitcoin market structure
-- TODO: add a specific, dated academic or institutional source comparing Bitcoin, gold, and major fiat currency pair volatility over a defined period
+- [BIS Working Papers](https://www.bis.org/list/wpapers/index.htm): institutional research on cryptoasset market structure, risk, and volatility; check each paper's sample period before comparing results
 
 ---
 

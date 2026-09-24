@@ -121,7 +121,7 @@ Historical exploit case studies may explain root cause, affected mechanism, impa
 
 Do not invent citations.
 
-If a claim cannot be verified, remove it, qualify it, or leave a TODO stating what needs verification.
+If a claim cannot be verified, remove it or qualify it before publication. Do not leave a publication placeholder in the manuscript.
 
 ## Tradeoffs
 

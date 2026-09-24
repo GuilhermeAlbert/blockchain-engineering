@@ -93,7 +93,7 @@ This chapter's example is intentionally simplified, a real block-building implem
 
 ## Under the hood: what changes if you alter anything
 
-Try mentally altering any single field (the transaction list, the previous hash, even the timestamp by one second) and recomputing: the Merkle root changes (if transactions changed), and the block hash changes regardless of which field changed, because the header concatenates and hashes all of them together. This is the direct mechanism behind [Hashes and Block Linking](./block-linking.md#tamper-evidence): a block's own hash depends on everything inside it, and the next block's header explicitly includes this block's hash as its `previousHash` field, so altering anything in this block breaks the chain from this point forward.
+Try mentally altering any single field (the transaction list, the previous hash, even the timestamp by one second) and recomputing: the Merkle root changes (if transactions changed), and the block hash changes regardless of which field changed, because the header concatenates and hashes all of them together. This is the direct mechanism behind [Hashes and Block Linking](./block-linking.md#the-mechanism): a block's own hash depends on everything inside it, and the next block's header explicitly includes this block's hash as its `previousHash` field, so altering anything in this block breaks the chain from this point forward.
 
 ## Tradeoffs
 
@@ -116,7 +116,7 @@ Run the code example above, then modify one character in one transaction string 
 
 ---
 
-[← Previous: Probabilistic Finality](../distributed-systems/probabilistic-finality.md)
+[← Previous: What Is a Blockchain?](./README.md)
 ·
 [Back to Blockchain Fundamentals](./README.md)
 ·
