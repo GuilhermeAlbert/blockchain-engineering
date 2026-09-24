@@ -11,7 +11,7 @@
 <p align="center">
   <strong>English</strong>
   ·
-  <a href="./pt-BR/README.md">Português do Brasil</a>
+  <a href="./pt-BR/">Português do Brasil</a>
 </p>
 
 <p align="center">

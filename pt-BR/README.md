@@ -9,7 +9,7 @@
 <p align="center">Entenda blockchain por meio de código.</p>
 
 <p align="center">
-  <a href="../README.md">English</a>
+  <a href="../">English</a>
   ·
   <strong>Português do Brasil</strong>
 </p>
@@ -17,13 +17,13 @@
 <p align="center">
   <a href="#iniciar-a-leitura">Iniciar a leitura</a>
   ·
-  <a href="./SUMMARY.md">Conteúdo completo</a>
+  <a href="https://guilhermealbert.github.io/blockchain-engineering/pt-BR/SUMMARY.html">Conteúdo completo</a>
   ·
-  <a href="./PROGRESS.md">Progresso</a>
+  <a href="https://guilhermealbert.github.io/blockchain-engineering/pt-BR/PROGRESS.html">Progresso</a>
   ·
-  <a href="./glossary.md">Glossário</a>
+  <a href="https://guilhermealbert.github.io/blockchain-engineering/pt-BR/glossary.html">Glossário</a>
   ·
-  <a href="./resources.md">Recursos</a>
+  <a href="https://guilhermealbert.github.io/blockchain-engineering/pt-BR/resources.html">Recursos</a>
 </p>
 
 <p align="center">
