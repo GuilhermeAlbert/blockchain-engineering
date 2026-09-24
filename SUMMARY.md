@@ -403,6 +403,7 @@ For a shorter overview and suggested reading paths, see [README.md](./README.md)
 
 ## Regulation and Society
 
+- [Regulation and Society](./chapters/society/README.md)
 - [Custody](./chapters/society/custody.md)
 - [Exchanges](./chapters/society/exchanges.md)
 - [KYC and AML](./chapters/society/kyc-aml.md)

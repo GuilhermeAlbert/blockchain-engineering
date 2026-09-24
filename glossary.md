@@ -58,6 +58,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Central bank**: The institution responsible for managing a currency's money supply and, typically, for supervising the banking system and acting as lender of last resort. See [Central Banking](./chapters/economics/central-banking.md).
 
+**CBDC (Central Bank Digital Currency)**: A digital liability of a central bank designed for retail payment or wholesale settlement. See [CBDCs](./chapters/society/cbdcs.md).
+
 **Chain reorganization ("reorg")**: When a node switches from one version of the recent chain to a different, competing version it now considers more valid. See [Chain Reorganizations](./chapters/blockchain/reorgs.md).
 
 **Confirmation**: How many blocks have been mined on top of the block containing a given transaction; a rough, growing measure of how unlikely that transaction is to be reversed. See [Probabilistic Finality](./chapters/distributed-systems/probabilistic-finality.md).
@@ -160,6 +162,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Indexer**: A service that reads ordered chain data and builds a query-oriented database from it. See [Indexers](./chapters/infrastructure/indexers.md).
 
+## K
+
+**KYC (Know Your Customer)**: Procedures through which a covered service identifies and verifies customers under its applicable rules and risk program. See [KYC and AML](./chapters/society/kyc-aml.md).
+
 **Inflation**: A sustained rise in the general price level, meaning a currency's purchasing power falls over time. See [Inflation and Deflation](./chapters/economics/inflation-and-deflation.md).
 
 **Impermanent loss**: The value gap between an AMM liquidity provider's withdrawn position and what simply holding the same original tokens, unpooled, would have been worth; caused by the constant-product formula rebalancing a pool's reserves as price moves. See [Impermanent Loss](./chapters/defi/impermanent-loss.md).
@@ -244,6 +250,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 ## S
 
+**Self-custody**: Control of the keys or authorization policy required to move assets without asking a custodian. See [Self-Custody](./chapters/society/self-custody.md).
+
 **SegWit (Segregated Witness)**: A 2017 soft fork that moved signature data out of the main transaction structure, fixing malleability and changing fee accounting. See [SegWit](./chapters/bitcoin/segwit.md).
 
 **Soft fork**: A protocol rule change that tightens consensus rules in a way old software still accepts. See [Soft Forks](./chapters/forks/soft-forks.md).
@@ -273,6 +281,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 ## T
 
 **Timelock**: A contract or protocol rule that delays an approved action before execution, giving observers time to inspect it and users time to react. See [On-Chain Governance](./chapters/governance/on-chain.md).
+
+**Travel Rule**: A FATF standard requiring specified originator and beneficiary information to accompany qualifying transfers between covered institutions. See [KYC and AML](./chapters/society/kyc-aml.md).
 
 **Taproot**: A 2021 soft fork bringing Schnorr signatures to Bitcoin, making complex spending conditions indistinguishable on-chain from simple ones. See [Taproot](./chapters/bitcoin/taproot.md).
 

@@ -167,6 +167,16 @@ A curated list of primary sources, specifications, and books referenced througho
 - [Ethereum consensus specifications](https://github.com/ethereum/consensus-specs)
 - [OpenZeppelin governance documentation](https://docs.openzeppelin.com/contracts/5.x/governance)
 
+## Regulation and society
+
+- [FATF guidance for virtual assets and VASPs](https://www.fatf-gafi.org/content/dam/fatf-gafi/guidance/Updated-Guidance-VA-VASP.pdf.coredownload.inline.pdf)
+- [Regulation (EU) 2023/1114 on markets in crypto-assets](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32023R1114)
+- [Banco Central do Brasil: regulation of virtual assets](https://www.bcb.gov.br/meubc/faqs/p/guarda-e-negociacao-de-moedas-virtuais)
+- [BCB Resolution 520](https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=520&tipo=Resolu%C3%A7%C3%A3o+BCB)
+- [BIS CBDC publications](https://www.bis.org/topic/cbdc.htm)
+- [IMF CBDC Virtual Handbook](https://www.imf.org/en/Topics/fintech/central-bank-digital-currency/virtual-handbook)
+- [Ethereum privacy](https://ethereum.org/privacy/)
+
 ## Books
 
 - Andreas M. Antonopoulos, *Mastering Bitcoin*, for Bitcoin transaction, script, wallet, and network mechanics
