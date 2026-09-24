@@ -6,12 +6,16 @@ import { fileURLToPath } from "node:url";
 
 const args = process.argv.slice(2);
 const rootFlag = args.indexOf("--root");
-const root = resolve(
+const baseRoot = resolve(
   rootFlag === -1
     ? dirname(dirname(fileURLToPath(import.meta.url)))
     : args[rootFlag + 1],
 );
-const requested = new Set(args.filter((arg) => arg.startsWith("--") && arg !== "--root"));
+const editionFlag = args.indexOf("--edition");
+const parityFlag = args.indexOf("--parity-with");
+const root = editionFlag === -1 ? baseRoot : resolve(baseRoot, args[editionFlag + 1]);
+const parityRoot = parityFlag === -1 ? null : resolve(baseRoot, args[parityFlag + 1]);
+const requested = new Set(args.filter((arg) => ["--links", "--navigation", "--editorial"].includes(arg)));
 const full = requested.size === 0;
 const runLinks = full || requested.has("--links");
 const runNavigation = full || requested.has("--navigation");
@@ -154,11 +158,45 @@ function summaryOrder() {
 function findDirectionalLink(file, label) {
   const source = readFileSync(file, "utf8");
   const pattern = label === "previous"
-    ? /\[←\s*Previous:[^\]]*\]\(([^)]+)\)/i
-    : /\[Next:[^\]]*→\]\(([^)]+)\)/i;
+    ? /\[←\s*(?:Previous|Anterior):[^\]]*\]\(([^)]+)\)/i
+    : /\[(?:Next|Próximo):[^\]]*→\]\(([^)]+)\)/i;
   const match = source.match(pattern);
   if (!match) return null;
   return { target: resolveMarkdownTarget(file, match[1]).targetFile, line: lineAt(source, match.index) };
+}
+
+function parityFiles(directory) {
+  const topLevel = new Set([
+    "README.md",
+    "SUMMARY.md",
+    "PROGRESS.md",
+    "WRITING.md",
+    "CONTRIBUTING.md",
+    "glossary.md",
+    "resources.md",
+  ]);
+  return walk(directory).filter((file) => {
+    const path = relative(directory, file).split(sep).join("/");
+    return path.startsWith("chapters/") || topLevel.has(path);
+  });
+}
+
+function checkParity(sourceDirectory, translatedDirectory) {
+  const sourceFiles = parityFiles(sourceDirectory);
+  const translated = new Set(parityFiles(translatedDirectory).map((file) => relative(translatedDirectory, file)));
+  for (const sourceFile of sourceFiles) {
+    const path = relative(sourceDirectory, sourceFile);
+    if (!translated.has(path)) {
+      errors.push({ file: path.split(sep).join("/"), line: 1, category: "parity", message: "missing translated counterpart" });
+    }
+  }
+  const source = new Set(sourceFiles.map((file) => relative(sourceDirectory, file)));
+  for (const translatedFile of parityFiles(translatedDirectory)) {
+    const path = relative(translatedDirectory, translatedFile);
+    if (!source.has(path)) {
+      report(translatedFile, 1, "parity", "translated file has no source counterpart");
+    }
+  }
 }
 
 function checkNavigation(order) {
@@ -223,6 +261,7 @@ if (runLinks) checkLinks(files);
 if (runNavigation) checkNavigation(order);
 if (runEditorial) checkEditorial(files);
 if (full) checkInventory(files, order);
+if (parityRoot) checkParity(parityRoot, root);
 
 errors.sort((left, right) =>
   left.file.localeCompare(right.file) || left.line - right.line || left.message.localeCompare(right.message),

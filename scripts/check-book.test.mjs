@@ -24,6 +24,36 @@ function runFixture(files, ...args) {
   });
 }
 
+const portugueseFiles = {
+  "pt-BR/SUMMARY.md": "# Conteúdo\n\n- [Primeiro](./chapters/first.md)\n- [Segundo](./chapters/second.md)\n",
+  "pt-BR/chapters/first.md": [
+    "# Primeiro",
+    "",
+    "Leia a [seção específica](./second.md#seção-específica).",
+    "",
+    "---",
+    "",
+    "[Voltar ao conteúdo](../SUMMARY.md)",
+    "·",
+    "[Próximo: Segundo →](./second.md)",
+    "",
+  ].join("\n"),
+  "pt-BR/chapters/second.md": [
+    "# Segundo",
+    "",
+    "## Seção específica",
+    "",
+    "Uma explicação direta.",
+    "",
+    "---",
+    "",
+    "[← Anterior: Primeiro](./first.md)",
+    "·",
+    "[Voltar ao conteúdo](../SUMMARY.md)",
+    "",
+  ].join("\n"),
+};
+
 const cleanFiles = {
   "SUMMARY.md": "# Contents\n\n- [First](./chapters/first.md)\n- [Second](./chapters/second.md)\n",
   "chapters/first.md": [
@@ -117,4 +147,35 @@ test("reports a malformed navigation footer", () => {
   }, "--navigation");
   assert.equal(result.status, 1);
   assert.match(result.stdout, /next link must point to/);
+});
+
+test("validates a Portuguese edition from its own root", () => {
+  const result = runFixture({ ...cleanFiles, ...portugueseFiles }, "--edition", "pt-BR");
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+  assert.match(result.stdout, /0 errors/);
+});
+
+test("reports malformed Portuguese navigation", () => {
+  const files = {
+    ...cleanFiles,
+    ...portugueseFiles,
+    "pt-BR/chapters/first.md": portugueseFiles["pt-BR/chapters/first.md"].replace(
+      "[Próximo: Segundo →](./second.md)",
+      "[Próximo: Segundo →](./first.md)",
+    ),
+  };
+  const result = runFixture(files, "--edition", "pt-BR", "--navigation");
+  assert.equal(result.status, 1);
+  assert.match(result.stdout, /next link must point to/);
+});
+
+test("reports an edition parity mismatch", () => {
+  const files = {
+    ...cleanFiles,
+    ...portugueseFiles,
+    "chapters/only-in-source.md": "# Only in source\n",
+  };
+  const result = runFixture(files, "--edition", "pt-BR", "--parity-with", ".");
+  assert.equal(result.status, 1);
+  assert.match(result.stdout, /missing translated counterpart/);
 });
