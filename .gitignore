@@ -19,3 +19,6 @@ broadcast/
 # Editor/OS
 .DS_Store
 *.log
+
+# Local design mockups
+.superpowers/
