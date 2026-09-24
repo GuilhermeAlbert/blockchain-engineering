@@ -1,0 +1,23 @@
+import assert from "node:assert/strict";
+import { MemoryStore } from "./store.js";
+import { Indexer } from "./indexer.js";
+import { genesis, block1, block2a, block2b, block3b } from "./fixtures.js";
+
+const store = new MemoryStore(1);
+const indexer = new Indexer(store);
+indexer.apply(genesis);
+indexer.apply(block1);
+assert.equal(store.balance("alice"), 10n);
+assert.deepEqual(store.checkpoint(), { number: 1, hash: block1.hash });
+indexer.apply(block1);
+assert.equal(store.balance("alice"), 10n);
+indexer.apply(block2a);
+assert.equal(store.balance("alice"), 15n);
+indexer.reorganize([block2b, block3b]);
+assert.equal(store.balance("alice"), 7n);
+assert.equal(store.balance("bob"), 4n);
+assert.deepEqual(store.checkpoint(), { number: 3, hash: block3b.hash });
+assert.throws(() => indexer.apply({ ...block3b, hash: "0xbad", parentHash: "0xunknown" }), /unknown parent/);
+const restarted = new Indexer(store);
+assert.deepEqual(restarted.checkpoint(), { number: 3, hash: block3b.hash });
+console.log("8 tests passed");
