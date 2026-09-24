@@ -156,6 +156,17 @@ A curated list of primary sources, specifications, and books referenced througho
 - [Graph Node documentation](https://thegraph.com/docs/en/indexing/tooling/graph-node/)
 - [CloudEvents specification](https://cloudevents.io/)
 
+## Governance
+
+- [BIP 3: Updated BIP Process](https://github.com/bitcoin/bips/blob/master/bip-0003.md)
+- [Bitcoin Improvement Proposals repository](https://github.com/bitcoin/bips)
+- [Bitcoin Core contribution guidelines](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md)
+- [EIP-1: EIP Purpose and Guidelines](https://eips.ethereum.org/EIPS/eip-1)
+- [Ethereum governance](https://ethereum.org/governance/)
+- [Ethereum execution specifications](https://github.com/ethereum/execution-specs)
+- [Ethereum consensus specifications](https://github.com/ethereum/consensus-specs)
+- [OpenZeppelin governance documentation](https://docs.openzeppelin.com/contracts/5.x/governance)
+
 ## Books
 
 - Andreas M. Antonopoulos, *Mastering Bitcoin*, for Bitcoin transaction, script, wallet, and network mechanics

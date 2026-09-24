@@ -22,6 +22,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 ## B
 
+**BIP (Bitcoin Improvement Proposal)**: A published proposal or information document for Bitcoin; publication does not itself mean adoption or community consensus. See [BIPs](./chapters/governance/bips.md).
+
 **Block reward / subsidy**: The newly created bitcoin a miner receives for a block, separate from transaction fees. Halves every 210,000 blocks. See [Block Rewards](./chapters/bitcoin/block-rewards.md).
 
 **Byzantine fault**: A failure mode where a system component behaves arbitrarily or maliciously, potentially sending contradictory information to different peers, rather than simply stopping. See [Byzantine Faults](./chapters/distributed-systems/byzantine-faults.md).
@@ -80,6 +82,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 ## D
 
+**DAO (Decentralized Autonomous Organization)**: An organization whose treasury or administrative authority is managed in part through contracts and participant governance. See [DAOs](./chapters/governance/daos.md).
+
 **Decimals**: An ERC-20 display convention (not a protocol rule) specifying how many places to divide a raw token balance by for human-readable display; USDC uses 6, most tokens use 18. See [Balances](./chapters/tokens/balances.md).
 
 **Difficulty**: A normalized measure of how hard it currently is to find a valid block hash, expressed relative to Bitcoin's easiest-ever target. See [Mining Difficulty](./chapters/bitcoin/difficulty.md).
@@ -103,6 +107,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Elliptic curve**: A curve of the form y² = x³ + ax + b over a finite field, used as the mathematical basis for Bitcoin and Ethereum's keys and signatures. See [Elliptic Curves](./chapters/cryptography/elliptic-curves.md).
 
 **EIP-712**: A standard for structured, human-readable typed-data signatures, with a domain separator preventing cross-application replay. See [Typed Data and EIP-712](./chapters/web3/eip-712.md).
+
+**EIP (Ethereum Improvement Proposal)**: A standards document for Ethereum core protocol, networking, interfaces, or application conventions. See [EIPs](./chapters/governance/eips.md).
 
 ## E (continued)
 
@@ -265,6 +271,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Sequencer**: The component of a rollup that orders and provisionally executes transactions before they're batched and published to L1; centralized on every major rollup as of 2026. See [Sequencers](./chapters/layer2/sequencers.md).
 
 ## T
+
+**Timelock**: A contract or protocol rule that delays an approved action before execution, giving observers time to inspect it and users time to react. See [On-Chain Governance](./chapters/governance/on-chain.md).
 
 **Taproot**: A 2021 soft fork bringing Schnorr signatures to Bitcoin, making complex spending conditions indistinguishable on-chain from simple ones. See [Taproot](./chapters/bitcoin/taproot.md).
 
