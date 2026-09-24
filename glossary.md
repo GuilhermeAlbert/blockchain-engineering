@@ -18,6 +18,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Approval**: On-chain authority granted to a spender or operator to move tokens owned by another address. See [Approval Attacks](./chapters/security/approval-attacks.md).
 
+**Archive node**: A node configuration that retains historical state so old balances and contract calls can be answered directly. See [Archive Nodes](./chapters/infrastructure/archive-nodes.md).
+
 ## B
 
 **Block reward / subsidy**: The newly created bitcoin a miner receives for a block, separate from transaction fees. Halves every 210,000 blocks. See [Block Rewards](./chapters/bitcoin/block-rewards.md).
@@ -71,6 +73,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Collateralization ratio**: The value of collateral locked against a loan, expressed relative to the amount borrowed; the inverse of loan-to-value. See [Collateral](./chapters/defi/collateral.md).
 
 **Canonical bridge**: A rollup's own official bridge to L1, which inherits security directly from the rollup's fraud-proof or validity-proof mechanism rather than a separate trust assumption. See [Canonical Bridges](./chapters/layer2/canonical-bridges.md).
+
+**Checkpoint**: A persisted block position and hash recording how far a pipeline or indexer has applied canonical data. See [Indexers](./chapters/infrastructure/indexers.md).
+
+**Cache invalidation**: Removing or replacing cached results when their block context or underlying state is no longer current. See [Caching](./chapters/infrastructure/caching.md).
 
 ## D
 
@@ -143,6 +149,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Hashcash**: Adam Back's 1997 anti-spam system using proof-of-work, cited directly in the Bitcoin whitepaper as the model for Bitcoin's mining puzzle. See [Hashcash](./chapters/origins/hashcash.md).
 
 ## I
+
+**Idempotency**: The property that applying the same operation more than once has the same effect as applying it once. See [Event Processing](./chapters/infrastructure/event-processing.md).
+
+**Indexer**: A service that reads ordered chain data and builds a query-oriented database from it. See [Indexers](./chapters/infrastructure/indexers.md).
 
 **Inflation**: A sustained rise in the general price level, meaning a currency's purchasing power falls over time. See [Inflation and Deflation](./chapters/economics/inflation-and-deflation.md).
 
@@ -224,6 +234,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **Replay protection**: Data and state that prevent a valid signed message or cross-chain message from being executed more than once or in the wrong domain. See [Malicious Signatures](./chapters/security/malicious-signatures.md).
 
+**RPC (Remote Procedure Call)**: An interface through which software requests node data or actions, commonly using JSON-RPC for Ethereum and Bitcoin Core. See [RPC](./chapters/infrastructure/rpc.md).
+
 ## S
 
 **SegWit (Segregated Witness)**: A 2017 soft fork that moved signature data out of the main transaction structure, fixing malleability and changing fee accounting. See [SegWit](./chapters/bitcoin/segwit.md).
@@ -277,6 +289,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Velocity of money**: How many times, on average, a unit of currency is spent within a given period. See [Money Supply](./chapters/economics/money-supply.md).
 
 **Validity proof**: A cryptographic proof, submitted alongside a rollup batch, demonstrating its new state root correctly followed from the previous state and the batch's transactions. See [Validity Proofs](./chapters/layer2/validity-proofs.md).
+
+## W
+
+**Webhook**: An HTTP delivery mechanism used by a service to notify another system of an event, with authentication, retries, and duplicate handling supplied above the transport. See [Webhooks](./chapters/infrastructure/webhooks.md).
 
 ## Z
 

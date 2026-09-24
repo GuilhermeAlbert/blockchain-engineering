@@ -143,6 +143,19 @@ A curated list of primary sources, specifications, and books referenced througho
 - [Wormhole incident report, 2 February 2022](https://wormholecrypto.medium.com/wormhole-incident-report-02-02-22-ad9b8f21eec6)
 - [Verichains Ronin Bridge audit, June 2022](https://docs.roninchain.com/assets/files/Verichains-Audit-Ronin-Bridge-v1.1-8d4913ed1f3197a108f80de1de4c4407.pdf)
 
+## Infrastructure
+
+- [Ethereum nodes and clients](https://ethereum.org/developers/docs/nodes-and-clients/)
+- [Running an Ethereum node](https://ethereum.org/developers/docs/nodes-and-clients/run-a-node/)
+- [Ethereum archive nodes](https://ethereum.org/developers/docs/nodes-and-clients/archive-nodes/)
+- [Ethereum JSON-RPC](https://ethereum.org/developers/docs/apis/json-rpc/)
+- [Bitcoin Core RPC](https://bitcoincore.org/en/doc/)
+- [Geth documentation](https://geth.ethereum.org/docs/)
+- [The Graph subgraphs](https://thegraph.com/docs/en/subgraphs/overview/)
+- [The Graph indexing overview](https://thegraph.com/docs/en/indexing/overview/)
+- [Graph Node documentation](https://thegraph.com/docs/en/indexing/tooling/graph-node/)
+- [CloudEvents specification](https://cloudevents.io/)
+
 ## Books
 
 - Andreas M. Antonopoulos, *Mastering Bitcoin*, for Bitcoin transaction, script, wallet, and network mechanics
