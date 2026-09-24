@@ -14,6 +14,10 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 **AMM (Automated Market Maker)**: A smart contract that prices trades algorithmically from a pool's current token reserves, rather than matching buy and sell orders. See [Automated Market Makers](./chapters/defi/amm.md).
 
+**Access control**: Rules that decide which accounts or contracts may call sensitive functions such as minting, upgrading, pausing, or changing configuration. See [Access Control](./chapters/security/access-control.md).
+
+**Approval**: On-chain authority granted to a spender or operator to move tokens owned by another address. See [Approval Attacks](./chapters/security/approval-attacks.md).
+
 ## B
 
 **Block reward / subsidy**: The newly created bitcoin a miner receives for a block, separate from transaction fees. Halves every 210,000 blocks. See [Block Rewards](./chapters/bitcoin/block-rewards.md).
@@ -100,6 +104,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 ## F
 
+**Front running**: Observing a pending transaction and arranging for another transaction to execute before it to capture an ordering advantage. See [Front Running](./chapters/security/front-running.md).
+
 **Finality**: The property of a transaction or block becoming permanent and irreversible; deterministic, probabilistic, or economic depending on the consensus mechanism. See [Finality](./chapters/distributed-systems/finality.md).
 
 **Fraud proof**: A submitted proof that a rollup's published state claim is wrong, produced through an interactive process that narrows a dispute down to one cheaply-verifiable execution step. See [Fraud Proofs](./chapters/layer2/fraud-proofs.md).
@@ -156,6 +162,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 ## M
 
+**MEV (Maximal Extractable Value)**: Value obtained through transaction inclusion, exclusion, or ordering by searchers and actors involved in block construction. See [MEV](./chapters/security/mev.md).
+
 **Multisig**: A wallet requiring more than one private key to authorize spending. See [Multisig](./chapters/wallets/multisig.md).
 
 **Mempool**: The set of valid, unconfirmed transactions a node currently knows about and is prepared to relay or mine. Local to each node, not a single global list. See [The Mempool](./chapters/bitcoin/mempool.md).
@@ -182,6 +190,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 ## O
 
+**Oracle**: A mechanism that makes external or derived information, such as an asset price, available to a smart contract. See [Oracles](./chapters/defi/oracles.md) and [Oracle Manipulation](./chapters/security/oracle-manipulation.md).
+
 **Oracle**: Infrastructure that gets external data, most often asset prices, onto a blockchain in a form a smart contract can read, since a contract cannot query an external API directly. See [Oracles](./chapters/defi/oracles.md).
 
 **Optimistic rollup**: A rollup that accepts a published state claim by default, giving anyone a challenge period to dispute it with a fraud proof before it's treated as final. See [Optimistic Rollups](./chapters/layer2/optimistic-rollups.md).
@@ -204,11 +214,15 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 
 ## R
 
+**Reentrancy**: Nested execution caused when a contract calls external code before settling its own state and the external code calls back into it. See [Reentrancy](./chapters/security/reentrancy.md).
+
 **Regression theorem**: Ludwig von Mises's argument that money's value must trace back to a good's prior non-monetary use. Central to a specific, unresolved debate about Bitcoin. See [The Regression Theorem](./chapters/economics/regression-theorem.md).
 
 **RPOW (Reusable Proof of Work)**: Hal Finney's 2004 system letting Hashcash-style proof-of-work tokens be exchanged for transferable, signed tokens. See [Hashcash](./chapters/origins/hashcash.md#from-hashcash-to-rpow).
 
 **Rollup**: An L2 system that executes transactions off L1, then publishes the underlying data and a way to verify correctness (fraud or validity proofs) back to L1. See [Rollups](./chapters/layer2/rollups.md).
+
+**Replay protection**: Data and state that prevent a valid signed message or cross-chain message from being executed more than once or in the wrong domain. See [Malicious Signatures](./chapters/security/malicious-signatures.md).
 
 ## S
 
@@ -217,6 +231,8 @@ This glossary grows alongside the book. If a term you expected is missing, the c
 **Soft fork**: A protocol rule change that tightens consensus rules in a way old software still accepts. See [Soft Forks](./chapters/forks/soft-forks.md).
 
 **Smart contract**: Code deployed to a blockchain that executes deterministically when called, holding its own state and, optionally, funds. See [Smart Contracts](./chapters/contracts/README.md).
+
+**Sandwich attack**: A transaction-ordering attack that trades before and after a victim to move the victim's execution price and capture the difference. See [Front Running](./chapters/security/front-running.md#sandwich-attacks).
 
 **secp256k1**: The specific elliptic curve Bitcoin and Ethereum use for all keys and signatures. See [secp256k1](./chapters/cryptography/secp256k1.md).
 

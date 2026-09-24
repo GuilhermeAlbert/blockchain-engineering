@@ -130,11 +130,24 @@ A curated list of primary sources, specifications, and books referenced througho
 
 ## Security
 
-- TODO: add as the Security section is written
+- [Solidity security considerations](https://docs.soliditylang.org/en/latest/security-considerations.html)
+- [Ethereum.org smart contract security](https://ethereum.org/developers/docs/smart-contracts/security/)
+- [Ethereum.org security and scam prevention](https://ethereum.org/security/)
+- [OpenZeppelin Contracts documentation](https://docs.openzeppelin.com/contracts/)
+- [OpenZeppelin access control](https://docs.openzeppelin.com/contracts/5.x/access-control)
+- [OpenZeppelin upgrades documentation](https://docs.openzeppelin.com/upgrades)
+- [Ethereum.org formal verification](https://ethereum.org/developers/docs/smart-contracts/formal-verification/)
+- [Solidity SMTChecker](https://docs.soliditylang.org/en/latest/smtchecker.html)
+- [Flashbots documentation](https://docs.flashbots.net/)
+- [Ronin Network: Community Alert, Ronin Validators Compromised](https://blog.roninchain.com/p/community-alert-ronin-validators)
+- [Wormhole incident report, 2 February 2022](https://wormholecrypto.medium.com/wormhole-incident-report-02-02-22-ad9b8f21eec6)
+- [Verichains Ronin Bridge audit, June 2022](https://docs.roninchain.com/assets/files/Verichains-Audit-Ronin-Bridge-v1.1-8d4913ed1f3197a108f80de1de4c4407.pdf)
 
 ## Books
 
-- TODO: add as relevant sections are written
+- Andreas M. Antonopoulos, *Mastering Bitcoin*, for Bitcoin transaction, script, wallet, and network mechanics
+- Andreas M. Antonopoulos and Gavin Wood, *Mastering Ethereum*, for Ethereum accounts, transactions, the EVM, and smart contracts
+- Ross Anderson, *Security Engineering*, for threat modeling, authentication, access control, and system failure analysis beyond blockchain-specific code
 
 ## Papers
 

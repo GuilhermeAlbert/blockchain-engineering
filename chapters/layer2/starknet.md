@@ -32,4 +32,4 @@ Like zkSync, StarkNet builds account abstraction into its protocol natively rath
 ·
 [Back to Layer 2](./README.md)
 ·
-[Next: Private Key Theft →](../security/private-key-theft.md)
+[Next: Blockchain Security →](../security/README.md)
