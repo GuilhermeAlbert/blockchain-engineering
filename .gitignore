@@ -22,3 +22,7 @@ broadcast/
 
 # Local design mockups
 .superpowers/
+
+# Generated documentation
+.mkdocs-stage/
+site/
