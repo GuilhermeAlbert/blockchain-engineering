@@ -1,0 +1,1 @@
+{"name":"solidity-example","version":"1.0.0","private":true,"type":"module","scripts":{"demo":"tsx src/demo.ts","test":"tsx src/test.ts"},"devDependencies":{"@types/node":"^22.0.0","solc":"0.8.30","tsx":"^4.19.0","typescript":"^5.6.0"}}
