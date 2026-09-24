@@ -118,7 +118,23 @@ function addNavigationPages(summary, edition, available) {
   const entries = TOP_LEVEL_DOCS
     .map((file, index) => available.has(file) ? `- [${labels.pages[index]}](./${file})` : null)
     .filter(Boolean);
-  return [`- [${labels.home}](./index.md)`, "", summary.trim(), ...(entries.length ? ["", `## ${labels.reference}`, "", ...entries] : []), ""].join("\n");
+  const nav = [`- [${labels.home}](./index.md)`];
+  let headingLevel = 1;
+  for (const line of summary.split("\n")) {
+    const heading = line.match(/^(#{2,3})\s+(.+?)\s*$/);
+    if (heading) {
+      headingLevel = heading[1].length - 2;
+      nav.push(`${"    ".repeat(headingLevel)}- ${heading[2]}`);
+      continue;
+    }
+    const item = line.match(/^\s*-\s+(.+)$/);
+    if (item) nav.push(`${"    ".repeat(headingLevel + 1)}- ${item[1]}`);
+  }
+  if (entries.length) {
+    nav.push(`- ${labels.reference}`);
+    nav.push(...entries.map((entry) => `    ${entry}`));
+  }
+  return `${nav.join("\n")}\n`;
 }
 
 export function prepareEdition({ root, edition, output }) {

@@ -52,7 +52,7 @@ test("stages an English edition with shared assets and generated navigation", ()
   const root = mkdtempSync(join(tmpdir(), "mkdocs-stage-"));
   const output = join(root, ".stage", "en");
   write(root, "README.md", "# Book\n\n> [!NOTE]\n> Read this.\n");
-  write(root, "SUMMARY.md", "# Contents\n\n- [Chapter](./chapters/topic/README.md)\n");
+  write(root, "SUMMARY.md", "# Contents\n\n## Origins\n\n- [Chapter](./chapters/topic/README.md)\n");
   write(root, "chapters/topic/README.md", "# Topic\n");
   write(root, "examples/demo/README.md", "# Demo\n");
   write(root, "examples/demo/example.ts", "export const value = 1;\n");
@@ -68,7 +68,7 @@ test("stages an English edition with shared assets and generated navigation", ()
   assert.ok(existsSync(join(output, "examples/demo/example.ts")));
   assert.ok(existsSync(join(output, "stylesheets/extra.css")));
   assert.match(readFileSync(join(output, "SUMMARY.md"), "utf8"), /\[Home\]\(\.\/index\.md\)/);
-  assert.match(readFileSync(join(output, "SUMMARY.md"), "utf8"), /chapters\/topic\/index\.md/);
+  assert.match(readFileSync(join(output, "SUMMARY.md"), "utf8"), /- Origins\n    - \[Chapter\]\(\.\/chapters\/topic\/index\.md\)/);
 });
 
 test("normalizes Portuguese links to shared examples copied inside its site", () => {
