@@ -167,6 +167,15 @@ test("validates a Portuguese edition from its own root", () => {
   assert.match(result.stdout, /0 errors/);
 });
 
+test("default edition does not scan nested translations", () => {
+  const files = {
+    ...cleanFiles,
+    "pt-BR/README.md": "# Tradução\n\nTODO: revisar.\n",
+  };
+  const result = runFixture(files);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+});
+
 test("reports malformed Portuguese navigation", () => {
   const files = {
     ...cleanFiles,

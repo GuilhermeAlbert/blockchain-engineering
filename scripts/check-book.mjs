@@ -22,7 +22,7 @@ const runNavigation = full || requested.has("--navigation");
 const runEditorial = full || requested.has("--editorial");
 const errors = [];
 
-const excludedDirectories = new Set([".git", "node_modules", "dist", "build", "out", "docs"]);
+const excludedDirectories = new Set([".git", "node_modules", "dist", "build", "out", "docs", "pt-BR"]);
 const bannedWords = [
   "delve",
   "foster",
