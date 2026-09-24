@@ -4,7 +4,6 @@
   --md-primary-fg-color--dark: #4028aa;
   --md-accent-fg-color: #7357e8;
   --md-typeset-a-color: #5135c2;
-  --be-grid-color: rgba(66, 45, 150, 0.07);
   --be-code-border: rgba(91, 63, 214, 0.2);
 }
 
@@ -17,15 +16,7 @@
   --md-accent-fg-color: #a893ff;
   --md-typeset-a-color: #b6a5ff;
   --md-code-bg-color: #15121d;
-  --be-grid-color: rgba(168, 147, 255, 0.045);
   --be-code-border: rgba(168, 147, 255, 0.19);
-}
-
-body {
-  background-image:
-    linear-gradient(var(--be-grid-color) 1px, transparent 1px),
-    linear-gradient(90deg, var(--be-grid-color) 1px, transparent 1px);
-  background-size: 32px 32px;
 }
 
 .md-header {
@@ -122,10 +113,6 @@ body {
 }
 
 @media screen and (max-width: 44.984375em) {
-  body {
-    background-size: 24px 24px;
-  }
-
   .md-content__inner > h1 {
     font-size: 2rem;
   }
