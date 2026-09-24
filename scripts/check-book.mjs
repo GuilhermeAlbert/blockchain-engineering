@@ -237,11 +237,14 @@ function proseLines(source) {
 
 function checkEditorial(files) {
   const banned = new RegExp(`\\b(${bannedWords.join("|")})\\b`, "i");
-  const marker = /\b(TODO|TBD|FIXME|XXX|WIP)\b|lorem ipsum|\[insert/i;
+  const marker = /\b(TODO|TBD|FIXME|XXX|WIP)\b/;
+  const placeholder = /lorem ipsum|\[insert/i;
   for (const file of files) {
     const source = readFileSync(file, "utf8");
     for (const entry of proseLines(source)) {
-      if (marker.test(entry.line)) report(file, entry.number, "editorial", "editorial marker remains");
+      if (marker.test(entry.line) || placeholder.test(entry.line)) {
+        report(file, entry.number, "editorial", "editorial marker remains");
+      }
       if (entry.line.includes("—")) report(file, entry.number, "editorial", "em dash remains");
       const match = entry.line.match(banned);
       if (match) report(file, entry.number, "editorial", `banned wording: ${match[0]}`);

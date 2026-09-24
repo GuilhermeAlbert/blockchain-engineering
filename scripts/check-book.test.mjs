@@ -137,6 +137,18 @@ test("reports editorial markers, em dashes, and banned wording", () => {
   assert.match(result.stdout, /banned wording/);
 });
 
+test("does not treat the Portuguese word todo as an editorial marker", () => {
+  const files = {
+    ...cleanFiles,
+    "chapters/second.md": cleanFiles["chapters/second.md"].replace(
+      "A direct explanation.",
+      "Todo bloco válido referencia o bloco anterior.",
+    ),
+  };
+  const result = runFixture(files, "--editorial");
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+});
+
 test("reports a malformed navigation footer", () => {
   const result = runFixture({
     ...cleanFiles,
