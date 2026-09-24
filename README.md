@@ -9,6 +9,12 @@
 <p align="center">Understanding blockchain through code.</p>
 
 <p align="center">
+  <strong>English</strong>
+  ·
+  <a href="./pt-BR/README.md">Português do Brasil</a>
+</p>
+
+<p align="center">
   <a href="#start-reading">Start reading</a>
   ·
   <a href="./SUMMARY.md">Full contents</a>
@@ -21,7 +27,7 @@
 </p>
 
 <p align="center">
-  <img alt="Status" src="https://img.shields.io/badge/status-work%20in%20progress-a12a7d" />
+  <img alt="Status" src="https://img.shields.io/badge/status-complete-2f855a" />
   <img alt="Language" src="https://img.shields.io/badge/language-English-555555" />
   <img alt="Format" src="https://img.shields.io/badge/format-open%20book-555555" />
 </p>
