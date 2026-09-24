@@ -358,6 +358,20 @@ Corrections, technical reviews, clearer explanations, and links to primary sourc
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
+### Build the website locally
+
+The published site uses Material for MkDocs and builds both editions from the existing Markdown files.
+
+```bash
+python3 -m venv .venv-docs
+.venv-docs/bin/python -m pip install -r requirements-docs.txt
+MKDOCS_BIN=.venv-docs/bin/mkdocs node scripts/build-docs.mjs
+node scripts/check-built-site.mjs
+python3 -m http.server 8000 --directory site
+```
+
+Open `http://localhost:8000/` for English or `http://localhost:8000/pt-BR/` for Brazilian Portuguese.
+
 > [!WARNING]
 > Never use production private keys, seed phrases, or meaningful funds while experimenting with code from this repository.
 

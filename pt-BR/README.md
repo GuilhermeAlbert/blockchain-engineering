@@ -17,13 +17,13 @@
 <p align="center">
   <a href="#iniciar-a-leitura">Iniciar a leitura</a>
   ·
-  <a href="https://guilhermealbert.github.io/blockchain-engineering/pt-BR/SUMMARY.html">Conteúdo completo</a>
+  <a href="./SUMMARY.md">Conteúdo completo</a>
   ·
-  <a href="https://guilhermealbert.github.io/blockchain-engineering/pt-BR/PROGRESS.html">Progresso</a>
+  <a href="./PROGRESS.md">Progresso</a>
   ·
-  <a href="https://guilhermealbert.github.io/blockchain-engineering/pt-BR/glossary.html">Glossário</a>
+  <a href="./glossary.md">Glossário</a>
   ·
-  <a href="https://guilhermealbert.github.io/blockchain-engineering/pt-BR/resources.html">Recursos</a>
+  <a href="./resources.md">Recursos</a>
 </p>
 
 <p align="center">
@@ -359,6 +359,20 @@ Consulte [Progresso](./PROGRESS.md) para o registro por seção e os comandos de
 Correções, revisões técnicas, explicações mais claras e links para fontes primárias são bem-vindos.
 
 Consulte [Como contribuir](./CONTRIBUTING.md).
+
+### Gerar o site localmente
+
+O site usa Material for MkDocs e gera as duas edições a partir dos arquivos Markdown existentes.
+
+```bash
+python3 -m venv .venv-docs
+.venv-docs/bin/python -m pip install -r requirements-docs.txt
+MKDOCS_BIN=.venv-docs/bin/mkdocs node scripts/build-docs.mjs
+node scripts/check-built-site.mjs
+python3 -m http.server 8000 --directory site
+```
+
+Abra `http://localhost:8000/` para ler em inglês ou `http://localhost:8000/pt-BR/` para ler em português brasileiro.
 
 > [!WARNING]
 > Nunca use chaves privadas de produção, frases-semente reais ou valores relevantes ao experimentar o código deste repositório.

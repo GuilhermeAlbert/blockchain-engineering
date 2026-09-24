@@ -1,5 +1,6 @@
 (function () {
-  const projectRoot = "/blockchain-engineering/";
+  const scriptPath = new URL(document.currentScript.src).pathname;
+  const projectRoot = scriptPath.replace(/(?:pt-BR\/)?javascripts\/language-switcher\.js$/, "");
 
   function equivalentPath(language) {
     let relative = window.location.pathname.startsWith(projectRoot)
